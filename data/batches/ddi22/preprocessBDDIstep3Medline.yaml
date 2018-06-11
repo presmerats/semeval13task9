@@ -1,0 +1,40 @@
+filepath: ../data/batches/ddi22/preprocessBDDIstep3Medline.yaml
+models:
+  m0:
+    algorithm: lsvm
+    wordfeatures: [ word, lemma, pos, chunk, chunkGroup, lookup , ortho]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup,
+      isTitleCase,
+      isUpperCase,
+      isLowerCase,
+      hasDigits,
+      hasStrangeChars,
+      moreThan10chars,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      lenprefix,
+      lensuffix,
+      lenword,
+      wordStructure,
+      wordStructure2,
+      wordStructureLong,
+      wordStructureLong2]
+    topcountfeatures: [word, trigram, lemma, pos]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: null
+    modeltype: BDDI
+    topcount: 50
+numcores: 1
+resultsFolder: ../data/results/
+savingFolder: ../data/features/
+session: preprocessBDDIstep3Medline
+testFolder: 
+total_time: 0
+trainingFolder: '../data/features/preprocessDDIMedline-step2.json'

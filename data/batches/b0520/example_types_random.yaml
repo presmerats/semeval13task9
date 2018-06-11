@@ -1,0 +1,109 @@
+filepath: ../data/batches/b0520/example_types_random.yaml
+models:
+  m0:
+    algorithm: CRF
+    fafter1: [chunk]
+    fafter2: [chunk]
+    fafter3: [chunk]
+    fafter4: [chunk]
+    fafter5: []
+    fbefore1: [chunk]
+    fbefore2: [chunk]
+    fbefore3: [chunk]
+    fbefore4: [chunk]
+    fbefore5: []
+    fcurrent: [chunk, lemma]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m1:
+    algorithm: CRF
+    fafter1: [lookup]
+    fafter2: [lookup]
+    fafter3: [lookup]
+    fafter4: [lookup]
+    fafter5: []
+    fbefore1: [lookup]
+    fbefore2: [lookup]
+    fbefore3: [lookup]
+    fbefore4: [lookup]
+    fbefore5: []
+    fcurrent: [chunk, lemma]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m2:
+    algorithm: CRF
+    fafter1: [chunk]
+    fafter2: [chunk]
+    fafter3: [chunk]
+    fafter4: [chunk]
+    fafter5: []
+    fbefore1: [chunk]
+    fbefore2: [chunk]
+    fbefore3: [chunk]
+    fbefore4: [chunk]
+    fbefore5: []
+    fcurrent: [chunk, pos]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m3:
+    algorithm: CRF
+    fafter1: [chunk]
+    fafter2: [chunk]
+    fafter3: [chunk]
+    fafter4: [chunk]
+    fafter5: []
+    fbefore1: [chunk]
+    fbefore2: [chunk]
+    fbefore3: [chunk]
+    fbefore4: [chunk]
+    fbefore5: []
+    fcurrent: [chunk, lemma]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m4:
+    algorithm: CRF
+    fafter1: [lookup]
+    fafter2: [lookup]
+    fafter3: [lookup]
+    fafter4: [lookup]
+    fafter5: []
+    fbefore1: [lookup]
+    fbefore2: [lookup]
+    fbefore3: [lookup]
+    fbefore4: [lookup]
+    fbefore5: []
+    fcurrent: [chunk, pos]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+numcores: 4
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: tMDmNERaCRF
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/MedLine
+total_time: 0
+trainingFolder: ../data/LaboCase/Train

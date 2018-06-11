@@ -1,0 +1,60 @@
+models:
+  mod001:
+    accuracy: 0.0
+    fafter1: [getPOSTag, getLemma, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, suffix, lenprefix, lensuffix, lenword,
+      wordStructure, chunkGroup, chunk]
+    fafter2: [getPOSTag, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, wordStructure, chunkGroup, chunk]
+    fafter3: [getPOSTag, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, wordStructure, chunkGroup, chunk]
+    fbefore1: [getPOSTag, getLemma, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, suffix, lenprefix, lensuffix, lenword,
+      wordStructure, chunkGroup, chunk]
+    fbefore2: [getPOSTag, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, wordStructure, chunkGroup, chunk]
+    fbefore3: [getPOSTag, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, wordStructure, chunkGroup, chunk]
+    limitTest: 10
+    limitTraining: 10
+    modeltype: NER
+    status: done
+    fcurrent: [isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix, suffix, lenprefix, lensuffix, lenword, wordStructure, chunk, chunkGroup]
+  mod002:
+    accuracy: 0.0
+    fafter1: [getPOSTag, wordStructure, chunkGroup]
+    fafter2: [getPOSTag, wordStructure, chunkGroup]
+    fafter3: [getPOSTag, wordStructure, chunkGroup]
+    fbefore1: [getPOSTag, getLemma, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, suffix, lenprefix, lensuffix, lenword,
+      wordStructure, chunkGroup, chunk]
+    fbefore2: [getPOSTag, wordStructure, chunkGroup]
+    fbefore3: [getPOSTag, wordStructure, chunkGroup]
+    limitTest: 20
+    limitTraining: 10
+    modeltype: NER
+    status: done
+    fcurrent: [isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix, suffix, lenprefix, lensuffix, lenword, wordStructure, chunk, chunkGroup]
+  mod003ref:
+    accuracy: null
+    limitTest: 10
+    limitTraining: 10
+    fafter1: [getLemma, getPOSTag, hasDigits, hasStrangeChars, isTitleCase, isUpperCase,
+      lenprefix, lensuffix, lenword, prefix, suffix]
+    fafter2: [getPOSTag, hasDigits, isLowerCase, isUpperCase, moreThan10chars]
+    fafter3: [getPOSTag, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [getPOSTag hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [getPOSTag, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [getPOSTag, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    modeltype: ER
+    status: done
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+
+savingFolder: ../data/models/
+session: debug0517
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/DrugBank
+trainingFolder: ../data/LaboCase/Train

@@ -1,0 +1,833 @@
+filepath: ../data/batches/ddi22/ddi006.yaml
+models:
+  m10:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    results:
+      ddi00620180527050450:
+        accuracy_manual: 0.815954415954416
+        algorithm: lsvm
+        end: 1527397592.8551092
+        modelfile: ../data/models/svm-pipeline_20180527050540.pkl
+        resultsFile: ../data/results//task9.1_ddi006ddi006m10.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '8', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0,0524', fn: '287', fp: '111', prec: '0,0902', recall: '0,0369',
+            total: '298', tp: '11'}
+          exact: {F1: '0,0478', fn: '859', fp: '137', prec: '0,1543', recall: '0,0283',
+            total: '884', tp: '25'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0,0374', P: '0,1319', R: '0,0218'}
+          mechanism: {F1: '0,0903', fn: '264', fp: '18', prec: '0,4375', recall: '0,0504',
+            total: '278', tp: '14'}
+          partial: {F1: '0,0994', fn: '832', fp: '110', prec: '0,321', recall: '0,0588',
+            total: '884', tp: '52'}
+        scoresFile: ../data/results//task9.1_ddi006ddi006m10_scores.log
+        start: 1527397490.721918
+        status: done
+        total_time: 102.13319110870361
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [lemma]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, isTitleCase, isUpperCase,
+      isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4,
+      prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    wordfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, ortho]
+  m11:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    results:
+      ddi00620180527050450:
+        accuracy_manual: 0.815954415954416
+        algorithm: lsvm
+        end: 1527397593.3076692
+        modelfile: ../data/models/svm-pipeline_20180527050540.pkl
+        resultsFile: ../data/results//task9.1_ddi006ddi006m11.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '8', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0,0524', fn: '287', fp: '111', prec: '0,0902', recall: '0,0369',
+            total: '298', tp: '11'}
+          exact: {F1: '0,0478', fn: '859', fp: '137', prec: '0,1543', recall: '0,0283',
+            total: '884', tp: '25'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0,0374', P: '0,1319', R: '0,0218'}
+          mechanism: {F1: '0,0903', fn: '264', fp: '18', prec: '0,4375', recall: '0,0504',
+            total: '278', tp: '14'}
+          partial: {F1: '0,0994', fn: '832', fp: '110', prec: '0,321', recall: '0,0588',
+            total: '884', tp: '52'}
+        scoresFile: ../data/results//task9.1_ddi006ddi006m11_scores.log
+        start: 1527397490.7221465
+        status: done
+        total_time: 102.58552265167236
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [lemma]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, isTitleCase, isUpperCase,
+      isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4,
+      prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    wordfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, ortho]
+  m2:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    results:
+      ddi00620180527045909:
+        accuracy_manual: 0.815954415954416
+        algorithm: lsvm
+        end: 1527397259.9013798
+        modelfile: ../data/models/svm-pipeline_20180527050000.pkl
+        resultsFile: ../data/results//task9.1_ddi006ddi006m2.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '8', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0,0524', fn: '287', fp: '111', prec: '0,0902', recall: '0,0369',
+            total: '298', tp: '11'}
+          exact: {F1: '0,0478', fn: '859', fp: '137', prec: '0,1543', recall: '0,0283',
+            total: '884', tp: '25'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0,0374', P: '0,1319', R: '0,0218'}
+          mechanism: {F1: '0,0903', fn: '264', fp: '18', prec: '0,4375', recall: '0,0504',
+            total: '278', tp: '14'}
+          partial: {F1: '0,0994', fn: '832', fp: '110', prec: '0,321', recall: '0,0588',
+            total: '884', tp: '52'}
+        scoresFile: ../data/results//task9.1_ddi006ddi006m2_scores.log
+        start: 1527397150.1746602
+        status: done
+        total_time: 109.72671961784363
+      ddi00620180527050450:
+        accuracy_manual: 0.815954415954416
+        algorithm: lsvm
+        end: 1527397699.6185067
+        modelfile: ../data/models/svm-pipeline_20180527050727.pkl
+        resultsFile: ../data/results//task9.1_ddi006ddi006m2.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '8', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0,0524', fn: '287', fp: '111', prec: '0,0902', recall: '0,0369',
+            total: '298', tp: '11'}
+          exact: {F1: '0,0478', fn: '859', fp: '137', prec: '0,1543', recall: '0,0283',
+            total: '884', tp: '25'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0,0374', P: '0,1319', R: '0,0218'}
+          mechanism: {F1: '0,0903', fn: '264', fp: '18', prec: '0,4375', recall: '0,0504',
+            total: '278', tp: '14'}
+          partial: {F1: '0,0994', fn: '832', fp: '110', prec: '0,321', recall: '0,0588',
+            total: '884', tp: '52'}
+        scoresFile: ../data/results//task9.1_ddi006ddi006m2_scores.log
+        start: 1527397597.397111
+        status: done
+        total_time: 102.22139573097229
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [word, trigram, lemma, pos]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, isTitleCase, isUpperCase,
+      isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4,
+      prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    wordfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, ortho]
+  m22:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    results:
+      ddi00620180527050450:
+        accuracy_manual: 0.815954415954416
+        algorithm: lsvm
+        end: 1527397700.1810617
+        modelfile: ../data/models/svm-pipeline_20180527050727.pkl
+        resultsFile: ../data/results//task9.1_ddi006ddi006m22.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '8', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0,0524', fn: '287', fp: '111', prec: '0,0902', recall: '0,0369',
+            total: '298', tp: '11'}
+          exact: {F1: '0,0478', fn: '859', fp: '137', prec: '0,1543', recall: '0,0283',
+            total: '884', tp: '25'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0,0374', P: '0,1319', R: '0,0218'}
+          mechanism: {F1: '0,0903', fn: '264', fp: '18', prec: '0,4375', recall: '0,0504',
+            total: '278', tp: '14'}
+          partial: {F1: '0,0994', fn: '832', fp: '110', prec: '0,321', recall: '0,0588',
+            total: '884', tp: '52'}
+        scoresFile: ../data/results//task9.1_ddi006ddi006m22_scores.log
+        start: 1527397597.9004748
+        status: done
+        total_time: 102.28058695793152
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [word, trigram, lemma, pos]
+    windowfeatures: [word, pos, prefix, prefix3, prefix4, prefix5, suffix, suffix3,
+      suffix4, suffix5, wordStructure]
+    wordfeatures: [word, pos]
+  m23:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    results:
+      ddi00620180527050450:
+        accuracy_manual: 0.815954415954416
+        algorithm: lsvm
+        end: 1527397805.7765627
+        modelfile: ../data/models/svm-pipeline_20180527050913.pkl
+        resultsFile: ../data/results//task9.1_ddi006ddi006m23.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '8', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0,0524', fn: '287', fp: '111', prec: '0,0902', recall: '0,0369',
+            total: '298', tp: '11'}
+          exact: {F1: '0,0478', fn: '859', fp: '137', prec: '0,1543', recall: '0,0283',
+            total: '884', tp: '25'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0,0374', P: '0,1319', R: '0,0218'}
+          mechanism: {F1: '0,0903', fn: '264', fp: '18', prec: '0,4375', recall: '0,0504',
+            total: '278', tp: '14'}
+          partial: {F1: '0,0994', fn: '832', fp: '110', prec: '0,321', recall: '0,0588',
+            total: '884', tp: '52'}
+        scoresFile: ../data/results//task9.1_ddi006ddi006m23_scores.log
+        start: 1527397704.1732285
+        status: done
+        total_time: 101.6033341884613
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [word, trigram, lemma, pos]
+    windowfeatures: [word, pos, prefix, prefix3, prefix4, prefix5, suffix, suffix3,
+      suffix4, suffix5, wordStructure]
+    wordfeatures: [word, pos]
+  m24notop:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    results:
+      ddi00620180527050450:
+        accuracy_manual: 0.815954415954416
+        algorithm: lsvm
+        end: 1527397806.316854
+        modelfile: ../data/models/svm-pipeline_20180527050913.pkl
+        resultsFile: ../data/results//task9.1_ddi006ddi006m24notop.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '8', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0,0524', fn: '287', fp: '111', prec: '0,0902', recall: '0,0369',
+            total: '298', tp: '11'}
+          exact: {F1: '0,0478', fn: '859', fp: '137', prec: '0,1543', recall: '0,0283',
+            total: '884', tp: '25'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0,0374', P: '0,1319', R: '0,0218'}
+          mechanism: {F1: '0,0903', fn: '264', fp: '18', prec: '0,4375', recall: '0,0504',
+            total: '278', tp: '14'}
+          partial: {F1: '0,0994', fn: '832', fp: '110', prec: '0,321', recall: '0,0588',
+            total: '884', tp: '52'}
+        scoresFile: ../data/results//task9.1_ddi006ddi006m24notop_scores.log
+        start: 1527397704.7759497
+        status: done
+        total_time: 101.54090428352356
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [word, pos, prefix, prefix3, prefix4, prefix5, suffix, suffix3,
+      suffix4, suffix5, wordStructure]
+    wordfeatures: [word, pos]
+  m25notop:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    results:
+      ddi00620180527050450:
+        accuracy_manual: 0.815954415954416
+        algorithm: lsvm
+        end: 1527397912.9745421
+        modelfile: ../data/models/svm-pipeline_20180527051059.pkl
+        resultsFile: ../data/results//task9.1_ddi006ddi006m25notop.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '8', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0,0524', fn: '287', fp: '111', prec: '0,0902', recall: '0,0369',
+            total: '298', tp: '11'}
+          exact: {F1: '0,0478', fn: '859', fp: '137', prec: '0,1543', recall: '0,0283',
+            total: '884', tp: '25'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0,0374', P: '0,1319', R: '0,0218'}
+          mechanism: {F1: '0,0903', fn: '264', fp: '18', prec: '0,4375', recall: '0,0504',
+            total: '278', tp: '14'}
+          partial: {F1: '0,0994', fn: '832', fp: '110', prec: '0,321', recall: '0,0588',
+            total: '884', tp: '52'}
+        scoresFile: ../data/results//task9.1_ddi006ddi006m25notop_scores.log
+        start: 1527397810.3552341
+        status: done
+        total_time: 102.61930799484253
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [word, pos, prefix, prefix3, prefix4, prefix5, suffix, suffix3,
+      suffix4, suffix5, wordStructure]
+    wordfeatures: [word, pos]
+  m26:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    results:
+      ddi00620180527050450:
+        accuracy_manual: 0.815954415954416
+        algorithm: lsvm
+        end: 1527397912.9920251
+        modelfile: ../data/models/svm-pipeline_20180527051100.pkl
+        resultsFile: ../data/results//task9.1_ddi006ddi006m26.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '8', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0,0524', fn: '287', fp: '111', prec: '0,0902', recall: '0,0369',
+            total: '298', tp: '11'}
+          exact: {F1: '0,0478', fn: '859', fp: '137', prec: '0,1543', recall: '0,0283',
+            total: '884', tp: '25'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0,0374', P: '0,1319', R: '0,0218'}
+          mechanism: {F1: '0,0903', fn: '264', fp: '18', prec: '0,4375', recall: '0,0504',
+            total: '278', tp: '14'}
+          partial: {F1: '0,0994', fn: '832', fp: '110', prec: '0,321', recall: '0,0588',
+            total: '884', tp: '52'}
+        scoresFile: ../data/results//task9.1_ddi006ddi006m26_scores.log
+        start: 1527397810.9579277
+        status: done
+        total_time: 102.03409743309021
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [word]
+    windowfeatures: [word, pos, prefix, prefix3, prefix4, prefix5, suffix, suffix3,
+      suffix4, suffix5, wordStructure]
+    wordfeatures: [word, pos]
+  m27:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    results:
+      ddi00620180527050450:
+        accuracy_manual: 0.815954415954416
+        algorithm: lsvm
+        end: 1527398019.17777
+        modelfile: ../data/models/svm-pipeline_20180527051246.pkl
+        resultsFile: ../data/results//task9.1_ddi006ddi006m27.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '8', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0,0524', fn: '287', fp: '111', prec: '0,0902', recall: '0,0369',
+            total: '298', tp: '11'}
+          exact: {F1: '0,0478', fn: '859', fp: '137', prec: '0,1543', recall: '0,0283',
+            total: '884', tp: '25'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0,0374', P: '0,1319', R: '0,0218'}
+          mechanism: {F1: '0,0903', fn: '264', fp: '18', prec: '0,4375', recall: '0,0504',
+            total: '278', tp: '14'}
+          partial: {F1: '0,0994', fn: '832', fp: '110', prec: '0,321', recall: '0,0588',
+            total: '884', tp: '52'}
+        scoresFile: ../data/results//task9.1_ddi006ddi006m27_scores.log
+        start: 1527397917.5414937
+        status: done
+        total_time: 101.63627624511719
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [word]
+    windowfeatures: [word, pos, prefix, prefix3, prefix4, prefix5, suffix, suffix3,
+      suffix4, suffix5, wordStructure]
+    wordfeatures: [word, pos]
+  m28:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    results:
+      ddi00620180527050450:
+        accuracy_manual: 0.815954415954416
+        algorithm: lsvm
+        end: 1527398019.3798926
+        modelfile: ../data/models/svm-pipeline_20180527051246.pkl
+        resultsFile: ../data/results//task9.1_ddi006ddi006m28.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '8', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0,0524', fn: '287', fp: '111', prec: '0,0902', recall: '0,0369',
+            total: '298', tp: '11'}
+          exact: {F1: '0,0478', fn: '859', fp: '137', prec: '0,1543', recall: '0,0283',
+            total: '884', tp: '25'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0,0374', P: '0,1319', R: '0,0218'}
+          mechanism: {F1: '0,0903', fn: '264', fp: '18', prec: '0,4375', recall: '0,0504',
+            total: '278', tp: '14'}
+          partial: {F1: '0,0994', fn: '832', fp: '110', prec: '0,321', recall: '0,0588',
+            total: '884', tp: '52'}
+        scoresFile: ../data/results//task9.1_ddi006ddi006m28_scores.log
+        start: 1527397917.743594
+        status: done
+        total_time: 101.63629865646362
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [trigram]
+    windowfeatures: [word, pos, prefix, prefix3, prefix4, prefix5, suffix, suffix3,
+      suffix4, suffix5, wordStructure]
+    wordfeatures: [word, pos]
+  m29:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [trigram]
+    windowfeatures: [word, pos, prefix, prefix3, prefix4, prefix5, suffix, suffix3,
+      suffix4, suffix5, wordStructure]
+    wordfeatures: [word, pos]
+  m3:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    results:
+      ddi00620180527045909:
+        accuracy_manual: 0.815954415954416
+        algorithm: lsvm
+        end: 1527397259.869143
+        modelfile: ../data/models/svm-pipeline_20180527050000.pkl
+        resultsFile: ../data/results//task9.1_ddi006ddi006m3.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '8', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0,0524', fn: '287', fp: '111', prec: '0,0902', recall: '0,0369',
+            total: '298', tp: '11'}
+          exact: {F1: '0,0478', fn: '859', fp: '137', prec: '0,1543', recall: '0,0283',
+            total: '884', tp: '25'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0,0374', P: '0,1319', R: '0,0218'}
+          mechanism: {F1: '0,0903', fn: '264', fp: '18', prec: '0,4375', recall: '0,0504',
+            total: '278', tp: '14'}
+          partial: {F1: '0,0994', fn: '832', fp: '110', prec: '0,321', recall: '0,0588',
+            total: '884', tp: '52'}
+        scoresFile: ../data/results//task9.1_ddi006ddi006m3_scores.log
+        start: 1527397150.1747487
+        status: pending
+        total_time: 109.69439435005188
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [word, trigram, lemma, pos]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, isTitleCase, isUpperCase,
+      isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4,
+      prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    wordfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, ortho]
+  m30:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [lemma]
+    windowfeatures: [word, pos, prefix, prefix3, prefix4, prefix5, suffix, suffix3,
+      suffix4, suffix5, wordStructure]
+    wordfeatures: [word, pos]
+  m31:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [lemma]
+    windowfeatures: [word, pos, prefix, prefix3, prefix4, prefix5, suffix, suffix3,
+      suffix4, suffix5, wordStructure]
+    wordfeatures: [word, pos]
+  m42:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: []
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [word, pos, prefix, prefix3, prefix4, prefix5, suffix, suffix3,
+      suffix4, suffix5, wordStructure]
+    wordfeatures: [word, pos]
+  m43:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: []
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [lemma, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, wordStructure]
+    wordfeatures: [word, pos]
+  m44:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: []
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [word, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, wordStructure]
+    wordfeatures: [pos]
+  m45:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: []
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, wordStructure]
+    wordfeatures: [ortho]
+  m46:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: []
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [word, pos]
+    wordfeatures: [word, pos]
+  m47:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: []
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [word, pos, chunkGroup]
+    wordfeatures: [word, pos]
+  m48:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: []
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [lemma, chunkGroup, wordStructure]
+    wordfeatures: [lemma, pos]
+  m4notop:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, isTitleCase, isUpperCase,
+      isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4,
+      prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    wordfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, ortho]
+  m52:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: []
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [word, pos, prefix, prefix3, prefix4, prefix5, suffix, suffix3,
+      suffix4, suffix5, wordStructure]
+    wordfeatures: [word, pos]
+  m53:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: []
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [lemma, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, wordStructure]
+    wordfeatures: [word, pos]
+  m54:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: []
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [word, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, wordStructure]
+    wordfeatures: [pos]
+  m55:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: []
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, wordStructure]
+    wordfeatures: [ortho]
+  m56:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: []
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [word, pos]
+    wordfeatures: [word, pos]
+  m57:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: []
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [word, pos, chunkGroup]
+    wordfeatures: [word, pos]
+  m58:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: []
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [lemma, chunkGroup, wordStructure]
+    wordfeatures: [lemma, pos]
+  m5notop:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, isTitleCase, isUpperCase,
+      isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4,
+      prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    wordfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, ortho]
+  m6:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [word]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, isTitleCase, isUpperCase,
+      isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4,
+      prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    wordfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, ortho]
+  m65:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: []
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, wordStructure]
+    wordfeatures: [ortho]
+  m66:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: []
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [word, pos]
+    wordfeatures: [word, pos]
+  m7:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [word]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, isTitleCase, isUpperCase,
+      isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4,
+      prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    wordfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, ortho]
+  m70:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [word, trigram, lemma, pos]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, isTitleCase, isUpperCase,
+      isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4,
+      prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    wordfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, ortho]
+  m71:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count]
+    topcount: 30
+    topcountfeatures: [word, trigram]
+    windowfeatures: [word, pos, prefix, prefix3, prefix4, prefix5, suffix, suffix3,
+      suffix4, suffix5, wordStructure]
+    wordfeatures: [word, pos]
+  m8:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [trigram]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, isTitleCase, isUpperCase,
+      isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4,
+      prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    wordfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, ortho]
+  m9:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [trigram]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, isTitleCase, isUpperCase,
+      isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4,
+      prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    wordfeatures: [word, lemma, pos, chunk, chunkGroup, lookup, ortho]
+numcores: 2
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: ddi006
+testFeatures: ../data/features/featuresDDItest_DrugBank.json
+testFolder: ../data/LaboCase/Test/Test for DDI Extraction task/DrugBank
+total_time: 6824.0660536289215
+trainingFolder: ../data/features/featuresDDItrain_DrugBank.json

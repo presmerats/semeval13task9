@@ -1,0 +1,48 @@
+filepath: ../data/batches/debug_bestmodels_vs_NER.yaml
+models:
+  mod001:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    modeltype: ER
+    results:
+      bm20180519155319: {accuracy: 0.5592105263157895, accuracy_manual: 0.5830508474576271,
+        end: 1526747067.9085212, f1: '0.68', modelfile: ../data/models/svm-pipeline_20180519162359.pkl,
+        precision: '0.87', recall: '0.56', resultsFile: ../data/results//task9.1_bmbmmod001.txt_result,
+        scoresFile: ../data/results//task9.1_bmbmmod001_scores.log, start: 1526745199.6667488,
+        status: done, total_time: 1868.2417724132538}
+    status: error
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+  mod002:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    modeltype: NER
+    results:
+      bm20180519155319: {modelfile: ../data/models/svm-pipeline_20180519171952.pkl,
+        start: 1526745199.6670697, status: done}
+    status: error
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+numcores: 7
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: bm
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/DrugBank
+total_time: 5218.934740304947
+trainingFolder: ../data/LaboCase/Train

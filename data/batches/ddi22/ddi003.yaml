@@ -1,0 +1,147 @@
+filepath: ../data/batches/ddi22/ddi003.yaml
+models:
+  m3:
+    algorithm: lsvm
+    features: [inSameChunk, verbLemma, negationLemma, posCounts, getWords, getLemmas]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    results:
+      ddi00320180526134036:
+        accuracy_manual: 0.8320987654320988
+        algorithm: lsvm
+        end: 1527342129.9706037
+        modelfile: ../data/models/svm-pipeline_20180526134122.pkl
+        resultsFile: ../data/results//task9.1_ddi003ddi003m3.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '0', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0', fn: '298', fp: '0', prec: '0', recall: '0', total: '298',
+            tp: '0'}
+          exact: {F1: '0', fn: '884', fp: '0', prec: '0', recall: '0', total: '884',
+            tp: '0'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0', P: '0', R: '0'}
+          mechanism: {F1: '0', fn: '278', fp: '0', prec: '0', recall: '0', total: '278',
+            tp: '0'}
+          partial: {F1: '0', fn: '884', fp: '0', prec: '0', recall: '0', total: '884',
+            tp: '0'}
+        scoresFile: ../data/results//task9.1_ddi003ddi003m3_scores.log
+        start: 1527342036.1777263
+        status: done
+        total_time: 93.7928774356842
+      ddi00320180526134833:
+        accuracy_manual: 0.8320987654320988
+        algorithm: lsvm
+        end: 1527342613.5809238
+        modelfile: ../data/models/svm-pipeline_20180526134922.pkl
+        resultsFile: ../data/results//task9.1_ddi003ddi003m3.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '0', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0', fn: '298', fp: '0', prec: '0', recall: '0', total: '298',
+            tp: '0'}
+          exact: {F1: '0', fn: '884', fp: '0', prec: '0', recall: '0', total: '884',
+            tp: '0'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0', P: '0', R: '0'}
+          mechanism: {F1: '0', fn: '278', fp: '0', prec: '0', recall: '0', total: '278',
+            tp: '0'}
+          partial: {F1: '0', fn: '884', fp: '0', prec: '0', recall: '0', total: '884',
+            tp: '0'}
+        scoresFile: ../data/results//task9.1_ddi003ddi003m3_scores.log
+        start: 1527342513.7783818
+        status: done
+        total_time: 99.80254197120667
+      ddi00320180526141050:
+        accuracy_manual: 0.8030389363722698
+        algorithm: lsvm
+        end: 1527344122.5696008
+        modelfile: ../data/models/svm-pipeline_20180526141431.pkl
+        resultsFile: ../data/results//task9.1_ddi003ddi003m3.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '0', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0', fn: '298', fp: '0', prec: '0', recall: '0', total: '298',
+            tp: '0'}
+          exact: {F1: '0', fn: '884', fp: '647', prec: '0', recall: '0', total: '884',
+            tp: '0'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0', P: '0', R: '0'}
+          mechanism: {F1: '0', fn: '278', fp: '0', prec: '0', recall: '0', total: '278',
+            tp: '0'}
+          partial: {F1: '0,3227', fn: '637', fp: '400', prec: '0,3818', recall: '0,2794',
+            total: '884', tp: '247'}
+        scoresFile: ../data/results//task9.1_ddi003ddi003m3_scores.log
+        start: 1527343850.8142078
+        status: done
+        total_time: 271.7553930282593
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m5:
+    algorithm: lsvm
+    features: [inSameChunk, verbLemma, negationLemma, posCounts, getWords, getLemmas]
+    limitTest: null
+    limitTraining: 2500
+    modelfile: null
+    modeltype: BDDI
+    results:
+      ddi00320180526134036:
+        accuracy_manual: 0.8320987654320988
+        algorithm: lsvm
+        end: 1527342148.838913
+        modelfile: ../data/models/svm-pipeline_20180526134127.pkl
+        resultsFile: ../data/results//task9.1_ddi003ddi003m5.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '0', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0', fn: '298', fp: '0', prec: '0', recall: '0', total: '298',
+            tp: '0'}
+          exact: {F1: '0', fn: '884', fp: '0', prec: '0', recall: '0', total: '884',
+            tp: '0'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0', P: '0', R: '0'}
+          mechanism: {F1: '0', fn: '278', fp: '0', prec: '0', recall: '0', total: '278',
+            tp: '0'}
+          partial: {F1: '0', fn: '884', fp: '0', prec: '0', recall: '0', total: '884',
+            tp: '0'}
+        scoresFile: ../data/results//task9.1_ddi003ddi003m5_scores.log
+        start: 1527342036.177801
+        status: done
+        total_time: 112.66111207008362
+      ddi00320180526134833:
+        accuracy_manual: 0.8320987654320988
+        algorithm: lsvm
+        end: 1527342619.1705112
+        modelfile: ../data/models/svm-pipeline_20180526134927.pkl
+        resultsFile: ../data/results//task9.1_ddi003ddi003m5.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '0', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0', fn: '298', fp: '0', prec: '0', recall: '0', total: '298',
+            tp: '0'}
+          exact: {F1: '0', fn: '884', fp: '0', prec: '0', recall: '0', total: '884',
+            tp: '0'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0', P: '0', R: '0'}
+          mechanism: {F1: '0', fn: '278', fp: '0', prec: '0', recall: '0', total: '278',
+            tp: '0'}
+          partial: {F1: '0', fn: '884', fp: '0', prec: '0', recall: '0', total: '884',
+            tp: '0'}
+        scoresFile: ../data/results//task9.1_ddi003ddi003m5_scores.log
+        start: 1527342513.7784247
+        status: done
+        total_time: 105.39208650588989
+    resultsFile: null
+    scoresFile: null
+    status: pending
+numcores: 2
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: ddi003
+testFeatures: ../data/features/FeatureExtractionTest2_countfeatures.json
+testFolder: ../data/LaboCase/Test/Test for DDI Extraction task/DrugBank
+total_time: 109.44973754882812
+trainingFolder: ../data/features/FeatureExtraction2_countfeatures.json

@@ -1,0 +1,23 @@
+accuracy: 0.49728260869565216
+features:  current: 
+[ lemma, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ before1: 
+[ lemma, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ after1: 
+[ lemma, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ before2: 
+[ lemma, ]
+ after2: 
+[ lemma, ]
+ before3: 
+[ lemma, ]
+ after3: 
+[ lemma, ]
+ before4: 
+[ lemma, ]
+ after4: 
+[ lemma, ]
+ before5: 
+[ lemma, ]
+ after5: 
+[ lemma, ]

@@ -1,0 +1,41 @@
+SCORES FOR the file: task9.1_ddi006ddi006m71.txt
+Gold Dataset: /DrugBank
+
+Partial Evaluation: only detection of DDI (regadless to the type)
+tp	fp	fn	total	prec	recall	F1
+396	212	488	884	0,6513	0,448	0,5308
+
+
+Detection and Classification of DDI
+tp	fp	fn	total	prec	recall	F1
+326	282	558	884	0,5362	0,3688	0,437
+
+
+________________________________________________________________________
+
+SCORES FOR DDI TYPE
+Scores for ddi with type mechanism
+tp	fp	fn	total	prec	recall	F1
+99	90	179	278	0,5238	0,3561	0,424
+
+
+Scores for ddi with type effect
+tp	fp	fn	total	prec	recall	F1
+120	141	178	298	0,4598	0,4027	0,4293
+
+
+Scores for ddi with type advise
+tp	fp	fn	total	prec	recall	F1
+89	41	125	214	0,6846	0,4159	0,5174
+
+
+Scores for ddi with type int
+tp	fp	fn	total	prec	recall	F1
+18	10	76	94	0,6429	0,1915	0,2951
+
+
+MACRO-AVERAGE MEASURES:
+	P	R	F1
+	0,5778	0,3415	0,4293
+________________________________________________________________________
+

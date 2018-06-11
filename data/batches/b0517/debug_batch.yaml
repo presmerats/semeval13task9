@@ -1,0 +1,299 @@
+models:
+  mod001:
+    accuracy: 0.0
+    goalaccuracy:  0.5263157894736842
+    fafter1: [
+      getLemma,
+      getPOSTag,
+      hasDigits,
+      hasStrangeChars,
+      isTitleCase,
+      isUpperCase,
+      lenprefix,
+      lensuffix,
+      lenword,
+      prefix,
+      suffix,
+    ]
+    fafter2: [
+      getPOSTag,
+      hasDigits,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+    ]
+    fafter3: [
+      getPOSTag,
+      hasDigits,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+    ]
+    fbefore1: [
+      getPOSTag,
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+      lenprefix,
+      lenword,
+      moreThan10chars,
+      prefix,
+      suffix,
+    ]
+    fbefore2: [
+      getPOSTag,
+      hasStrangeChars,
+      isLowerCase,
+      isUpperCase,
+      wordStructure,
+    ]
+    fbefore3: [
+      getPOSTag,
+      hasDigits,
+      isTitleCase,
+      moreThan10chars,
+      wordStructure,
+    ]
+    limitTest: 10
+    limitTraining: 10
+    modeltype: ER
+    status: done
+    fcurrent: [
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+      lensuffix,
+      lenword,
+      moreThan10chars,
+      wordStructure,
+    ]
+  
+  mod002:
+    accuracy: 0.0
+    goalaccuracy:  0.5263157894736842
+    fafter1: [
+      getLemma,
+      getPOSTag,
+      hasDigits,
+      hasStrangeChars,
+      isTitleCase,
+      isUpperCase,
+      lenprefix,
+      lensuffix,
+      lenword,
+      prefix,
+      suffix,
+    ]
+    fafter2: [
+      getPOSTag,
+      hasDigits,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+    ]
+    fafter3: [
+      getPOSTag,
+      hasDigits,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+    ]
+    fbefore1: [
+      getPOSTag,
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+      lenprefix,
+      lenword,
+      moreThan10chars,
+      prefix,
+      suffix,
+    ]
+    fbefore2: [
+      getPOSTag,
+      hasStrangeChars,
+      isLowerCase,
+      isUpperCase,
+      wordStructure,
+    ]
+    fbefore3: [
+      getPOSTag,
+      hasDigits,
+      isTitleCase,
+      moreThan10chars,
+      wordStructure,
+    ]
+    limitTest: 100
+    limitTraining: 100
+    modeltype: ER
+    status: done
+    fcurrent: [
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+      lensuffix,
+      lenword,
+      moreThan10chars,
+      wordStructure,
+    ]
+  
+  mod003:
+    accuracy: 0.0
+    goalaccuracy:  0.5263157894736842
+    fafter1: [
+      getLemma,
+      getPOSTag,
+      hasDigits,
+      hasStrangeChars,
+      isTitleCase,
+      isUpperCase,
+      lenprefix,
+      lensuffix,
+      lenword,
+      prefix,
+      suffix,
+    ]
+    fafter2: [
+      getPOSTag,
+      hasDigits,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+    ]
+    fafter3: [
+      getPOSTag,
+      hasDigits,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+    ]
+    fbefore1: [
+      getPOSTag,
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+      lenprefix,
+      lenword,
+      moreThan10chars,
+      prefix,
+      suffix,
+    ]
+    fbefore2: [
+      getPOSTag,
+      hasStrangeChars,
+      isLowerCase,
+      isUpperCase,
+      wordStructure,
+    ]
+    fbefore3: [
+      getPOSTag,
+      hasDigits,
+      isTitleCase,
+      moreThan10chars,
+      wordStructure,
+    ]
+    limitTest: 2000
+    limitTraining: 2000
+    modeltype: ER
+    status: done
+    fcurrent: [
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+      lensuffix,
+      lenword,
+      moreThan10chars,
+      wordStructure,
+    ]
+
+  mod004:
+    accuracy: 0.0
+    goalaccuracy:  0.5263157894736842
+    fafter1: [
+      getLemma,
+      getPOSTag,
+      hasDigits,
+      hasStrangeChars,
+      isTitleCase,
+      isUpperCase,
+      lenprefix,
+      lensuffix,
+      lenword,
+      prefix,
+      suffix,
+    ]
+    fafter2: [
+      getPOSTag,
+      hasDigits,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+    ]
+    fafter3: [
+      getPOSTag,
+      hasDigits,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+    ]
+    fbefore1: [
+      getPOSTag,
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+      lenprefix,
+      lenword,
+      moreThan10chars,
+      prefix,
+      suffix,
+    ]
+    fbefore2: [
+      getPOSTag,
+      hasStrangeChars,
+      isLowerCase,
+      isUpperCase,
+      wordStructure,
+    ]
+    fbefore3: [
+      getPOSTag,
+      hasDigits,
+      isTitleCase,
+      moreThan10chars,
+      wordStructure,
+    ]
+    limitTest: 5000
+    limitTraining: 5000
+    modeltype: ER
+    status: done
+    fcurrent: [
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+      lensuffix,
+      lenword,
+      moreThan10chars,
+      wordStructure,
+    ]
+
+ 
+
+savingFolder: ../data/results/
+session: debug0517batcholdmodels
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/DrugBank
+trainingFolder: ../data/LaboCase/Train

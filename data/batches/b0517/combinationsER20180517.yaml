@@ -1,0 +1,3937 @@
+filepath: ../data/batches/combinationsER20180517.yaml
+models:
+  dum000:
+    accuracy: 0.7203947368421053
+    accuracy_manual: 0.7491525423728813
+    fafter1: [pos]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos]
+    fbefore2: []
+    fbefore3: []
+    f1: '0.76'
+    goalaccuracy: 0
+    limitTest: 10
+    limitTraining: 10
+    modelfile: ../data/models/svm-pipeline_20180518224855.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.72'
+    results:
+      combER051720180520005135:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777507.3792837
+        modelfile: ../data/models/svm-pipeline_20180520005141.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum000.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum000_scores.log
+        start: 1526777495.8490276
+        status: done
+        total_time: 11.530256032943726
+    resultsFile: ../data/results//task9.1_combER0517combER0517_0.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_0_scores.log
+    status: pending
+    fcurrent: [pos]
+  dum001:
+    accuracy: 0.7203947368421053
+    accuracy_manual: 0.7491525423728813
+    fafter1: [pos]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos]
+    fbefore2: []
+    fbefore3: []
+    f1: '0.76'
+    goalaccuracy: 0
+    limitTest: 10
+    limitTraining: 10
+    modelfile: ../data/models/svm-pipeline_20180518224855.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.72'
+    results:
+      combER051720180520005135:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777512.9675171
+        modelfile: ../data/models/svm-pipeline_20180520005144.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum001.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum001_scores.log
+        start: 1526777495.84956
+        status: done
+        total_time: 17.11795711517334
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777690.000602
+        modelfile: ../data/models/svm-pipeline_20180520005442.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum001.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum001_scores.log
+        start: 1526777673.647907
+        status: done
+        total_time: 16.352694988250732
+    resultsFile: ../data/results//task9.1_combER0517combER0517_0.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_0_scores.log
+    status: pending
+    fcurrent: [pos]
+  dum002:
+    accuracy: 0.7203947368421053
+    accuracy_manual: 0.7491525423728813
+    fafter1: [pos]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos]
+    fbefore2: []
+    fbefore3: []
+    f1: '0.76'
+    goalaccuracy: 0
+    limitTest: 10
+    limitTraining: 10
+    modelfile: ../data/models/svm-pipeline_20180518224855.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.72'
+    results:
+      combER051720180520005135:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777511.7143333
+        modelfile: ../data/models/svm-pipeline_20180520005144.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum002.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum002_scores.log
+        start: 1526777495.8504953
+        status: done
+        total_time: 15.863837957382202
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777684.4830725
+        modelfile: ../data/models/svm-pipeline_20180520005439.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum002.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum002_scores.log
+        start: 1526777673.649347
+        status: done
+        total_time: 10.833725452423096
+    resultsFile: ../data/results//task9.1_combER0517combER0517_0.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_0_scores.log
+    status: pending
+    fcurrent: [pos]
+  dum003:
+    accuracy: 0.7203947368421053
+    accuracy_manual: 0.7491525423728813
+    fafter1: [pos]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos]
+    fbefore2: []
+    fbefore3: []
+    f1: '0.76'
+    goalaccuracy: 0
+    limitTest: 10
+    limitTraining: 10
+    modelfile: ../data/models/svm-pipeline_20180518224855.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.72'
+    results:
+      combER051720180520005135:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777512.9837053
+        modelfile: ../data/models/svm-pipeline_20180520005144.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum003.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum003_scores.log
+        start: 1526777495.8516457
+        status: done
+        total_time: 17.132059574127197
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777690.4023519
+        modelfile: ../data/models/svm-pipeline_20180520005442.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum003.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum003_scores.log
+        start: 1526777673.6502898
+        status: done
+        total_time: 16.75206208229065
+    resultsFile: ../data/results//task9.1_combER0517combER0517_0.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_0_scores.log
+    status: pending
+    fcurrent: [pos]
+  dum004:
+    accuracy: 0.7203947368421053
+    accuracy_manual: 0.7491525423728813
+    fafter1: [pos]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos]
+    fbefore2: []
+    fbefore3: []
+    f1: '0.76'
+    goalaccuracy: 0
+    limitTest: 10
+    limitTraining: 10
+    modelfile: ../data/models/svm-pipeline_20180518224855.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.72'
+    results:
+      combER051720180520005135:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777512.949073
+        modelfile: ../data/models/svm-pipeline_20180520005144.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum004.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum004_scores.log
+        start: 1526777495.8526528
+        status: done
+        total_time: 17.096420288085938
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777690.2837424
+        modelfile: ../data/models/svm-pipeline_20180520005442.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum004.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum004_scores.log
+        start: 1526777673.6523247
+        status: done
+        total_time: 16.631417751312256
+    resultsFile: ../data/results//task9.1_combER0517combER0517_0.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_0_scores.log
+    status: pending
+    fcurrent: [pos]
+  dum005:
+    accuracy: 0.7203947368421053
+    accuracy_manual: 0.7491525423728813
+    fafter1: [pos]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos]
+    fbefore2: []
+    fbefore3: []
+    f1: '0.76'
+    goalaccuracy: 0
+    limitTest: 10
+    limitTraining: 10
+    modelfile: ../data/models/svm-pipeline_20180518224855.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.72'
+    results:
+      combER051720180520005135:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777510.6217058
+        modelfile: ../data/models/svm-pipeline_20180520005144.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum005.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum005_scores.log
+        start: 1526777495.8533347
+        status: done
+        total_time: 14.768371105194092
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777690.243295
+        modelfile: ../data/models/svm-pipeline_20180520005442.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum005.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum005_scores.log
+        start: 1526777673.6538084
+        status: done
+        total_time: 16.589486598968506
+    resultsFile: ../data/results//task9.1_combER0517combER0517_0.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_0_scores.log
+    status: pending
+    fcurrent: [pos]
+  dum006:
+    accuracy: 0.7203947368421053
+    accuracy_manual: 0.7491525423728813
+    fafter1: [pos]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos]
+    fbefore2: []
+    fbefore3: []
+    f1: '0.76'
+    goalaccuracy: 0
+    limitTest: 10
+    limitTraining: 10
+    modelfile: ../data/models/svm-pipeline_20180518224855.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.72'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777690.3796136
+        modelfile: ../data/models/svm-pipeline_20180520005442.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum006.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum006_scores.log
+        start: 1526777673.6551597
+        status: done
+        total_time: 16.724453926086426
+    resultsFile: ../data/results//task9.1_combER0517combER0517_0.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_0_scores.log
+    status: pending
+    fcurrent: [pos]
+  dum007:
+    accuracy: 0.7203947368421053
+    accuracy_manual: 0.7491525423728813
+    fafter1: [pos]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos]
+    fbefore2: []
+    fbefore3: []
+    f1: '0.76'
+    goalaccuracy: 0
+    limitTest: 10
+    limitTraining: 10
+    modelfile: ../data/models/svm-pipeline_20180518224855.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.72'
+    results:
+      combER051720180520005135:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777523.472759
+        modelfile: ../data/models/svm-pipeline_20180520005156.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum007.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum007_scores.log
+        start: 1526777508.6822436
+        status: done
+        total_time: 14.790515422821045
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777698.7658772
+        modelfile: ../data/models/svm-pipeline_20180520005451.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum007.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum007_scores.log
+        start: 1526777685.4531045
+        status: done
+        total_time: 13.312772750854492
+    resultsFile: ../data/results//task9.1_combER0517combER0517_0.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_0_scores.log
+    status: pending
+    fcurrent: [pos]
+  dum008:
+    accuracy: 0.7203947368421053
+    accuracy_manual: 0.7491525423728813
+    fafter1: [pos]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos]
+    fbefore2: []
+    fbefore3: []
+    f1: '0.76'
+    goalaccuracy: 0
+    limitTest: 10
+    limitTraining: 10
+    modelfile: ../data/models/svm-pipeline_20180518224855.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.72'
+    results:
+      combER051720180520005135:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777527.8072963
+        modelfile: ../data/models/svm-pipeline_20180520005200.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum008.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum008_scores.log
+        start: 1526777512.0561273
+        status: done
+        total_time: 15.751168966293335
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777704.6342707
+        modelfile: ../data/models/svm-pipeline_20180520005459.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum008.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum008_scores.log
+        start: 1526777690.7211666
+        status: done
+        total_time: 13.913104057312012
+    resultsFile: ../data/results//task9.1_combER0517combER0517_0.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_0_scores.log
+    status: pending
+    fcurrent: [pos]
+  dum009:
+    accuracy: 0.7203947368421053
+    accuracy_manual: 0.7491525423728813
+    fafter1: [pos]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos]
+    fbefore2: []
+    fbefore3: []
+    f1: '0.76'
+    goalaccuracy: 0
+    limitTest: 10
+    limitTraining: 10
+    modelfile: ../data/models/svm-pipeline_20180518224855.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.72'
+    results:
+      combER051720180520005135:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777529.4332252
+        modelfile: ../data/models/svm-pipeline_20180520005201.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum009.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum009_scores.log
+        start: 1526777512.8638895
+        status: done
+        total_time: 16.56933569908142
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777705.5830886
+        modelfile: ../data/models/svm-pipeline_20180520005458.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum009.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum009_scores.log
+        start: 1526777691.2048702
+        status: done
+        total_time: 14.378218412399292
+    resultsFile: ../data/results//task9.1_combER0517combER0517_0.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_0_scores.log
+    status: pending
+    fcurrent: [pos]
+  dum010:
+    accuracy: 0.7203947368421053
+    accuracy_manual: 0.7491525423728813
+    fafter1: [pos]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos]
+    fbefore2: []
+    fbefore3: []
+    f1: '0.76'
+    goalaccuracy: 0
+    limitTest: 10
+    limitTraining: 10
+    modelfile: ../data/models/svm-pipeline_20180518224855.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.72'
+    results:
+      combER051720180520005135:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777524.7705193
+        modelfile: ../data/models/svm-pipeline_20180520005158.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum010.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum010_scores.log
+        start: 1526777513.2594595
+        status: done
+        total_time: 11.511059761047363
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777705.628796
+        modelfile: ../data/models/svm-pipeline_20180520005458.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum010.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum010_scores.log
+        start: 1526777691.8543944
+        status: done
+        total_time: 13.774401664733887
+    resultsFile: ../data/results//task9.1_combER0517combER0517_0.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_0_scores.log
+    status: pending
+    fcurrent: [pos]
+  dum011:
+    accuracy: 0.7203947368421053
+    accuracy_manual: 0.7491525423728813
+    fafter1: [pos]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos]
+    fbefore2: []
+    fbefore3: []
+    f1: '0.76'
+    goalaccuracy: 0
+    limitTest: 10
+    limitTraining: 10
+    modelfile: ../data/models/svm-pipeline_20180518224855.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.72'
+    results:
+      combER051720180520005135:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777529.5291183
+        modelfile: ../data/models/svm-pipeline_20180520005203.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum011.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum011_scores.log
+        start: 1526777514.3046408
+        status: done
+        total_time: 15.224477529525757
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777709.7674825
+        modelfile: ../data/models/svm-pipeline_20180520005502.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum011.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum011_scores.log
+        start: 1526777693.131981
+        status: done
+        total_time: 16.635501623153687
+    resultsFile: ../data/results//task9.1_combER0517combER0517_0.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_0_scores.log
+    status: pending
+    fcurrent: [pos]
+  dum012:
+    accuracy: 0.7203947368421053
+    accuracy_manual: 0.7491525423728813
+    fafter1: [pos]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos]
+    fbefore2: []
+    fbefore3: []
+    f1: '0.76'
+    goalaccuracy: 0
+    limitTest: 10
+    limitTraining: 10
+    modelfile: ../data/models/svm-pipeline_20180518224855.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.72'
+    results:
+      combER051720180520005135:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777531.3135421
+        modelfile: ../data/models/svm-pipeline_20180520005204.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum012.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum012_scores.log
+        start: 1526777515.2490602
+        status: done
+        total_time: 16.06448197364807
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526777709.121278
+        modelfile: ../data/models/svm-pipeline_20180520005502.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517dum012.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517dum012_scores.log
+        start: 1526777694.3700287
+        status: done
+        total_time: 14.751249313354492
+    resultsFile: ../data/results//task9.1_combER0517combER0517_0.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_0_scores.log
+    status: pending
+    fcurrent: [pos]
+  mod000:
+    accuracy: 0.7203947368421053
+    accuracy_manual: 0.7491525423728813
+    fafter1: [pos]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos]
+    fbefore2: []
+    fbefore3: []
+    f1: '0.76'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180518224855.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.72'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526778212.6033258
+        modelfile: ../data/models/svm-pipeline_20180520010318.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod000.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod000_scores.log
+        start: 1526777695.658879
+        status: done
+        total_time: 516.9444468021393
+    resultsFile: ../data/results//task9.1_combER0517combER0517_0.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_0_scores.log
+    status: pending
+    fcurrent: [pos]
+  mod001:
+    accuracy: 0.7203947368421053
+    accuracy_manual: 0.7491525423728813
+    fafter1: [pos]
+    fafter2: [pos]
+    fafter3: []
+    fbefore1: [pos]
+    fbefore2: [pos]
+    fbefore3: []
+    f1: '0.76'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180518230531.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.72'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526778291.8859658
+        modelfile: ../data/models/svm-pipeline_20180520010436.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod001.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod001_scores.log
+        start: 1526777700.508537
+        status: done
+        total_time: 591.3774287700653
+    resultsFile: ../data/results//task9.1_combER0517combER0517_1.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_1_scores.log
+    status: pending
+    fcurrent: [pos]
+  mod002:
+    accuracy: 0.7138157894736842
+    accuracy_manual: 0.7423728813559322
+    fafter1: [pos]
+    fafter2: [pos]
+    fafter3: [pos]
+    fbefore1: [pos]
+    fbefore2: [pos]
+    fbefore3: [pos]
+    f1: '0.75'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180518232029.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.71'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526778373.5634596
+        modelfile: ../data/models/svm-pipeline_20180520010557.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod002.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod002_scores.log
+        start: 1526777706.3583474
+        status: done
+        total_time: 667.2051122188568
+    resultsFile: ../data/results//task9.1_combER0517combER0517_2.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_2_scores.log
+    status: pending
+    fcurrent: [pos]
+  mod003:
+    accuracy: 0.0
+    accuracy_manual: 0.0
+    fafter1: [lemma]
+    fafter2: []
+    fafter3: []
+    fbefore1: [lemma]
+    fbefore2: []
+    fbefore3: []
+    f1: '0'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180518232954.pkl
+    modeltype: ER
+    precision: '0'
+    recall: '0'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.7084745762711865
+        algorithm: SVMtrainer
+        end: 1526778367.0438366
+        modelfile: ../data/models/svm-pipeline_20180520010554.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod003.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.71', cor: '207', inc: '75', mis: '22', par: '0', prec: '0.73',
+            recall: '0.68', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.77', cor: '207', inc: '0', mis: '22', par: '75', prec: '0.73',
+            recall: '0.8', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '282', mis: '22', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '282', mis: '22', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod003_scores.log
+        start: 1526777707.7318842
+        status: done
+        total_time: 659.3119523525238
+    resultsFile: ../data/results//task9.1_combER0517combER0517_3.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_3_scores.log
+    status: pending
+    fcurrent: [lemma]
+  mod004:
+    accuracy: 0.0
+    accuracy_manual: 0.0
+    fafter1: [lemma]
+    fafter2: [lemma]
+    fafter3: []
+    fbefore1: [lemma]
+    fbefore2: [lemma]
+    fbefore3: []
+    f1: '0'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180518234721.pkl
+    modeltype: ER
+    precision: '0'
+    recall: '0'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526779145.4817784
+        modelfile: ../data/models/svm-pipeline_20180520011847.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod004.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod004_scores.log
+        start: 1526777709.1146224
+        status: done
+        total_time: 1436.3671560287476
+    resultsFile: ../data/results//task9.1_combER0517combER0517_4.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_4_scores.log
+    status: pending
+    fcurrent: [lemma]
+  mod005:
+    accuracy: 0.0
+    accuracy_manual: 0.0
+    fafter1: [lemma]
+    fafter2: [lemma]
+    fafter3: [lemma]
+    fbefore1: [lemma]
+    fbefore2: [lemma]
+    fbefore3: [lemma]
+    f1: '0'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519000455.pkl
+    modeltype: ER
+    precision: '0'
+    recall: '0'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526779279.483748
+        modelfile: ../data/models/svm-pipeline_20180520012100.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod005.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod005_scores.log
+        start: 1526777710.9042058
+        status: done
+        total_time: 1568.5795421600342
+    resultsFile: ../data/results//task9.1_combER0517combER0517_5.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_5_scores.log
+    status: pending
+    fcurrent: [lemma]
+  mod006:
+    accuracy: 0.5164473684210527
+    accuracy_manual: 0.5389830508474577
+    fafter1: [pos]
+    fafter2: [pos]
+    fafter3: [pos]
+    fbefore1: [pos]
+    fbefore2: [pos]
+    fbefore3: [pos]
+    f1: '0.64'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519002529.pkl
+    modeltype: ER
+    precision: '0.84'
+    recall: '0.52'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526778882.9183044
+        modelfile: ../data/models/svm-pipeline_20180520011430.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod006.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod006_scores.log
+        start: 1526777712.3424
+        status: done
+        total_time: 1170.5759043693542
+    resultsFile: ../data/results//task9.1_combER0517combER0517_6.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_6_scores.log
+    status: pending
+    fcurrent: [lemma]
+  mod007:
+    accuracy: 0.35855263157894735
+    accuracy_manual: 0.376271186440678
+    fafter1: [lemma]
+    fafter2: []
+    fafter3: []
+    fbefore1: [lemma]
+    fbefore2: []
+    fbefore3: []
+    f1: '0.52'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519004015.pkl
+    modeltype: ER
+    precision: '0.92'
+    recall: '0.36'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526779547.5373755
+        modelfile: ../data/models/svm-pipeline_20180520012530.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod007.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod007_scores.log
+        start: 1526778214.6364124
+        status: done
+        total_time: 1332.9009630680084
+    resultsFile: ../data/results//task9.1_combER0517combER0517_7.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_7_scores.log
+    status: pending
+    fcurrent: [pos]
+  mod008:
+    accuracy: 0.0
+    accuracy_manual: 0.0
+    fafter1: [lemma]
+    fafter2: [lemma]
+    fafter3: []
+    fbefore1: [lemma]
+    fbefore2: [lemma]
+    fbefore3: []
+    f1: '0'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519005754.pkl
+    modeltype: ER
+    precision: '0'
+    recall: '0'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.559322033898305
+        algorithm: SVMtrainer
+        end: 1526779566.0606802
+        modelfile: ../data/models/svm-pipeline_20180520012549.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod008.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.66', cor: '163', inc: '26', mis: '115', par: '0', prec: '0.86',
+            recall: '0.54', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.69', cor: '163', inc: '0', mis: '115', par: '26', prec: '0.86',
+            recall: '0.58', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '189', mis: '115', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '189', mis: '115', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod008_scores.log
+        start: 1526778293.2949357
+        status: done
+        total_time: 1272.7657444477081
+    resultsFile: ../data/results//task9.1_combER0517combER0517_8.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_8_scores.log
+    status: pending
+    fcurrent: [pos]
+  mod009:
+    accuracy: 0.7072368421052632
+    accuracy_manual: 0.735593220338983
+    fafter1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+    fafter2: []
+    fafter3: []
+    fbefore1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+    fbefore2: []
+    fbefore3: []
+    f1: '0.75'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519011253.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.71'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526778810.671509
+        modelfile: ../data/models/svm-pipeline_20180520011313.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod009.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod009_scores.log
+        start: 1526778369.086145
+        status: done
+        total_time: 441.58536410331726
+    resultsFile: ../data/results//task9.1_combER0517combER0517_9.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_9_scores.log
+    status: pending
+    fcurrent: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+  mod010:
+    accuracy: 0.7072368421052632
+    accuracy_manual: 0.735593220338983
+    fafter1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+    fafter2: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+    fafter3: []
+    fbefore1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+    fbefore2: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+    fbefore3: []
+    f1: '0.75'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519013310.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.71'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526779374.3124042
+        modelfile: ../data/models/svm-pipeline_20180520012235.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod010.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod010_scores.log
+        start: 1526778375.6352034
+        status: done
+        total_time: 998.67720079422
+    resultsFile: ../data/results//task9.1_combER0517combER0517_10.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_10_scores.log
+    status: pending
+    fcurrent: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+  mod011:
+    accuracy: 0.7072368421052632
+    accuracy_manual: 0.735593220338983
+    fafter1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+    fafter2: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+    fafter3: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+    fbefore1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+    fbefore2: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+    fbefore3: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+    f1: '0.75'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519015812.pkl
+    modeltype: ER
+    precision: '0.79'
+    recall: '0.71'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526780066.624965
+        modelfile: ../data/models/svm-pipeline_20180520013409.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod011.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod011_scores.log
+        start: 1526778812.9013321
+        status: done
+        total_time: 1253.7236328125
+    resultsFile: ../data/results//task9.1_combER0517combER0517_11.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_11_scores.log
+    status: pending
+    fcurrent: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+  mod012:
+    accuracy: 0.0
+    accuracy_manual: 0.0
+    fafter1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fbefore1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    f1: '0'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519022032.pkl
+    modeltype: ER
+    precision: '0'
+    recall: '0'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526780308.5908904
+        modelfile: ../data/models/svm-pipeline_20180520013801.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod012.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod012_scores.log
+        start: 1526778884.380406
+        status: done
+        total_time: 1424.2104845046997
+    resultsFile: ../data/results//task9.1_combER0517combER0517_12.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_12_scores.log
+    status: pending
+    fcurrent: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+  mod013:
+    accuracy: 0.0
+    accuracy_manual: 0.0
+    fafter1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+    fafter3: []
+    fbefore1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: []
+    f1: '0'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519044319.pkl
+    modeltype: ER
+    precision: '0'
+    recall: '0'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526783328.364176
+        modelfile: ../data/models/svm-pipeline_20180520022803.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod013.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod013_scores.log
+        start: 1526779146.9486039
+        status: done
+        total_time: 4181.415572166443
+    resultsFile: ../data/results//task9.1_combER0517combER0517_0.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_0_scores.log
+    status: pending
+    fcurrent: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+  mod014:
+    accuracy: 0.0
+    accuracy_manual: 0.0
+    fafter1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+    fafter3: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+    fbefore1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+    f1: '0'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519052312.pkl
+    modeltype: ER
+    precision: '0'
+    recall: '0'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526783529.788673
+        modelfile: ../data/models/svm-pipeline_20180520023119.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod014.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod014_scores.log
+        start: 1526779281.738612
+        status: done
+        total_time: 4248.0500609874725
+    resultsFile: ../data/results//task9.1_combER0517combER0517_1.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_1_scores.log
+    status: pending
+    fcurrent: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+  mod015:
+    accuracy: 0.0
+    accuracy_manual: 0.0
+    fafter1: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fbefore1: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    f1: '0'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519055609.pkl
+    modeltype: ER
+    precision: '0'
+    recall: '0'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526781865.207455
+        modelfile: ../data/models/svm-pipeline_20180520020355.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod015.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod015_scores.log
+        start: 1526779375.916127
+        status: done
+        total_time: 2489.2913279533386
+    resultsFile: ../data/results//task9.1_combER0517combER0517_2.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_2_scores.log
+    status: pending
+    fcurrent: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod016:
+    accuracy: 0.0
+    accuracy_manual: 0.0
+    fafter1: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: []
+    fbefore1: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: []
+    f1: '0'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519062924.pkl
+    modeltype: ER
+    precision: '0'
+    recall: '0'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526784141.7261376
+        modelfile: ../data/models/svm-pipeline_20180520024138.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod016.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod016_scores.log
+        start: 1526779549.785228
+        status: done
+        total_time: 4591.9409096241
+    resultsFile: ../data/results//task9.1_combER0517combER0517_3.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_3_scores.log
+    status: pending
+    fcurrent: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod017:
+    accuracy: 0.6842105263157895
+    accuracy_manual: 0.711864406779661
+    fafter1: [wordStructure]
+    fafter2: [wordStructure]
+    fafter3: [wordStructure]
+    fbefore1: [wordStructure]
+    fbefore2: [wordStructure]
+    fbefore3: [wordStructure]
+    f1: '0.73'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519064828.pkl
+    modeltype: ER
+    precision: '0.78'
+    recall: '0.68'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526780566.8424923
+        modelfile: ../data/models/svm-pipeline_20180520014230.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod017.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod017_scores.log
+        start: 1526779567.5621862
+        status: done
+        total_time: 999.2803061008453
+    resultsFile: ../data/results//task9.1_combER0517combER0517_4.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_4_scores.log
+    status: pending
+    fcurrent: [wordStructure]
+  mod019:
+    accuracy: 0.0
+    accuracy_manual: 0.0
+    fafter1: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: []
+    fbefore1: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: []
+    f1: '0'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519072623.pkl
+    modeltype: ER
+    precision: '0'
+    recall: '0'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526784048.0128179
+        modelfile: ../data/models/svm-pipeline_20180520024004.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod019.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod019_scores.log
+        start: 1526780069.1857152
+        status: done
+        total_time: 3978.827102661133
+    resultsFile: ../data/results//task9.1_combER0517combER0517_5.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_5_scores.log
+    status: pending
+    fcurrent: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod020:
+    accuracy: 0.0
+    accuracy_manual: 0.0
+    fafter1: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore1: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    f1: '0'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519082048.pkl
+    modeltype: ER
+    precision: '0'
+    recall: '0'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526785185.7341497
+        modelfile: ../data/models/svm-pipeline_20180520025849.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod020.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod020_scores.log
+        start: 1526780311.0530262
+        status: done
+        total_time: 4874.681123495102
+    resultsFile: ../data/results//task9.1_combER0517combER0517_6.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_6_scores.log
+    status: pending
+    fcurrent: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod021:
+    accuracy: 0.0
+    accuracy_manual: 0.0
+    fafter1: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    f1: '0'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519083828.pkl
+    modeltype: ER
+    precision: '0'
+    recall: '0'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526782439.8869538
+        modelfile: ../data/models/svm-pipeline_20180520021326.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod021.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod021_scores.log
+        start: 1526780569.2771173
+        status: done
+        total_time: 1870.6098365783691
+    resultsFile: ../data/results//task9.1_combER0517combER0517_7.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_7_scores.log
+    status: pending
+    fcurrent: [lemma, pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod022:
+    accuracy: 0.0
+    accuracy_manual: 0.0
+    fafter1: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: []
+    fbefore1: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: []
+    f1: '0'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519101702.pkl
+    modeltype: ER
+    precision: '0'
+    recall: '0'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526786421.4268267
+        modelfile: ../data/models/svm-pipeline_20180520031935.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod022.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod022_scores.log
+        start: 1526781867.908034
+        status: done
+        total_time: 4553.518792629242
+    resultsFile: ../data/results//task9.1_combER0517combER0517_0.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_0_scores.log
+    status: pending
+    fcurrent: [lemma, pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod023:
+    accuracy: 0.0
+    accuracy_manual: 0.0
+    fafter1: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore1: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    f1: '0'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519110745.pkl
+    modeltype: ER
+    precision: '0'
+    recall: '0'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526787542.7178235
+        modelfile: ../data/models/svm-pipeline_20180520033755.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod023.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod023_scores.log
+        start: 1526782443.5066073
+        status: done
+        total_time: 5099.211216211319
+    resultsFile: ../data/results//task9.1_combER0517combER0517_1.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_1_scores.log
+    status: pending
+    fcurrent: [lemma, pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod024:
+    accuracy: 0.039473684210526314
+    accuracy_manual: 0.04067796610169491
+    fafter1: [pos]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos]
+    fbefore2: []
+    fbefore3: []
+    f1: '0.08'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519112250.pkl
+    modeltype: ER
+    precision: '1'
+    recall: '0.04'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.7050847457627119
+        algorithm: SVMtrainer
+        end: 1526784964.713662
+        modelfile: ../data/models/svm-pipeline_20180520025544.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod024.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.72', cor: '206', inc: '65', mis: '33', par: '0', prec: '0.76',
+            recall: '0.68', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.77', cor: '206', inc: '0', mis: '33', par: '65', prec: '0.76',
+            recall: '0.78', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '271', mis: '33', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '271', mis: '33', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod024_scores.log
+        start: 1526783340.551076
+        status: done
+        total_time: 1624.1625859737396
+    resultsFile: ../data/results//task9.1_combER0517combER0517_2.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_2_scores.log
+    status: pending
+    fcurrent: [lemma, pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod025:
+    accuracy: 0.06907894736842106
+    accuracy_manual: 0.0711864406779661
+    fafter1: [pos]
+    fafter2: [pos]
+    fafter3: []
+    fbefore1: [pos]
+    fbefore2: [pos]
+    fbefore3: []
+    f1: '0.13'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519114104.pkl
+    modeltype: ER
+    precision: '1'
+    recall: '0.07'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.7050847457627119
+        algorithm: SVMtrainer
+        end: 1526784545.2964242
+        modelfile: ../data/models/svm-pipeline_20180520024842.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod025.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.72', cor: '206', inc: '63', mis: '35', par: '0', prec: '0.77',
+            recall: '0.68', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.77', cor: '206', inc: '0', mis: '35', par: '63', prec: '0.77',
+            recall: '0.78', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '269', mis: '35', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '269', mis: '35', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod025_scores.log
+        start: 1526783540.9882116
+        status: done
+        total_time: 1004.308212518692
+    resultsFile: ../data/results//task9.1_combER0517combER0517_3.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_3_scores.log
+    status: pending
+    fcurrent: [lemma, pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod026:
+    accuracy: 0.0
+    accuracy_manual: 0.0
+    fafter1: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [pos]
+    fafter3: [pos]
+    fbefore1: [pos]
+    fbefore2: [pos]
+    fbefore3: [pos]
+    f1: '0'
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180519121516.pkl
+    modeltype: ER
+    precision: '0'
+    recall: '0'
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.44745762711864406
+        algorithm: SVMtrainer
+        end: 1526786011.5864766
+        modelfile: ../data/models/svm-pipeline_20180520031304.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod026.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.59', cor: '130', inc: '6', mis: '168', par: '0', prec: '0.96',
+            recall: '0.43', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.6', cor: '130', inc: '0', mis: '168', par: '6', prec: '0.96',
+            recall: '0.44', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '136', mis: '168', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '136', mis: '168', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod026_scores.log
+        start: 1526784058.4004455
+        status: done
+        total_time: 1953.1860311031342
+    resultsFile: ../data/results//task9.1_combER0517combER0517_4.txt_result
+    scoresFile: ../data/results//task9.1_combER0517combER0517_4_scores.log
+    status: pending
+    fcurrent: [lemma, pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod027:
+    accuracy: 0.0
+    fafter1: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fbefore1: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526785541.0853903
+        modelfile: ../data/models/svm-pipeline_20180520030512.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod027.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod027_scores.log
+        start: 1526784152.1884184
+        status: done
+        total_time: 1388.8969719409943
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod028:
+    accuracy: 0.0
+    fafter1: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: []
+    fbefore1: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526788442.5341816
+        modelfile: ../data/models/svm-pipeline_20180520035312.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod028.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod028_scores.log
+        start: 1526784548.0148575
+        status: done
+        total_time: 3894.5193240642548
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod029:
+    accuracy: 0.0
+    fafter1: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore1: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: [lemma, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526787852.2456017
+        modelfile: ../data/models/svm-pipeline_20180520034318.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod029.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod029_scores.log
+        start: 1526784966.5574477
+        status: done
+        total_time: 2885.6881539821625
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod030:
+    accuracy: 0.0
+    fafter1: [pos, chunkGroup]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos, chunkGroup]
+    fbefore2: []
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526785758.9514093
+        modelfile: ../data/models/svm-pipeline_20180520030904.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod030.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod030_scores.log
+        start: 1526785197.2750213
+        status: done
+        total_time: 561.6763880252838
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [pos, chunkGroup]
+  mod031:
+    accuracy: 0.0
+    fafter1: [pos, chunkGroup]
+    fafter2: [pos, chunkGroup]
+    fafter3: []
+    fbefore1: [pos, chunkGroup]
+    fbefore2: [pos, chunkGroup]
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526786234.8440475
+        modelfile: ../data/models/svm-pipeline_20180520031658.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod031.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod031_scores.log
+        start: 1526785544.0400395
+        status: done
+        total_time: 690.8040080070496
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [pos, chunkGroup]
+  mod032:
+    accuracy: 0.0
+    fafter1: [pos, chunkGroup]
+    fafter2: [pos, chunkGroup]
+    fafter3: [pos, chunkGroup]
+    fbefore1: [pos, chunkGroup]
+    fbefore2: [pos, chunkGroup]
+    fbefore3: [pos, chunkGroup]
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526786530.9824052
+        modelfile: ../data/models/svm-pipeline_20180520032158.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod032.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod032_scores.log
+        start: 1526785760.6742303
+        status: done
+        total_time: 770.3081748485565
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [pos, chunkGroup]
+  mod033:
+    accuracy: 0.0
+    fafter1: [chunk]
+    fafter2: []
+    fafter3: []
+    fbefore1: [chunk]
+    fbefore2: []
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526786435.978936
+        modelfile: ../data/models/svm-pipeline_20180520032024.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod033.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod033_scores.log
+        start: 1526786014.4525664
+        status: done
+        total_time: 421.5263695716858
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [chunk]
+  mod034:
+    accuracy: 0.0
+    fafter1: [chunk]
+    fafter2: [chunk]
+    fafter3: []
+    fbefore1: [chunk]
+    fbefore2: [chunk]
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526786679.2907708
+        modelfile: ../data/models/svm-pipeline_20180520032425.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod034.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod034_scores.log
+        start: 1526786237.4971268
+        status: done
+        total_time: 441.793643951416
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [chunk]
+  mod035:
+    accuracy: 0.0
+    fafter1: [chunk]
+    fafter2: [chunk]
+    fafter3: [chunk]
+    fbefore1: [chunk]
+    fbefore2: [chunk]
+    fbefore3: [chunk]
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526786911.769635
+        modelfile: ../data/models/svm-pipeline_20180520032817.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod035.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod035_scores.log
+        start: 1526786430.2937875
+        status: done
+        total_time: 481.4758474826813
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [chunk]
+  mod036:
+    accuracy: 0.0
+    fafter1: [chunkGroup]
+    fafter2: []
+    fafter3: []
+    fbefore1: [chunkGroup]
+    fbefore2: []
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526786924.1629918
+        modelfile: ../data/models/svm-pipeline_20180520032830.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod036.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod036_scores.log
+        start: 1526786437.7810643
+        status: done
+        total_time: 486.3819274902344
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [chunkGroup]
+  mod037:
+    accuracy: 0.0
+    fafter1: [chunkGroup]
+    fafter2: [chunkGroup]
+    fafter3: []
+    fbefore1: [chunkGroup]
+    fbefore2: [chunkGroup]
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526786975.0563588
+        modelfile: ../data/models/svm-pipeline_20180520032920.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod037.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod037_scores.log
+        start: 1526786532.810497
+        status: done
+        total_time: 442.24586176872253
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [chunkGroup]
+  mod038:
+    accuracy: 0.0
+    fafter1: [chunkGroup]
+    fafter2: [chunkGroup]
+    fafter3: [chunkGroup]
+    fbefore1: [chunkGroup]
+    fbefore2: [chunkGroup]
+    fbefore3: [chunkGroup]
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.8711864406779661
+        algorithm: SVMtrainer
+        end: 1526787195.6448278
+        modelfile: ../data/models/svm-pipeline_20180520033300.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod038.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.79', cor: '255', inc: '88', mis: '-39', par: '0', prec: '0.74',
+            recall: '0.84', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.85', cor: '255', inc: '0', mis: '-39', par: '88', prec: '0.74',
+            recall: '0.98', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '343', mis: '-39', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod038_scores.log
+        start: 1526786682.080326
+        status: done
+        total_time: 513.5645017623901
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [chunkGroup]
+  mod039:
+    accuracy: 0.0
+    fafter1: [pos, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526788746.5814095
+        modelfile: ../data/models/svm-pipeline_20180520035835.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod039.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod039_scores.log
+        start: 1526786914.5953085
+        status: done
+        total_time: 1831.9861009120941
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [pos, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod040:
+    accuracy: 0.0
+    fafter1: [pos, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [pos, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: []
+    fbefore1: [pos, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [pos, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526791755.2320783
+        modelfile: ../data/models/svm-pipeline_20180520044810.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod040.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod040_scores.log
+        start: 1526786926.9126117
+        status: done
+        total_time: 4828.319466590881
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [pos, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod041:
+    accuracy: 0.0
+    fafter1: [pos, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [pos, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: [pos, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore1: [pos, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [pos, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: [pos, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [pos, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod042:
+    accuracy: 0.0
+    fafter1: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526789081.917332
+        modelfile: ../data/models/svm-pipeline_20180520040405.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod042.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod042_scores.log
+        start: 1526787198.483874
+        status: done
+        total_time: 1883.43345785141
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod043:
+    accuracy: 0.0
+    fafter1: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: []
+    fbefore1: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod044:
+    accuracy: 0.0
+    fafter1: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore1: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526793349.3462489
+        modelfile: ../data/models/svm-pipeline_20180520051426.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod044.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod044_scores.log
+        start: 1526787855.78385
+        status: done
+        total_time: 5493.5623989105225
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod045:
+    accuracy: 0.0
+    fafter1: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.5254237288135594
+        algorithm: SVMtrainer
+        end: 1526790388.576691
+        modelfile: ../data/models/svm-pipeline_20180520042552.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod045.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.66', cor: '153', inc: '10', mis: '141', par: '0', prec: '0.94',
+            recall: '0.5', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.67', cor: '153', inc: '0', mis: '141', par: '10', prec: '0.94',
+            recall: '0.52', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '163', mis: '141', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '163', mis: '141', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod045_scores.log
+        start: 1526788459.1806803
+        status: done
+        total_time: 1929.3960106372833
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod046:
+    accuracy: 0.0
+    fafter1: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: []
+    fbefore1: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526793484.4381604
+        modelfile: ../data/models/svm-pipeline_20180520051702.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod046.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod046_scores.log
+        start: 1526788758.9038603
+        status: done
+        total_time: 4725.534300088882
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod047:
+    accuracy: 0.0
+    fafter1: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore1: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod048:
+    accuracy: 0.0
+    fafter1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod049:
+    accuracy: 0.0
+    fafter1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: []
+    fbefore1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526795364.3940117
+        modelfile: ../data/models/svm-pipeline_20180520054729.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod049.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod049_scores.log
+        start: 1526790397.8014123
+        status: done
+        total_time: 4966.592599391937
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod050:
+    accuracy: 0.0
+    fafter1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod051:
+    accuracy: 0.0
+    fafter1: [lemma, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fbefore1: [lemma, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526793193.1147838
+        modelfile: ../data/models/svm-pipeline_20180520051241.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod051.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod051_scores.log
+        start: 1526791628.2066295
+        status: done
+        total_time: 1564.9081542491913
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod052:
+    accuracy: 0.0
+    fafter1: [lemma, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [lemma, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: []
+    fbefore1: [lemma, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [lemma, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526795769.0165741
+        modelfile: ../data/models/svm-pipeline_20180520055508.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod052.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod052_scores.log
+        start: 1526791813.6569586
+        status: done
+        total_time: 3955.3596155643463
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod053:
+    accuracy: 0.0
+    fafter1: [lemma, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [lemma, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: [lemma, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore1: [lemma, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [lemma, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: [lemma, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526795667.3485794
+        modelfile: ../data/models/svm-pipeline_20180520055323.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod053.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod053_scores.log
+        start: 1526792445.6987605
+        status: done
+        total_time: 3221.6498188972473
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod054:
+    accuracy: 0.0
+    fafter1: [lemma, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fbefore1: [lemma, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526794279.2664988
+        modelfile: ../data/models/svm-pipeline_20180520053045.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod054.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod054_scores.log
+        start: 1526792726.0537975
+        status: done
+        total_time: 1553.2127013206482
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod055:
+    accuracy: 0.0
+    fafter1: [lemma, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [lemma, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: []
+    fbefore1: [lemma, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [lemma, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526796960.7424853
+        modelfile: ../data/models/svm-pipeline_20180520061406.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod055.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod055_scores.log
+        start: 1526793196.6226103
+        status: done
+        total_time: 3764.1198749542236
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod056:
+    accuracy: 0.0
+    fafter1: [lemma, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [lemma, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: [lemma, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore1: [lemma, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [lemma, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: [lemma, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod057:
+    accuracy: 0.0
+    fafter1: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.36271186440677966
+        algorithm: SVMtrainer
+        end: 1526795511.903357
+        modelfile: ../data/models/svm-pipeline_20180520055114.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod057.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.51', cor: '106', inc: '2', mis: '196', par: '0', prec: '0.98',
+            recall: '0.35', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.52', cor: '106', inc: '0', mis: '196', par: '2', prec: '0.98',
+            recall: '0.35', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '108', mis: '196', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '108', mis: '196', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod057_scores.log
+        start: 1526793506.225732
+        status: done
+        total_time: 2005.6776249408722
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase,
+      hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod058:
+    accuracy: 0.0
+    fafter1: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: []
+    fbefore1: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526798372.346841
+        modelfile: ../data/models/svm-pipeline_20180520063842.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod058.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod058_scores.log
+        start: 1526794284.3293786
+        status: done
+        total_time: 4088.017462491989
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase,
+      hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod059:
+    accuracy: 0.0
+    fafter1: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore1: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: [pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526799857.6349907
+        modelfile: ../data/models/svm-pipeline_20180520070332.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod059.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod059_scores.log
+        start: 1526795512.2291453
+        status: done
+        total_time: 4345.405845403671
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, pos, lookup, chunkGroup, isLowerCase, isTitleCase, isUpperCase,
+      hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod060:
+    accuracy: 0.0
+    fafter1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.36271186440677966
+        algorithm: SVMtrainer
+        end: 1526797300.9834595
+        modelfile: ../data/models/svm-pipeline_20180520062105.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod060.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.51', cor: '106', inc: '2', mis: '196', par: '0', prec: '0.98',
+            recall: '0.35', spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.52', cor: '106', inc: '0', mis: '196', par: '2', prec: '0.98',
+            recall: '0.35', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '108', mis: '196', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '108', mis: '196', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod060_scores.log
+        start: 1526795523.7137792
+        status: done
+        total_time: 1777.269680261612
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod061:
+    accuracy: 0.0
+    fafter1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: []
+    fbefore1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: []
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526799930.7835608
+        modelfile: ../data/models/svm-pipeline_20180520070458.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod061.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod061_scores.log
+        start: 1526795680.011001
+        status: done
+        total_time: 4250.772559642792
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+  mod062:
+    accuracy: 0.0
+    fafter1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter3: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore3: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    goalaccuracy: 0
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      combER051720180520005433:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526800550.9264374
+        modelfile: ../data/models/svm-pipeline_20180520071512.pkl
+        resultsFile: ../data/results//task9.1_combER0517combER0517mod062.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_combER0517combER0517mod062_scores.log
+        start: 1526795984.4315848
+        status: done
+        total_time: 4566.494852542877
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+numcores: 3
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: combER0517
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/DrugBank
+trainingFolder: ../data/LaboCase/Train

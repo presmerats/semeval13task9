@@ -1,0 +1,89 @@
+filepath: ../data/batches/svmdebug/d21tDBmDDIaSVMw3.yaml
+models:
+  m0:
+    algorithm: lsvm
+    fafter1: [pos, lookup, wordStructure]
+    fafter2: [pos, lookup, wordStructure]
+    fafter3: [pos, lookup, wordStructure]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, lookup, wordStructure]
+    fbefore2: [pos, lookup, wordStructure]
+    fbefore3: [pos, lookup, wordStructure]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [lemma, pos, chunkGroup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m1:
+    algorithm: lsvm
+    fafter1: [pos, lookup, wordStructure]
+    fafter2: [pos, lookup, wordStructure]
+    fafter3: [pos, lookup, wordStructure]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, lookup, wordStructure]
+    fbefore2: [pos, lookup, wordStructure]
+    fbefore3: [pos, lookup, wordStructure]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [lemma, pos, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m2:
+    algorithm: lsvm
+    fafter1: [pos, lookup, wordStructure]
+    fafter2: [pos, lookup, wordStructure]
+    fafter3: [pos, lookup, wordStructure]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, lookup, wordStructure]
+    fbefore2: [pos, lookup, wordStructure]
+    fbefore3: [pos, lookup, wordStructure]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [lemma, pos, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m3:
+    algorithm: lsvm
+    fafter1: [pos, lookup, wordStructure]
+    fafter2: [pos, lookup, wordStructure]
+    fafter3: [pos, lookup, wordStructure]
+    fafter4: [pos, lookup, wordStructure]
+    fafter5: [pos, lookup, wordStructure]
+    fbefore1: [pos, lookup, wordStructure]
+    fbefore2: [pos, lookup, wordStructure]
+    fbefore3: [pos, lookup, wordStructure]
+    fbefore4: [pos, lookup, wordStructure]
+    fbefore5: [pos, lookup, wordStructure]
+    fcurrent: [lemma, chunkGroup, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+numcores: 4
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: d21tDBmDDIaSVMw3
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/DrugBank
+total_time: 9.167198419570923
+trainingFolder: ../data/LaboCase/Train

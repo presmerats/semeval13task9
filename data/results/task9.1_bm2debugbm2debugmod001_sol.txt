@@ -1,0 +1,78 @@
+DDI-DrugBank.d749.s0|54-60|Macugen|null
+DDI-DrugBank.d749.s1|0-9|Pegaptanib|null
+DDI-DrugBank.d749.s2|62-68|Macugen|null
+DDI-DrugBank.d749.s2|170-179|pegaptanib|null
+DDI-DrugBank.d772.s0|0-6|TERAZOL|null
+DDI-DrugBank.d772.s0|33-39|TERAZOL|null
+DDI-DrugBank.d772.s0|136-148|contraceptive|null
+DDI-DrugBank.d772.s1|0-6|TERAZOL|null
+DDI-DrugBank.d772.s1|43-51|estradiol|null
+DDI-DrugBank.d772.s1|62-73|progesterone|null
+DDI-DrugBank.d772.s1|114-124|terconazole|null
+DDI-DrugBank.d772.s1|217-229|contraceptive|null
+DDI-DrugBank.d620.s0|0-11|Pyrazinamide|null
+DDI-DrugBank.d646.s0|79-87|rifaximin|null
+DDI-DrugBank.d646.s0|193-201|rifaximin|null
+DDI-DrugBank.d646.s0|256-264|midazolam|null
+DDI-DrugBank.d646.s1|71-79|rifaximin|null
+DDI-DrugBank.d646.s1|122-134|contraceptive|null
+DDI-DrugBank.d646.s1|147-163|ethinyl estradiol|null
+DDI-DrugBank.d646.s1|169-180|norgestimate|null
+DDI-DrugBank.d681.s0|18-27|cimetidine|null
+DDI-DrugBank.d681.s0|30-36|digoxin|null
+DDI-DrugBank.d681.s0|74-82|sevelamer|null
+DDI-DrugBank.d681.s0|89-100|theophylline|null
+DDI-DrugBank.d745.s0|55-58|SAMe|null
+DDI-DrugBank.d657.s0|17-26|Dronabinol|null
+DDI-DrugBank.d657.s0|85-91|MARINOL|null
+DDI-DrugBank.d657.s0|94-103|Dronabinol|null
+DDI-DrugBank.d657.s0|195-208|anti-infective|null
+DDI-DrugBank.d657.s0|218-226|sedatives|null
+DDI-DrugBank.d657.s0|232-248|opioid analgesics|null
+DDI-DrugBank.d657.s1|99-110|cannabinoids|null
+DDI-DrugBank.d657.s2|0-9|Dronabinol|null
+DDI-DrugBank.d657.s3|152-161|dronabinol|null
+DDI-DrugBank.d592.s0|17-41|Sodium_Tetradecyl_Sulfate|null
+DDI-DrugBank.d592.s1|119-128|Sotradecol|null
+DDI-DrugBank.d592.s2|0-6|Heparin|null
+DDI-DrugBank.d592.s2|54-78|Sodium_Tetradecyl_Sulfate|null
+DDI-DrugBank.d684.s3|32-43|erythromycin|null
+DDI-DrugBank.d684.s3|46-57|itraconazole|null
+DDI-DrugBank.d684.s3|60-71|ketoconazole|null
+DDI-DrugBank.d684.s3|74-84|fluconazole|null
+DDI-DrugBank.d684.s3|87-110|calcium channel blockers|null
+DDI-DrugBank.d684.s3|116-125|cimetidine|null
+DDI-DrugBank.d778.s0|47-56|BILTRICIDE|null
+DDI-DrugBank.d621.s0|27-40|anticoagulants|null
+DDI-DrugBank.d621.s1|26-35|colestipol|null
+DDI-DrugBank.d621.s1|38-51|cholestyramine|null
+DDI-DrugBank.d621.s1|54-64|mineral oil|null
+DDI-DrugBank.d621.s1|71-80|sucralfate|null
+DDI-DrugBank.d593.s0|36-43|VIRAZOLE|null
+DDI-DrugBank.d593.s0|122-128|digoxin|null
+DDI-DrugBank.d593.s0|131-145|bronchodilators|null
+DDI-DrugBank.d593.s0|154-169|antiviral agents|null
+DDI-DrugBank.d593.s0|172-182|antibiotics|null
+DDI-DrugBank.d593.s0|188-203|anti-metabolites|null
+DDI-DrugBank.d593.s1|16-23|VIRAZOLE|null
+DDI-DrugBank.d692.s0|59-65|VIGAMOX|null
+DDI-DrugBank.d692.s1|31-42|moxifloxacin|null
+DDI-DrugBank.d692.s1|120-131|moxifloxacin|null
+DDI-DrugBank.d724.s0|60-67|Infergen|null
+DDI-DrugBank.d724.s1|0-7|Infergen|null
+DDI-DrugBank.d667.s0|43-50|oxytocin|null
+DDI-DrugBank.d667.s0|125-139|vasoconstrictor|null
+DDI-DrugBank.d667.s1|35-42|oxytocin|null
+DDI-DrugBank.d667.s2|91-98|oxytocin|null
+DDI-DrugBank.d617.s0|99-106|PRIMACOR|null
+DDI-DrugBank.d617.s0|156-175|digitalis glycosides|null
+DDI-DrugBank.d617.s1|0-8|lidocaine|null
+DDI-DrugBank.d617.s1|11-19|quinidine|null
+DDI-DrugBank.d617.s2|0-10|hydralazine|null
+DDI-DrugBank.d617.s2|13-20|prazosin|null
+DDI-DrugBank.d617.s3|0-19|isosorbide dinitrate|null
+DDI-DrugBank.d617.s3|22-34|nitroglycerin|null
+DDI-DrugBank.d617.s4|0-13|chlorthalidone|null
+DDI-DrugBank.d617.s4|16-25|furosemide|null
+DDI-DrugBank.d617.s4|28-46|hydrochlorothiazide|null
+DDI-DrugBank.d617.s4|49-62|spironolactone|null

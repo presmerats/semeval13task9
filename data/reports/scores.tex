@@ -1,0 +1,2786 @@
+\documentclass[a4paper]{article}
+
+%%%%%%%% CREATE DOCUMENT STRUCTURE %%%%%%%%
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{subfig}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+
+\usepackage{pdflscape}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage{sectsty}
+%\usepackage{apacite}
+\usepackage{float}
+\usepackage{titling} 
+\usepackage{blindtext}
+\usepackage[square,sort,comma,numbers]{natbib}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{xcolor}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[linesnumbered,algoruled,boxed,lined]{algorithm2e}
+\setlength\parskip{.5\baselineskip plus .1\baselineskip  minus .1\baselineskip}
+\setlength{\parindent}{1em}
+\definecolor{darkgreen}{rgb}{0.0, 0.4, 0.0}
+
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+
+\title{AHLT DNR report}
+\author{Pau Rodríguez Esmerats, Asaf Badouh }
+\begin{document}
+
+\begin{landscape}
+
+\section{ Best models}
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod051 } & NER & CRF & lm,lo,chg,ort+lm,lo,chg,ort  &  39 &  -1:+1  &  0.91 & 0.85 & 0.88  &  0.68 & 0.61 & 0.64 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod045 } & NER & CRF & pos,lo,chg,ort+pos,lo,chg,ort  &  39 &  -1:+1  &  0.9 & 0.85 & 0.87  &  0.67 & 0.62 & 0.64 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod046 } & NER & CRF & pos,lo,chg,ort+pos,lo,chg,ort  &  65 &  -2:+2  &  0.89 & 0.85 & 0.87  &  0.66 & 0.62 & 0.64 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod048 } & NER & CRF & pos,lo,ch,ort+pos,lo,ch,ort  &  39 &  -1:+1  &  0.89 & 0.85 & 0.87  &  0.67 & 0.62 & 0.64 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod054 } & NER & CRF & lm,lo,ch,ort+lm,lo,ch,ort  &  39 &  -1:+1  &  0.91 & 0.84 & 0.87  &  0.68 & 0.6 & 0.63 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod057 } & NER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  40 &  -1:+1  &  0.89 & 0.85 & 0.87  &  0.67 & 0.62 & 0.64 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod060 } & NER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  40 &  -1:+1  &  0.9 & 0.85 & 0.87  &  0.67 & 0.61 & 0.64 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod061 } & NER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  66 &  -2:+2  &  0.89 & 0.85 & 0.87  &  0.66 & 0.61 & 0.63 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod049 } & NER & CRF & pos,lo,ch,ort+pos,lo,ch,ort  &  65 &  -2:+2  &  0.88 & 0.84 & 0.86  &  0.65 & 0.61 & 0.63 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod052 } & NER & CRF & lm,lo,chg,ort+lm,lo,chg,ort  &  65 &  -2:+2  &  0.9 & 0.83 & 0.86  &  0.66 & 0.58 & 0.62 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod053 } & NER & CRF & lm,lo,chg,ort+lm,lo,chg,ort  &  91 &  -3:+3  &  0.89 & 0.83 & 0.86  &  0.66 & 0.59 & 0.62 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod055 } & NER & CRF & lm,lo,ch,ort+lm,lo,ch,ort  &  65 &  -2:+2  &  0.89 & 0.83 & 0.86  &  0.66 & 0.58 & 0.61 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod056 } & NER & CRF & lm,lo,ch,ort+lm,lo,ch,ort  &  91 &  -3:+3  &  0.89 & 0.83 & 0.86  &  0.66 & 0.6 & 0.62 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod058 } & NER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  66 &  -2:+2  &  0.89 & 0.84 & 0.86  &  0.66 & 0.61 & 0.63 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod059 } & NER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  92 &  -3:+3  &  0.88 & 0.84 & 0.86  &  0.65 & 0.6 & 0.63 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod062 } & NER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  92 &  -3:+3  &  0.88 & 0.84 & 0.86  &  0.66 & 0.61 & 0.63 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod050 } & NER & CRF & pos,lo,ch,ort+pos,lo,ch,ort  &  91 &  -3:+3  &  0.88 & 0.83 & 0.85  &  0.65 & 0.6 & 0.62 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod016 } & NER & CRF & pos,ort+pos,ort  &  55 &  -2:+2  &  0.88 & 0.79 & 0.83  &  0.67 & 0.58 & 0.62 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod021 } & NER & CRF & lm,pos,ort+pos,ort  &  34 &  -1:+1  &  0.89 & 0.78 & 0.83  &  0.68 & 0.58 & 0.62 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod022 } & NER & CRF & lm,pos,ort+pos,ort  &  56 &  -2:+2  &  0.88 & 0.79 & 0.83  &  0.66 & 0.58 & 0.62 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod027 } & NER & CRF & lm,pos,ort+lm,ort  &  34 &  -1:+1  &  0.89 & 0.77 & 0.83  &  0.67 & 0.58 & 0.62 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod028 } & NER & CRF & lm,pos,ort+lm,ort  &  56 &  -2:+2  &  0.87 & 0.79 & 0.83  &  0.66 & 0.58 & 0.61 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod040 } & NER & CRF & pos,chg,ort+pos,chg,ort  &  60 &  -2:+2  &  0.88 & 0.78 & 0.83  &  0.67 & 0.57 & 0.62 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod043 } & NER & CRF & pos,ch,ort+pos,ch,ort  &  60 &  -2:+2  &  0.88 & 0.79 & 0.83  &  0.67 & 0.58 & 0.61 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod012 } & NER & CRF & ort+ort  &  30 &  -1:+1  &  0.9 & 0.75 & 0.82  &  0.68 & 0.56 & 0.61 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod013 } & NER & CRF & ort+ort  &  50 &  -2:+2  &  0.88 & 0.76 & 0.82  &  0.66 & 0.55 & 0.6 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod015 } & NER & CRF & lm,ort+lm,ort  &  33 &  -1:+1  &  0.9 & 0.75 & 0.82  &  0.68 & 0.57 & 0.62 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod019 } & NER & CRF & lm,ort+lm,ort  &  55 &  -2:+2  &  0.88 & 0.76 & 0.82  &  0.67 & 0.56 & 0.61 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod023 } & NER & CRF & lm,pos,ort+pos,ort  &  78 &  -3:+3  &  0.87 & 0.77 & 0.82  &  0.65 & 0.57 & 0.6 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod029 } & NER & CRF & lm,pos,ort+lm,ort  &  78 &  -3:+3  &  0.88 & 0.77 & 0.82  &  0.66 & 0.57 & 0.61 \\
+ 		
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod039 } & NER & CRF & pos,chg,ort+pos,chg,ort  &  36 &  -1:+1  &  0.89 & 0.77 & 0.82  &  0.67 & 0.57 & 0.62 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod041 } & NER & CRF & pos,chg,ort+pos,chg,ort  &  84 &  -3:+3  &  0.87 & 0.78 & 0.82  &  0.66 & 0.58 & 0.61 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod042 } & NER & CRF & pos,ch,ort+pos,ch,ort  &  36 &  -1:+1  &  0.89 & 0.77 & 0.82  &  0.66 & 0.57 & 0.61 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod044 } & NER & CRF & pos,ch,ort+pos,ch,ort  &  84 &  -3:+3  &  0.87 & 0.78 & 0.82  &  0.65 & 0.57 & 0.61 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod014 } & NER & CRF & ort+ort  &  70 &  -3:+3  &  0.87 & 0.76 & 0.81  &  0.66 & 0.56 & 0.6 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod020 } & NER & CRF & lm,ort+lm,ort  &  77 &  -3:+3  &  0.87 & 0.76 & 0.81  &  0.65 & 0.56 & 0.6 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmERaCS00m060 } & ER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  40 &  -1:+1  &  0.85 & 0.75 & 0.8  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m145 } & NER & CRF & pos,lo,chg,ort+pos,lo,chg,ort  &  39 &  -1:+1  &  0.85 & 0.75 & 0.8  &  0.92 & 0.59 & 0.64 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01mod057 } & ER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  40 &  -1:+1  &  0.86 & 0.74 & 0.8  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01mod060 } & ER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  40 &  -1:+1  &  0.85 & 0.75 & 0.8  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01mod157 } & NER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  40 &  -1:+1  &  0.85 & 0.75 & 0.8  &  0.92 & 0.6 & 0.64 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod024 } & NER & CRF & lm,pos,ort+pos  &  14 &  -1:+1  &  0.89 & 0.73 & 0.8  &  0.67 & 0.54 & 0.59 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod026 } & NER & CRF & lm,pos,ort+pos,ort  &  28 &  -3:+3  &  0.87 & 0.74 & 0.8  &  0.66 & 0.55 & 0.6 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod000 } & ER & SVM & pos+pos  &  3 &  -1:+1  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod001 } & ER & SVM & pos+pos  &  5 &  -2:+2  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod002 } & ER & SVM & pos+pos  &  7 &  -3:+3  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod006 } & ER & SVM & lm+pos  &  7 &  -3:+3  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod007 } & ER & SVM & pos+lm  &  3 &  -1:+1  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod009 } & ER & SVM & ort+ort  &  18 &  -1:+1  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod010 } & ER & SVM & ort+ort  &  30 &  -2:+2  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod011 } & ER & SVM & ort+ort  &  42 &  -3:+3  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod017 } & ER & SVM & ort+ort  &  7 &  -3:+3  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod030 } & ER & SVM & pos,chg+pos,chg  &  6 &  -1:+1  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod031 } & ER & SVM & pos,chg+pos,chg  &  10 &  -2:+2  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod032 } & ER & SVM & pos,chg+pos,chg  &  14 &  -3:+3  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod033 } & ER & SVM & ch+ch  &  3 &  -1:+1  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod034 } & ER & SVM & ch+ch  &  5 &  -2:+2  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod035 } & ER & SVM & ch+ch  &  7 &  -3:+3  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod036 } & ER & SVM & chg+chg  &  3 &  -1:+1  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod037 } & ER & SVM & chg+chg  &  5 &  -2:+2  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod038 } & ER & SVM & chg+chg  &  7 &  -3:+3  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmERaCS00m06b } & NER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  40 &  -1:+1  &  0.85 & 0.74 & 0.79  &  0.92 & 0.59 & 0.64 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m045 } & ER & CRF & pos,lo,chg,ort+pos,lo,chg,ort  &  39 &  -1:+1  &  0.85 & 0.74 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m062 } & ER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  92 &  -3:+3  &  0.85 & 0.73 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m161 } & NER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  66 &  -2:+2  &  0.85 & 0.73 & 0.79  &  0.92 & 0.58 & 0.63 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01mod158 } & NER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  66 &  -2:+2  &  0.85 & 0.73 & 0.79  &  0.83 & 0.58 & 0.63 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01mod160 } & NER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  40 &  -1:+1  &  0.84 & 0.74 & 0.79  &  0.92 & 0.59 & 0.64 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod025 } & NER & CRF & lm,pos,ort+pos  &  16 &  -2:+2  &  0.88 & 0.72 & 0.79  &  0.67 & 0.53 & 0.59 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmERaCS00m001 } & ER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort,chg  &  52 &  -5:+5  &  0.84 & 0.74 & 0.79  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m061 } & ER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  66 &  -2:+2  &  0.84 & 0.73 & 0.78  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m162 } & NER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  92 &  -3:+3  &  0.84 & 0.72 & 0.78  &  0.91 & 0.56 & 0.62 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01mod058 } & ER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  66 &  -2:+2  &  0.84 & 0.72 & 0.78  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01mod059 } & ER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  92 &  -3:+3  &  0.84 & 0.72 & 0.78  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01mod159 } & NER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  92 &  -3:+3  &  0.84 & 0.72 & 0.78  &  0.92 & 0.57 & 0.63 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod008 } & NER & CRF & pos+lm  &  5 &  -2:+2  &  0.89 & 0.69 & 0.78  &  0.66 & 0.49 & 0.56 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod004 } & NER & CRF & lm+lm  &  5 &  -2:+2  &  0.9 & 0.64 & 0.75  &  0.67 & 0.44 & 0.51 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod007 } & NER & CRF & pos+lm  &  3 &  -1:+1  &  0.88 & 0.66 & 0.75  &  0.65 & 0.48 & 0.55 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod005 } & NER & CRF & lm+lm  &  7 &  -3:+3  &  0.9 & 0.62 & 0.74  &  0.66 & 0.42 & 0.5 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m025 } & ER & CRF & lm,pos,ort+pos  &  16 &  -2:+2  &  0.81 & 0.66 & 0.73  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m026 } & ER & CRF & lm,pos,ort+pos,ort  &  28 &  -3:+3  &  0.82 & 0.65 & 0.73  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod002 } & NER & CRF & pos+pos  &  7 &  -3:+3  &  0.89 & 0.62 & 0.73  &  0.66 & 0.43 & 0.51 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod030 } & NER & CRF & pos,chg+pos,chg  &  6 &  -1:+1  &  0.91 & 0.61 & 0.73  &  0.66 & 0.43 & 0.51 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod031 } & NER & CRF & pos,chg+pos,chg  &  10 &  -2:+2  &  0.9 & 0.61 & 0.73  &  0.66 & 0.43 & 0.51 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod032 } & NER & CRF & pos,chg+pos,chg  &  14 &  -3:+3  &  0.89 & 0.62 & 0.73  &  0.65 & 0.44 & 0.52 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod024 } & ER & SVM & lm,pos,ort+pos  &  14 &  -1:+1  &  0.76 & 0.68 & 0.72  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod025 } & ER & SVM & lm,pos,ort+pos  &  16 &  -2:+2  &  0.77 & 0.68 & 0.72  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m024 } & ER & CRF & lm,pos,ort+pos  &  14 &  -1:+1  &  0.79 & 0.65 & 0.72  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m124 } & NER & CRF & lm,pos,ort+pos  &  14 &  -1:+1  &  0.86 & 0.62 & 0.72  &  0.9 & 0.53 & 0.61 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod003 } & ER & SVM & lm+lm  &  3 &  -1:+1  &  0.73 & 0.68 & 0.71  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod000 } & NER & CRF & pos+pos  &  3 &  -1:+1  &  0.91 & 0.59 & 0.71  &  0.68 & 0.4 & 0.48 \\
+ 		
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod003 } & NER & CRF & lm+lm  &  3 &  -1:+1  &  0.93 & 0.58 & 0.71  &  0.71 & 0.39 & 0.45 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m125 } & NER & CRF & lm,pos,ort+pos  &  16 &  -2:+2  &  0.84 & 0.61 & 0.7  &  0.86 & 0.51 & 0.58 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m126 } & NER & CRF & lm,pos,ort+pos,ort  &  28 &  -3:+3  &  0.83 & 0.61 & 0.7  &  0.87 & 0.51 & 0.59 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod001 } & NER & CRF & pos+pos  &  5 &  -2:+2  &  0.88 & 0.58 & 0.7  &  0.65 & 0.39 & 0.47 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod006 } & NER & CRF & lm+pos  &  7 &  -3:+3  &  0.91 & 0.56 & 0.7  &  0.7 & 0.38 & 0.45 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m007 } & ER & CRF & pos+lm  &  3 &  -1:+1  &  0.82 & 0.59 & 0.69  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod010 } & NER & CRF & ort+ort  &  30 &  -2:+2  &  0.9 & 0.55 & 0.69  &  0.67 & 0.38 & 0.45 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod017 } & NER & CRF & +  &  7 &  -3:+3  &  0.9 & 0.56 & 0.69  &  0.66 & 0.39 & 0.47 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod011 } & NER & CRF & ort+ort  &  42 &  -3:+3  &  0.89 & 0.56 & 0.68  &  0.65 & 0.39 & 0.45 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod008 } & ER & SVM & pos+lm  &  5 &  -2:+2  &  0.86 & 0.54 & 0.66  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod045 } & ER & SVM & pos,lo,chg,ort+pos,lo,chg,ort  &  39 &  -1:+1  &  0.94 & 0.5 & 0.66  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m000 } & ER & CRF & pos+pos  &  3 &  -1:+1  &  0.83 & 0.55 & 0.66  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod009 } & NER & CRF & ort+ort  &  18 &  -1:+1  &  0.89 & 0.53 & 0.66  &  0.69 & 0.36 & 0.43 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m006 } & ER & CRF & lm+pos  &  7 &  -3:+3  &  0.88 & 0.51 & 0.65  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m107 } & NER & CRF & pos+lm  &  3 &  -1:+1  &  0.86 & 0.52 & 0.65  &  0.9 & 0.43 & 0.53 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod033 } & NER & CRF & ch+ch  &  3 &  -1:+1  &  0.91 & 0.5 & 0.65  &  0.69 & 0.34 & 0.41 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod035 } & NER & CRF & ch+ch  &  7 &  -3:+3  &  0.91 & 0.51 & 0.65  &  0.69 & 0.34 & 0.41 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod036 } & NER & CRF & chg+chg  &  3 &  -1:+1  &  0.91 & 0.5 & 0.65  &  0.69 & 0.34 & 0.41 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m100 } & NER & CRF & pos+pos  &  3 &  -1:+1  &  0.88 & 0.5 & 0.64  &  0.93 & 0.38 & 0.47 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod037 } & NER & CRF & chg+chg  &  5 &  -2:+2  &  0.9 & 0.5 & 0.64  &  0.69 & 0.34 & 0.4 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod038 } & NER & CRF & chg+chg  &  7 &  -3:+3  &  0.91 & 0.5 & 0.64  &  0.69 & 0.34 & 0.41 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ crf01m106 } & NER & CRF & lm+pos  &  7 &  -3:+3  &  0.88 & 0.49 & 0.63  &  0.94 & 0.37 & 0.46 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d20tMXmNWEaCRFmod034 } & NER & CRF & ch+ch  &  5 &  -2:+2  &  0.89 & 0.49 & 0.63  &  0.68 & 0.33 & 0.4 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod026 } & ER & SVM & lm,pos,ort+pos,ort  &  28 &  -3:+3  &  0.96 & 0.43 & 0.59  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod057 } & ER & SVM & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  40 &  -1:+1  &  0.98 & 0.35 & 0.51  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ combER0517mod060 } & ER & SVM & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  40 &  -1:+1  &  0.98 & 0.35 & 0.51  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+\section{All model }
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod051 } & NER & CRF & lm,lo,chg,ort+lm,lo,chg,ort  &  39 &  -1:+1  &  0.91 & 0.85 & 0.88  &  0.68 & 0.61 & 0.64 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod045 } & NER & CRF & pos,lo,chg,ort+pos,lo,chg,ort  &  39 &  -1:+1  &  0.9 & 0.85 & 0.87  &  0.67 & 0.62 & 0.64 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod046 } & NER & CRF & pos,lo,chg,ort+pos,lo,chg,ort  &  65 &  -2:+2  &  0.89 & 0.85 & 0.87  &  0.66 & 0.62 & 0.64 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod048 } & NER & CRF & pos,lo,ch,ort+pos,lo,ch,ort  &  39 &  -1:+1  &  0.89 & 0.85 & 0.87  &  0.67 & 0.62 & 0.64 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod054 } & NER & CRF & lm,lo,ch,ort+lm,lo,ch,ort  &  39 &  -1:+1  &  0.91 & 0.84 & 0.87  &  0.68 & 0.6 & 0.63 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod057 } & NER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  40 &  -1:+1  &  0.89 & 0.85 & 0.87  &  0.67 & 0.62 & 0.64 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod060 } & NER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  40 &  -1:+1  &  0.9 & 0.85 & 0.87  &  0.67 & 0.61 & 0.64 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod061 } & NER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  66 &  -2:+2  &  0.89 & 0.85 & 0.87  &  0.66 & 0.61 & 0.63 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod049 } & NER & CRF & pos,lo,ch,ort+pos,lo,ch,ort  &  65 &  -2:+2  &  0.88 & 0.84 & 0.86  &  0.65 & 0.61 & 0.63 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod052 } & NER & CRF & lm,lo,chg,ort+lm,lo,chg,ort  &  65 &  -2:+2  &  0.9 & 0.83 & 0.86  &  0.66 & 0.58 & 0.62 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod053 } & NER & CRF & lm,lo,chg,ort+lm,lo,chg,ort  &  91 &  -3:+3  &  0.89 & 0.83 & 0.86  &  0.66 & 0.59 & 0.62 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod055 } & NER & CRF & lm,lo,ch,ort+lm,lo,ch,ort  &  65 &  -2:+2  &  0.89 & 0.83 & 0.86  &  0.66 & 0.58 & 0.61 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod056 } & NER & CRF & lm,lo,ch,ort+lm,lo,ch,ort  &  91 &  -3:+3  &  0.89 & 0.83 & 0.86  &  0.66 & 0.6 & 0.62 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod058 } & NER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  66 &  -2:+2  &  0.89 & 0.84 & 0.86  &  0.66 & 0.61 & 0.63 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod059 } & NER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  92 &  -3:+3  &  0.88 & 0.84 & 0.86  &  0.65 & 0.6 & 0.63 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod062 } & NER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  92 &  -3:+3  &  0.88 & 0.84 & 0.86  &  0.66 & 0.61 & 0.63 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod050 } & NER & CRF & pos,lo,ch,ort+pos,lo,ch,ort  &  91 &  -3:+3  &  0.88 & 0.83 & 0.85  &  0.65 & 0.6 & 0.62 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod016 } & NER & CRF & pos,ort+pos,ort  &  55 &  -2:+2  &  0.88 & 0.79 & 0.83  &  0.67 & 0.58 & 0.62 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod021 } & NER & CRF & lm,pos,ort+pos,ort  &  34 &  -1:+1  &  0.89 & 0.78 & 0.83  &  0.68 & 0.58 & 0.62 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod022 } & NER & CRF & lm,pos,ort+pos,ort  &  56 &  -2:+2  &  0.88 & 0.79 & 0.83  &  0.66 & 0.58 & 0.62 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod027 } & NER & CRF & lm,pos,ort+lm,ort  &  34 &  -1:+1  &  0.89 & 0.77 & 0.83  &  0.67 & 0.58 & 0.62 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod028 } & NER & CRF & lm,pos,ort+lm,ort  &  56 &  -2:+2  &  0.87 & 0.79 & 0.83  &  0.66 & 0.58 & 0.61 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod040 } & NER & CRF & pos,chg,ort+pos,chg,ort  &  60 &  -2:+2  &  0.88 & 0.78 & 0.83  &  0.67 & 0.57 & 0.62 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod043 } & NER & CRF & pos,ch,ort+pos,ch,ort  &  60 &  -2:+2  &  0.88 & 0.79 & 0.83  &  0.67 & 0.58 & 0.61 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod012 } & NER & CRF & ort+ort  &  30 &  -1:+1  &  0.9 & 0.75 & 0.82  &  0.68 & 0.56 & 0.61 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod013 } & NER & CRF & ort+ort  &  50 &  -2:+2  &  0.88 & 0.76 & 0.82  &  0.66 & 0.55 & 0.6 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod015 } & NER & CRF & lm,ort+lm,ort  &  33 &  -1:+1  &  0.9 & 0.75 & 0.82  &  0.68 & 0.57 & 0.62 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod019 } & NER & CRF & lm,ort+lm,ort  &  55 &  -2:+2  &  0.88 & 0.76 & 0.82  &  0.67 & 0.56 & 0.61 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod023 } & NER & CRF & lm,pos,ort+pos,ort  &  78 &  -3:+3  &  0.87 & 0.77 & 0.82  &  0.65 & 0.57 & 0.6 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod029 } & NER & CRF & lm,pos,ort+lm,ort  &  78 &  -3:+3  &  0.88 & 0.77 & 0.82  &  0.66 & 0.57 & 0.61 \\
+ 	
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod039 } & NER & CRF & pos,chg,ort+pos,chg,ort  &  36 &  -1:+1  &  0.89 & 0.77 & 0.82  &  0.67 & 0.57 & 0.62 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod041 } & NER & CRF & pos,chg,ort+pos,chg,ort  &  84 &  -3:+3  &  0.87 & 0.78 & 0.82  &  0.66 & 0.58 & 0.61 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod042 } & NER & CRF & pos,ch,ort+pos,ch,ort  &  36 &  -1:+1  &  0.89 & 0.77 & 0.82  &  0.66 & 0.57 & 0.61 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod044 } & NER & CRF & pos,ch,ort+pos,ch,ort  &  84 &  -3:+3  &  0.87 & 0.78 & 0.82  &  0.65 & 0.57 & 0.61 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod014 } & NER & CRF & ort+ort  &  70 &  -3:+3  &  0.87 & 0.76 & 0.81  &  0.66 & 0.56 & 0.6 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod020 } & NER & CRF & lm,ort+lm,ort  &  77 &  -3:+3  &  0.87 & 0.76 & 0.81  &  0.65 & 0.56 & 0.6 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmERaCS00m060 } & ER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  40 &  -1:+1  &  0.85 & 0.75 & 0.8  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m145 } & NER & CRF & pos,lo,chg,ort+pos,lo,chg,ort  &  39 &  -1:+1  &  0.85 & 0.75 & 0.8  &  0.92 & 0.59 & 0.64 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01mod057 } & ER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  40 &  -1:+1  &  0.86 & 0.74 & 0.8  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01mod060 } & ER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  40 &  -1:+1  &  0.85 & 0.75 & 0.8  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01mod157 } & NER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  40 &  -1:+1  &  0.85 & 0.75 & 0.8  &  0.92 & 0.6 & 0.64 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod024 } & NER & CRF & lm,pos,ort+pos  &  14 &  -1:+1  &  0.89 & 0.73 & 0.8  &  0.67 & 0.54 & 0.59 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod026 } & NER & CRF & lm,pos,ort+pos,ort  &  28 &  -3:+3  &  0.87 & 0.74 & 0.8  &  0.66 & 0.55 & 0.6 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod000 } & ER & SVM & pos+pos  &  3 &  -1:+1  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod001 } & ER & SVM & pos+pos  &  5 &  -2:+2  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod002 } & ER & SVM & pos+pos  &  7 &  -3:+3  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod006 } & ER & SVM & lm+pos  &  7 &  -3:+3  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod007 } & ER & SVM & pos+lm  &  3 &  -1:+1  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod009 } & ER & SVM & ort+ort  &  18 &  -1:+1  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod010 } & ER & SVM & ort+ort  &  30 &  -2:+2  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod011 } & ER & SVM & ort+ort  &  42 &  -3:+3  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod017 } & ER & SVM & ort+ort  &  7 &  -3:+3  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod030 } & ER & SVM & pos,chg+pos,chg  &  6 &  -1:+1  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod031 } & ER & SVM & pos,chg+pos,chg  &  10 &  -2:+2  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod032 } & ER & SVM & pos,chg+pos,chg  &  14 &  -3:+3  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod033 } & ER & SVM & ch+ch  &  3 &  -1:+1  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod034 } & ER & SVM & ch+ch  &  5 &  -2:+2  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod035 } & ER & SVM & ch+ch  &  7 &  -3:+3  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod036 } & ER & SVM & chg+chg  &  3 &  -1:+1  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod037 } & ER & SVM & chg+chg  &  5 &  -2:+2  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod038 } & ER & SVM & chg+chg  &  7 &  -3:+3  &  0.74 & 0.84 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmERaCS00m06b } & NER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  40 &  -1:+1  &  0.85 & 0.74 & 0.79  &  0.92 & 0.59 & 0.64 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m045 } & ER & CRF & pos,lo,chg,ort+pos,lo,chg,ort  &  39 &  -1:+1  &  0.85 & 0.74 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m062 } & ER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  92 &  -3:+3  &  0.85 & 0.73 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m161 } & NER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  66 &  -2:+2  &  0.85 & 0.73 & 0.79  &  0.92 & 0.58 & 0.63 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01mod158 } & NER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  66 &  -2:+2  &  0.85 & 0.73 & 0.79  &  0.83 & 0.58 & 0.63 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01mod160 } & NER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  40 &  -1:+1  &  0.84 & 0.74 & 0.79  &  0.92 & 0.59 & 0.64 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod025 } & NER & CRF & lm,pos,ort+pos  &  16 &  -2:+2  &  0.88 & 0.72 & 0.79  &  0.67 & 0.53 & 0.59 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmERaCS00m001 } & ER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort,chg  &  52 &  -5:+5  &  0.84 & 0.74 & 0.79  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m061 } & ER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  66 &  -2:+2  &  0.84 & 0.73 & 0.78  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m162 } & NER & CRF & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  92 &  -3:+3  &  0.84 & 0.72 & 0.78  &  0.91 & 0.56 & 0.62 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01mod058 } & ER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  66 &  -2:+2  &  0.84 & 0.72 & 0.78  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01mod059 } & ER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  92 &  -3:+3  &  0.84 & 0.72 & 0.78  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01mod159 } & NER & CRF & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  92 &  -3:+3  &  0.84 & 0.72 & 0.78  &  0.92 & 0.57 & 0.63 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod008 } & NER & CRF & pos+lm  &  5 &  -2:+2  &  0.89 & 0.69 & 0.78  &  0.66 & 0.49 & 0.56 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod004 } & NER & CRF & lm+lm  &  5 &  -2:+2  &  0.9 & 0.64 & 0.75  &  0.67 & 0.44 & 0.51 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod007 } & NER & CRF & pos+lm  &  3 &  -1:+1  &  0.88 & 0.66 & 0.75  &  0.65 & 0.48 & 0.55 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod005 } & NER & CRF & lm+lm  &  7 &  -3:+3  &  0.9 & 0.62 & 0.74  &  0.66 & 0.42 & 0.5 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m025 } & ER & CRF & lm,pos,ort+pos  &  16 &  -2:+2  &  0.81 & 0.66 & 0.73  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m026 } & ER & CRF & lm,pos,ort+pos,ort  &  28 &  -3:+3  &  0.82 & 0.65 & 0.73  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod002 } & NER & CRF & pos+pos  &  7 &  -3:+3  &  0.89 & 0.62 & 0.73  &  0.66 & 0.43 & 0.51 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod030 } & NER & CRF & pos,chg+pos,chg  &  6 &  -1:+1  &  0.91 & 0.61 & 0.73  &  0.66 & 0.43 & 0.51 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod031 } & NER & CRF & pos,chg+pos,chg  &  10 &  -2:+2  &  0.9 & 0.61 & 0.73  &  0.66 & 0.43 & 0.51 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod032 } & NER & CRF & pos,chg+pos,chg  &  14 &  -3:+3  &  0.89 & 0.62 & 0.73  &  0.65 & 0.44 & 0.52 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod024 } & ER & SVM & lm,pos,ort+pos  &  14 &  -1:+1  &  0.76 & 0.68 & 0.72  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod025 } & ER & SVM & lm,pos,ort+pos  &  16 &  -2:+2  &  0.77 & 0.68 & 0.72  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m024 } & ER & CRF & lm,pos,ort+pos  &  14 &  -1:+1  &  0.79 & 0.65 & 0.72  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m124 } & NER & CRF & lm,pos,ort+pos  &  14 &  -1:+1  &  0.86 & 0.62 & 0.72  &  0.9 & 0.53 & 0.61 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod003 } & ER & SVM & lm+lm  &  3 &  -1:+1  &  0.73 & 0.68 & 0.71  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod000 } & NER & CRF & pos+pos  &  3 &  -1:+1  &  0.91 & 0.59 & 0.71  &  0.68 & 0.4 & 0.48 \\
+ 	
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod003 } & NER & CRF & lm+lm  &  3 &  -1:+1  &  0.93 & 0.58 & 0.71  &  0.71 & 0.39 & 0.45 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m125 } & NER & CRF & lm,pos,ort+pos  &  16 &  -2:+2  &  0.84 & 0.61 & 0.7  &  0.86 & 0.51 & 0.58 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m126 } & NER & CRF & lm,pos,ort+pos,ort  &  28 &  -3:+3  &  0.83 & 0.61 & 0.7  &  0.87 & 0.51 & 0.59 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod001 } & NER & CRF & pos+pos  &  5 &  -2:+2  &  0.88 & 0.58 & 0.7  &  0.65 & 0.39 & 0.47 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod006 } & NER & CRF & lm+pos  &  7 &  -3:+3  &  0.91 & 0.56 & 0.7  &  0.7 & 0.38 & 0.45 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m007 } & ER & CRF & pos+lm  &  3 &  -1:+1  &  0.82 & 0.59 & 0.69  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod010 } & NER & CRF & ort+ort  &  30 &  -2:+2  &  0.9 & 0.55 & 0.69  &  0.67 & 0.38 & 0.45 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod017 } & NER & CRF & +  &  7 &  -3:+3  &  0.9 & 0.56 & 0.69  &  0.66 & 0.39 & 0.47 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod011 } & NER & CRF & ort+ort  &  42 &  -3:+3  &  0.89 & 0.56 & 0.68  &  0.65 & 0.39 & 0.45 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod008 } & ER & SVM & pos+lm  &  5 &  -2:+2  &  0.86 & 0.54 & 0.66  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod045 } & ER & SVM & pos,lo,chg,ort+pos,lo,chg,ort  &  39 &  -1:+1  &  0.94 & 0.5 & 0.66  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m000 } & ER & CRF & pos+pos  &  3 &  -1:+1  &  0.83 & 0.55 & 0.66  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod009 } & NER & CRF & ort+ort  &  18 &  -1:+1  &  0.89 & 0.53 & 0.66  &  0.69 & 0.36 & 0.43 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m006 } & ER & CRF & lm+pos  &  7 &  -3:+3  &  0.88 & 0.51 & 0.65  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m107 } & NER & CRF & pos+lm  &  3 &  -1:+1  &  0.86 & 0.52 & 0.65  &  0.9 & 0.43 & 0.53 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod033 } & NER & CRF & ch+ch  &  3 &  -1:+1  &  0.91 & 0.5 & 0.65  &  0.69 & 0.34 & 0.41 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod035 } & NER & CRF & ch+ch  &  7 &  -3:+3  &  0.91 & 0.51 & 0.65  &  0.69 & 0.34 & 0.41 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod036 } & NER & CRF & chg+chg  &  3 &  -1:+1  &  0.91 & 0.5 & 0.65  &  0.69 & 0.34 & 0.41 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m100 } & NER & CRF & pos+pos  &  3 &  -1:+1  &  0.88 & 0.5 & 0.64  &  0.93 & 0.38 & 0.47 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod037 } & NER & CRF & chg+chg  &  5 &  -2:+2  &  0.9 & 0.5 & 0.64  &  0.69 & 0.34 & 0.4 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod038 } & NER & CRF & chg+chg  &  7 &  -3:+3  &  0.91 & 0.5 & 0.64  &  0.69 & 0.34 & 0.41 \\
+ 	
+
+ 
+ 	
+ 	\small{ crf01m106 } & NER & CRF & lm+pos  &  7 &  -3:+3  &  0.88 & 0.49 & 0.63  &  0.94 & 0.37 & 0.46 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod034 } & NER & CRF & ch+ch  &  5 &  -2:+2  &  0.89 & 0.49 & 0.63  &  0.68 & 0.33 & 0.4 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod026 } & ER & SVM & lm,pos,ort+pos,ort  &  28 &  -3:+3  &  0.96 & 0.43 & 0.59  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod057 } & ER & SVM & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  40 &  -1:+1  &  0.98 & 0.35 & 0.51  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod060 } & ER & SVM & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  40 &  -1:+1  &  0.98 & 0.35 & 0.51  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bmmod001 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bmmod002 } & NER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod000 } & NER & SVM & pos+pos  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod001 } & NER & SVM & pos+pos  &  5 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod002 } & NER & SVM & pos+pos  &  7 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod003 } & NER & SVM & lm+lm  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod004 } & NER & SVM & lm+lm  &  5 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod005 } & NER & SVM & lm+lm  &  7 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod006 } & NER & SVM & lm+pos  &  7 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod007 } & NER & SVM & pos+lm  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod008 } & NER & SVM & pos+lm  &  5 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod009 } & NER & SVM & ort+ort  &  18 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod010 } & NER & SVM & ort+ort  &  30 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod011 } & NER & SVM & ort+ort  &  42 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod012 } & NER & SVM & ort+ort  &  30 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod013 } & NER & SVM & ort+ort  &  50 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod014 } & NER & SVM & ort+ort  &  70 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod015 } & NER & SVM & lm,ort+lm,ort  &  33 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod016 } & NER & SVM & pos,ort+pos,ort  &  55 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod017 } & NER & SVM & ort+ort  &  7 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod020 } & NER & SVM & lm,ort+lm,ort  &  77 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod019 } & NER & SVM & lm,ort+lm,ort  &  55 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod021 } & NER & SVM & lm,pos,ort+pos,ort  &  34 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod022 } & NER & SVM & lm,pos,ort+pos,ort  &  56 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod023 } & NER & SVM & lm,pos,ort+pos,ort  &  78 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod024 } & NER & SVM & lm,pos,ort+pos  &  14 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod025 } & NER & SVM & lm,pos,ort+pos  &  16 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod026 } & NER & SVM & lm,pos,ort+pos,ort  &  28 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod027 } & NER & SVM & lm,pos,ort+lm,ort  &  34 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod028 } & NER & SVM & lm,pos,ort+lm,ort  &  56 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod029 } & NER & SVM & lm,pos,ort+lm,ort  &  78 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod030 } & NER & SVM & pos,chg+pos,chg  &  6 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod031 } & NER & SVM & pos,chg+pos,chg  &  10 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod032 } & NER & SVM & pos,chg+pos,chg  &  14 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod033 } & NER & SVM & ch+ch  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod034 } & NER & SVM & ch+ch  &  5 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod035 } & NER & SVM & ch+ch  &  7 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod036 } & NER & SVM & chg+chg  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod037 } & NER & SVM & chg+chg  &  5 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod038 } & NER & SVM & chg+chg  &  7 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod039 } & NER & SVM & pos,chg,ort+pos,chg,ort  &  36 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod040 } & NER & SVM & pos,chg,ort+pos,chg,ort  &  60 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod041 } & NER & SVM & pos,chg,ort+pos,chg,ort  &  84 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod042 } & NER & SVM & pos,ch,ort+pos,ch,ort  &  36 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod043 } & NER & SVM & pos,ch,ort+pos,ch,ort  &  60 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod044 } & NER & SVM & pos,ch,ort+pos,ch,ort  &  84 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod045 } & NER & SVM & pos,lo,chg,ort+pos,lo,chg,ort  &  39 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod046 } & NER & SVM & pos,lo,chg,ort+pos,lo,chg,ort  &  65 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod047 } & NER & SVM & pos,lo,chg,ort+pos,lo,chg,ort  &  91 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod048 } & NER & SVM & pos,lo,ch,ort+pos,lo,ch,ort  &  39 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod049 } & NER & SVM & pos,lo,ch,ort+pos,lo,ch,ort  &  65 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod050 } & NER & SVM & pos,lo,ch,ort+pos,lo,ch,ort  &  91 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod051 } & NER & SVM & lm,lo,chg,ort+lm,lo,chg,ort  &  39 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod052 } & NER & SVM & lm,lo,chg,ort+lm,lo,chg,ort  &  65 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod053 } & NER & SVM & lm,lo,chg,ort+lm,lo,chg,ort  &  91 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod054 } & NER & SVM & lm,lo,ch,ort+lm,lo,ch,ort  &  39 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod055 } & NER & SVM & lm,lo,ch,ort+lm,lo,ch,ort  &  65 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod056 } & NER & SVM & lm,lo,ch,ort+lm,lo,ch,ort  &  91 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod057 } & NER & SVM & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  40 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod058 } & NER & SVM & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  66 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod059 } & NER & SVM & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  92 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod060 } & NER & SVM & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  40 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod061 } & NER & SVM & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  66 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combNER0517mod062 } & NER & SVM & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  92 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 	
+
+ 
+ 	
+ 	\small{ debug0517mod001 } & NER & SVM & ort,ch,chg+ort,chg  &  86 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ debug0517mod002 } & NER & SVM & ort,ch,chg+ort,chg  &  45 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ debug0517mod003ref } & ER & SVM & ort+ort  &  50 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm3mod002 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ debug0517batcholdmodelsmod001 } & ER & SVM & ort+ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ debug0517batcholdmodelsmod002 } & ER & SVM & ort+ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ debug0517batcholdmodelsmod003 } & ER & SVM & ort+ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ debug0517batcholdmodelsmod004 } & ER & SVM & ort+ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517dum000 } & ER & SVM & pos+pos  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517dum001 } & ER & SVM & pos+pos  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517dum002 } & ER & SVM & pos+pos  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517dum003 } & ER & SVM & pos+pos  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517dum004 } & ER & SVM & pos+pos  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517dum005 } & ER & SVM & pos+pos  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517dum006 } & ER & SVM & pos+pos  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517dum007 } & ER & SVM & pos+pos  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517dum008 } & ER & SVM & pos+pos  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517dum009 } & ER & SVM & pos+pos  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517dum010 } & ER & SVM & pos+pos  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517dum011 } & ER & SVM & pos+pos  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517dum012 } & ER & SVM & pos+pos  &  3 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod004 } & ER & SVM & lm+lm  &  5 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod005 } & ER & SVM & lm+lm  &  7 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod012 } & ER & SVM & ort+ort  &  30 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod013 } & ER & SVM & ort+ort  &  50 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod014 } & ER & SVM & ort+ort  &  70 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod015 } & ER & SVM & lm,ort+lm,ort  &  33 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod016 } & ER & SVM & pos,ort+pos,ort  &  55 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod019 } & ER & SVM & lm,ort+lm,ort  &  55 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod020 } & ER & SVM & lm,ort+lm,ort  &  77 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod021 } & ER & SVM & lm,pos,ort+pos,ort  &  34 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod022 } & ER & SVM & lm,pos,ort+pos,ort  &  56 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod023 } & ER & SVM & lm,pos,ort+pos,ort  &  78 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod027 } & ER & SVM & lm,pos,ort+lm,ort  &  34 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod028 } & ER & SVM & lm,pos,ort+lm,ort  &  56 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod029 } & ER & SVM & lm,pos,ort+lm,ort  &  78 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod039 } & ER & SVM & pos,chg,ort+pos,chg,ort  &  36 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod040 } & ER & SVM & pos,chg,ort+pos,chg,ort  &  60 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod041 } & ER & SVM & pos,chg,ort+pos,chg,ort  &  84 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod042 } & ER & SVM & pos,ch,ort+pos,ch,ort  &  36 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod043 } & ER & SVM & pos,ch,ort+pos,ch,ort  &  60 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod044 } & ER & SVM & pos,ch,ort+pos,ch,ort  &  84 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod046 } & ER & SVM & pos,lo,chg,ort+pos,lo,chg,ort  &  65 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod047 } & ER & SVM & pos,lo,chg,ort+pos,lo,chg,ort  &  91 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod048 } & ER & SVM & pos,lo,ch,ort+pos,lo,ch,ort  &  39 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod049 } & ER & SVM & pos,lo,ch,ort+pos,lo,ch,ort  &  65 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod050 } & ER & SVM & pos,lo,ch,ort+pos,lo,ch,ort  &  91 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod051 } & ER & SVM & lm,lo,chg,ort+lm,lo,chg,ort  &  39 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod052 } & ER & SVM & lm,lo,chg,ort+lm,lo,chg,ort  &  65 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod053 } & ER & SVM & lm,lo,chg,ort+lm,lo,chg,ort  &  91 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod054 } & ER & SVM & lm,lo,ch,ort+lm,lo,ch,ort  &  39 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod055 } & ER & SVM & lm,lo,ch,ort+lm,lo,ch,ort  &  65 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod056 } & ER & SVM & lm,lo,ch,ort+lm,lo,ch,ort  &  91 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod058 } & ER & SVM & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  66 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod059 } & ER & SVM & lm,pos,lo,chg,ort+pos,lo,chg,ort  &  92 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod061 } & ER & SVM & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  66 &  -2:+2  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ combER0517mod062 } & ER & SVM & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  92 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod001 } & ER & SVM & ort,ch,lo+pos,ort  &  13 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod002 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod003 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod004 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod005 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm0517mod001 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm0517mod002 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm0517mod003 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod001 } & ER & SVM & ort,ch,lo+pos,ort  &  13 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod002 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod003 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod004 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod005 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod045 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod051 } & ER & SVM & ort,ch,lo+pos,ort  &  13 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod052 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod053 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod054 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod055 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod001 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod002 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod003 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod004 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod005 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm0517mod002 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm0517mod003 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bmNERmod001 } & NER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bmNERmod002 } & NER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bmNERmod003 } & NER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ d0517outputformatm001 } & ER & SVM & ort,ch,chg+ort,chg  &  50 &  -3:  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bmmod002 } & NER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmERaCS00m061 } & ER & SVM & lm,pos,lo,ch,ort+pos,lo,ch,ort  &  40 &  -1:+1  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ d20tMXmNWEaCRFmod047 } & NER & CRF & pos,lo,chg,ort+pos,lo,chg,ort  &  91 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 	
+
+ 
+ 	
+ 	\small{ bm3mod000 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm3mod001 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm3mod002 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod001 } & ER & SVM & ort,ch,lo+pos,ort  &  13 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod002 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm2debugmod003 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm0517mod001 } & NER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm0517mod002 } & NER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ bm0517mod003 } & ER & SVM & ort+lm,pos,ort  &  51 &  -3:+3  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ \hline
+\end{tabular}
+\end{center}
+
+\end{landscape}
+
+
+
+\end{document}

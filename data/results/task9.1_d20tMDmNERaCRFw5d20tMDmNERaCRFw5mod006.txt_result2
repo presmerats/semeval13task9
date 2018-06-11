@@ -1,0 +1,23 @@
+accuracy: 0.4483695652173913
+features:  current: 
+[ lemma, ]
+ before1: 
+[ pos, ]
+ after1: 
+[ pos, ]
+ before2: 
+[ pos, ]
+ after2: 
+[ pos, ]
+ before3: 
+[ pos, ]
+ after3: 
+[ pos, ]
+ before4: 
+[ pos, ]
+ after4: 
+[ pos, ]
+ before5: 
+[ pos, ]
+ after5: 
+[ pos, ]

@@ -1,0 +1,41 @@
+SCORES FOR the file: task9.1_ddi007ddi007m45.txt
+Gold Dataset: /MedLine
+
+Partial Evaluation: only detection of DDI (regadless to the type)
+tp	fp	fn	total	prec	recall	F1
+23	32	72	95	0,4182	0,2421	0,3067
+
+
+Detection and Classification of DDI
+tp	fp	fn	total	prec	recall	F1
+16	39	79	95	0,2909	0,1684	0,2133
+
+
+________________________________________________________________________
+
+SCORES FOR DDI TYPE
+Scores for ddi with type mechanism
+tp	fp	fn	total	prec	recall	F1
+5	13	19	24	0,2778	0,2083	0,2381
+
+
+Scores for ddi with type effect
+tp	fp	fn	total	prec	recall	F1
+10	26	52	62	0,2778	0,1613	0,2041
+
+
+Scores for ddi with type advise
+tp	fp	fn	total	prec	recall	F1
+1	0	6	7	1	0,1429	0,25
+
+
+Scores for ddi with type int
+tp	fp	fn	total	prec	recall	F1
+0	0	2	2	0	0	0
+
+
+MACRO-AVERAGE MEASURES:
+	P	R	F1
+	0,3889	0,1281	0,1927
+________________________________________________________________________
+

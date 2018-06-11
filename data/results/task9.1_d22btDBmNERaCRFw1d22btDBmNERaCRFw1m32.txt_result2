@@ -1,0 +1,23 @@
+accuracy: 0.8508474576271187
+features:  current: 
+[ pos, lookup, wordStructure, ]
+ before1: 
+[ prefix5, suffix5, wordStructure, ]
+ after1: 
+[ prefix5, suffix5, wordStructure, ]
+ before2: 
+[ ]
+ after2: 
+[ ]
+ before3: 
+[ ]
+ after3: 
+[ ]
+ before4: 
+[ ]
+ after4: 
+[ ]
+ before5: 
+[ ]
+ after5: 
+[ ]

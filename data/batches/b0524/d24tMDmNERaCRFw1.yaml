@@ -1,0 +1,92 @@
+filepath: ../data/batches/b0524/d24tMDmNERaCRFw1.yaml
+models:
+  m10:
+    algorithm: crf
+    fafter1: [pos, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22tDBmNERaCRFw120180522142040:
+        accuracy_manual: 0.8779661016949153
+        algorithm: CRFtrainer
+        end: 1526999148.1951036
+        modelfile: ../data/models/svm-pipeline_20180522142536.pkl
+        resultsFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m10.txt_result
+        scores:
+          brand: {F1: '0.81', cor: '38', inc: '0', mis: '15', par: '0', prec: '0.93',
+            recall: '0.72', spu: '3', total: '53'}
+          drug: {F1: '0.88', cor: '151', inc: '6', mis: '23', par: '0', prec: '0.92',
+            recall: '0.84', spu: '8', total: '180'}
+          drug_n: {F1: '0.29', cor: '1', inc: '0', mis: '5', par: '0', prec: '1',
+            recall: '0.17', spu: '0', total: '6'}
+          exact: {F1: '0.87', cor: '257', inc: '13', mis: '34', par: '0', prec: '0.9',
+            recall: '0.85', spu: '17', total: '304'}
+          group: {F1: '0.87', cor: '58', inc: '3', mis: '4', par: '0', prec: '0.85',
+            recall: '0.89', spu: '7', total: '65'}
+          macro: {F1: '0.71', P: '0.92', R: '0.65'}
+          partial: {F1: '0.88', cor: '257', inc: '0', mis: '34', par: '13', prec: '0.9',
+            recall: '0.87', spu: '17', total: '304'}
+          strict: {F1: '0.84', cor: '248', inc: '22', mis: '34', par: '0', prec: '0.86',
+            recall: '0.82', spu: '17', total: '304'}
+          type: {F1: '0.87', cor: '257', inc: '13', mis: '34', par: '0', prec: '0.9',
+            recall: '0.85', spu: '17', total: '304'}
+        scoresFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m10_scores.log
+        start: 1526998840.2493358
+        status: done
+        total_time: 307.9457678794861
+      d24tMDmNERaCRFw120180524111002:
+        accuracy_manual: 0.6385869565217391
+        algorithm: CRFtrainer
+        end: 1527160382.4625258
+        modelfile: ../data/models/svm-pipeline_20180524111247.pkl
+        resultsFile: ../data/results//task9.1_d24tMDmNERaCRFw1d24tMDmNERaCRFw1m10.txt_result
+        scores:
+          brand: {F1: '0.8', cor: '4', inc: '0', mis: '2', par: '0', prec: '1', recall: '0.67',
+            spu: '0', total: '6'}
+          drug: {F1: '0.75', cor: '116', inc: '3', mis: '52', par: '0', prec: '0.85',
+            recall: '0.68', spu: '18', total: '171'}
+          drug_n: {F1: '0.07', cor: '4', inc: '0', mis: '111', par: '0', prec: '1',
+            recall: '0.03', spu: '0', total: '115'}
+          exact: {F1: '0.71', cor: '232', inc: '20', mis: '130', par: '0', prec: '0.85',
+            recall: '0.61', spu: '22', total: '382'}
+          group: {F1: '0.81', cor: '66', inc: '5', mis: '19', par: '0', prec: '0.92',
+            recall: '0.73', spu: '1', total: '90'}
+          macro: {F1: '0.61', P: '0.94', R: '0.53'}
+          partial: {F1: '0.72', cor: '232', inc: '0', mis: '130', par: '20', prec: '0.85',
+            recall: '0.63', spu: '22', total: '382'}
+          strict: {F1: '0.58', cor: '190', inc: '62', mis: '130', par: '0', prec: '0.69',
+            recall: '0.5', spu: '22', total: '382'}
+          type: {F1: '0.6', cor: '196', inc: '56', mis: '130', par: '0', prec: '0.72',
+            recall: '0.51', spu: '22', total: '382'}
+        scoresFile: ../data/results//task9.1_d24tMDmNERaCRFw1d24tMDmNERaCRFw1m10_scores.log
+        start: 1527160202.5066392
+        status: done
+        total_time: 179.95588660240173
+    resultsFile: null
+    scoresFile: null
+    status: pending
+numcores: 4
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: d24tMDmNERaCRFw1
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/MedLine
+total_time: 1417.581583738327
+trainingFolder: ../data/LaboCase/Train

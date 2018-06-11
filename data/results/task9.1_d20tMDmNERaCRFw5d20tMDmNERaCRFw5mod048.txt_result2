@@ -1,0 +1,23 @@
+accuracy: 0.6657608695652174
+features:  current: 
+[ pos, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ before1: 
+[ pos, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ after1: 
+[ pos, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ before2: 
+[ wordStructure, ]
+ after2: 
+[ wordStructure, ]
+ before3: 
+[ wordStructure, ]
+ after3: 
+[ wordStructure, ]
+ before4: 
+[ wordStructure, ]
+ after4: 
+[ wordStructure, ]
+ before5: 
+[ wordStructure, ]
+ after5: 
+[ wordStructure, ]

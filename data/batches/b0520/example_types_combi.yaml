@@ -1,0 +1,69 @@
+filepath: ../data/batches/b0520/example_types_combi.yaml
+models:
+  m0:
+    algorithm: CRF
+    fafter1: [chunk, lookup]
+    fafter2: [chunk, lookup]
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [chunk, lookup]
+    fbefore2: [chunk, lookup]
+    fbefore3: [chunk, lookup]
+    fbefore4: [chunk, lookup]
+    fbefore5: [chunk, lookup]
+    fcurrent: [lemma, pos]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m1:
+    algorithm: CRF
+    fafter1: [chunk, wordStructure]
+    fafter2: [chunk, wordStructure]
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [chunk, wordStructure]
+    fbefore2: [chunk, wordStructure]
+    fbefore3: [chunk, wordStructure]
+    fbefore4: [chunk, wordStructure]
+    fbefore5: [chunk, wordStructure]
+    fcurrent: [lemma, pos]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m2:
+    algorithm: CRF
+    fafter1: [lookup, wordStructure]
+    fafter2: [lookup, wordStructure]
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [lookup, wordStructure]
+    fbefore2: [lookup, wordStructure]
+    fbefore3: [lookup, wordStructure]
+    fbefore4: [lookup, wordStructure]
+    fbefore5: [lookup, wordStructure]
+    fcurrent: [lemma, pos]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+numcores: 4
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: tMDmNERaCRF
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/MedLine
+total_time: 0
+trainingFolder: ../data/LaboCase/Train

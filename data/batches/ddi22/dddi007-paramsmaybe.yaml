@@ -1,0 +1,928 @@
+filepath: ../data/batches/ddi22/ddi007.yaml
+models:
+  m2:
+    algorithm: lsvm
+    wordfeatures: [ word, lemma, pos, chunk, chunkGroup, lookup , ortho]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup,
+      isTitleCase,
+      isUpperCase,
+      isLowerCase,
+      hasDigits,
+      hasStrangeChars,
+      moreThan10chars,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      lenprefix,
+      lensuffix,
+      lenword,
+      wordStructure,
+      ]
+    topcountfeatures: [word, trigram, lemma, pos]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m3:
+    algorithm: lsvm
+    wordfeatures: [ word, lemma, pos, chunk, chunkGroup, lookup , ortho]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup,
+      isTitleCase,
+      isUpperCase,
+      isLowerCase,
+      hasDigits,
+      hasStrangeChars,
+      moreThan10chars,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      lenprefix,
+      lensuffix,
+      lenword,
+      wordStructure,
+      ]
+    topcountfeatures: [word, trigram, lemma, pos]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m4notop:
+    algorithm: lsvm
+    wordfeatures: [ word, lemma, pos, chunk, chunkGroup, lookup , ortho]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup,
+      isTitleCase,
+      isUpperCase,
+      isLowerCase,
+      hasDigits,
+      hasStrangeChars,
+      moreThan10chars,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      lenprefix,
+      lensuffix,
+      lenword,
+      wordStructure,
+      ]
+    topcountfeatures: []
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m5notop:
+    algorithm: lsvm
+    wordfeatures: [ word, lemma, pos, chunk, chunkGroup, lookup , ortho]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup,
+      isTitleCase,
+      isUpperCase,
+      isLowerCase,
+      hasDigits,
+      hasStrangeChars,
+      moreThan10chars,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      lenprefix,
+      lensuffix,
+      lenword,
+      wordStructure,
+      ]
+    topcountfeatures: []
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m6:
+    algorithm: lsvm
+    wordfeatures: [ word, lemma, pos, chunk, chunkGroup, lookup , ortho]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup,
+      isTitleCase,
+      isUpperCase,
+      isLowerCase,
+      hasDigits,
+      hasStrangeChars,
+      moreThan10chars,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      lenprefix,
+      lensuffix,
+      lenword,
+      wordStructure,
+      ]
+    topcountfeatures: [word]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m7:
+    algorithm: lsvm
+    wordfeatures: [ word, lemma, pos, chunk, chunkGroup, lookup , ortho]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup,
+      isTitleCase,
+      isUpperCase,
+      isLowerCase,
+      hasDigits,
+      hasStrangeChars,
+      moreThan10chars,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      lenprefix,
+      lensuffix,
+      lenword,
+      wordStructure,
+      ]
+    topcountfeatures: [word]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m8:
+    algorithm: lsvm
+    wordfeatures: [ word, lemma, pos, chunk, chunkGroup, lookup , ortho]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup,
+      isTitleCase,
+      isUpperCase,
+      isLowerCase,
+      hasDigits,
+      hasStrangeChars,
+      moreThan10chars,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      lenprefix,
+      lensuffix,
+      lenword,
+      wordStructure,
+      ]
+    topcountfeatures: [trigram]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m9:
+    algorithm: lsvm
+    wordfeatures: [ word, lemma, pos, chunk, chunkGroup, lookup , ortho]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup,
+      isTitleCase,
+      isUpperCase,
+      isLowerCase,
+      hasDigits,
+      hasStrangeChars,
+      moreThan10chars,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      lenprefix,
+      lensuffix,
+      lenword,
+      wordStructure,
+      ]
+    topcountfeatures: [trigram]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m10:
+    algorithm: lsvm
+    wordfeatures: [ word, lemma, pos, chunk, chunkGroup, lookup , ortho]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup,
+      isTitleCase,
+      isUpperCase,
+      isLowerCase,
+      hasDigits,
+      hasStrangeChars,
+      moreThan10chars,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      lenprefix,
+      lensuffix,
+      lenword,
+      wordStructure,
+      ]
+    topcountfeatures: [lemma]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m11:
+    algorithm: lsvm
+    wordfeatures: [ word, lemma, pos, chunk, chunkGroup, lookup , ortho]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup,
+      isTitleCase,
+      isUpperCase,
+      isLowerCase,
+      hasDigits,
+      hasStrangeChars,
+      moreThan10chars,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      lenprefix,
+      lensuffix,
+      lenword,
+      wordStructure,
+      ]
+    topcountfeatures: [lemma]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m22:
+    algorithm: lsvm
+    wordfeatures: [ word,  pos]
+    windowfeatures: [word,  pos,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: [word, trigram, lemma, pos]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m23:
+    algorithm: lsvm
+    wordfeatures: [ word,  pos]
+    windowfeatures: [word,  pos,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: [word, trigram, lemma, pos]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m24notop:
+    algorithm: lsvm
+    wordfeatures: [ word,  pos]
+    windowfeatures: [word,  pos,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: []
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m25notop:
+    algorithm: lsvm
+    wordfeatures: [ word,  pos]
+    windowfeatures: [word,  pos,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: []
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m26:
+    algorithm: lsvm
+    wordfeatures: [ word,  pos]
+    windowfeatures: [word,  pos,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: [word]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m27:
+    algorithm: lsvm
+    wordfeatures: [ word,  pos]
+    windowfeatures: [word,  pos,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: [word]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m28:
+    algorithm: lsvm
+    wordfeatures: [ word,  pos]
+    windowfeatures: [word,  pos,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: [trigram]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m29:
+    algorithm: lsvm
+    wordfeatures: [ word,  pos]
+    windowfeatures: [word,  pos,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: [trigram]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m30:
+    algorithm: lsvm
+    wordfeatures: [ word,  pos]
+    windowfeatures: [word,  pos,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: [lemma]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m31:
+    algorithm: lsvm
+    wordfeatures: [ word,  pos]
+    windowfeatures: [word,  pos,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: [lemma]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m42:
+    algorithm: lsvm
+    wordfeatures: [ word,  pos]
+    windowfeatures: [word,  pos,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m43:
+    algorithm: lsvm
+    wordfeatures: [ word,  pos]
+    windowfeatures: [lemma, 
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m44:
+    algorithm: lsvm
+    wordfeatures: [  pos]
+    windowfeatures: [word, 
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m45:
+    algorithm: lsvm
+    wordfeatures: [ ortho]
+    windowfeatures: [ 
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m46:
+    algorithm: lsvm
+    wordfeatures: [ word, pos]
+    windowfeatures: [word, 
+      pos
+      ]
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m47:
+    algorithm: lsvm
+    wordfeatures: [ word, pos]
+    windowfeatures: [word, 
+      pos, chunkGroup
+      ]
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m48:
+    algorithm: lsvm
+    wordfeatures: [ lemma, pos]
+    windowfeatures: [lemma, 
+      chunkGroup, wordStructure
+      ]
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m52:
+    algorithm: lsvm
+    wordfeatures: [ word,  pos]
+    windowfeatures: [word,  pos,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m53:
+    algorithm: lsvm
+    wordfeatures: [ word,  pos]
+    windowfeatures: [lemma, 
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m54:
+    algorithm: lsvm
+    wordfeatures: [  pos]
+    windowfeatures: [word, 
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m55:
+    algorithm: lsvm
+    wordfeatures: [ ortho]
+    windowfeatures: [ 
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m56:
+    algorithm: lsvm
+    wordfeatures: [ word, pos]
+    windowfeatures: [word, 
+      pos
+      ]
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m57:
+    algorithm: lsvm
+    wordfeatures: [ word, pos]
+    windowfeatures: [word, 
+      pos, chunkGroup
+      ]
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m58:
+    algorithm: lsvm
+    wordfeatures: [ lemma, pos]
+    windowfeatures: [lemma, 
+      chunkGroup, wordStructure
+      ]
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: 1000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m65:
+    algorithm: lsvm
+    wordfeatures: [ ortho]
+    windowfeatures: [ 
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m66:
+    algorithm: lsvm
+    wordfeatures: [ word, pos]
+    windowfeatures: [word, 
+      pos
+      ]
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m70:
+    algorithm: lsvm
+    wordfeatures: [ word, lemma, pos, chunk, chunkGroup, lookup , ortho]
+    windowfeatures: [word, lemma, pos, chunk, chunkGroup, lookup,
+      isTitleCase,
+      isUpperCase,
+      isLowerCase,
+      hasDigits,
+      hasStrangeChars,
+      moreThan10chars,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      lenprefix,
+      lensuffix,
+      lenword,
+      wordStructure,
+      ]
+    topcountfeatures: [word, trigram, lemma, pos]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count, negationLemma]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+  m71:
+    algorithm: lsvm
+    wordfeatures: [ word, pos,]
+    windowfeatures: [word, pos,
+      prefix,
+      prefix3,
+      prefix4,
+      prefix5,
+      suffix,
+      suffix3,
+      suffix4,
+      suffix5,
+      wordStructure,
+      ]
+    topcountfeatures: [word, trigram, ]
+    sentencefeatures: [vb_count,cc_count,md_count,dt_count]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    topcount: 30
+
+numcores: 2
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: BDDI007
+testFeatures: ../data/features/featuresBDDItest_DrugBank.json
+testFolder: ../data/LaboCase/Test/Test for DDI Extraction task/DrugBank
+total_time: 6824.0660536289215
+trainingFolder: ../data/features/featuresBDDItrain_DrugBank.json

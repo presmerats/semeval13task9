@@ -1,0 +1,23 @@
+accuracy: 0.847457627118644
+features:  current: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ before1: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ after1: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ before2: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ after2: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ before3: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ after3: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ before4: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ after4: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ before5: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ after5: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]

@@ -1,0 +1,47 @@
+filepath: ../data/batches/d20tDBmERaCRFw5.yam5
+models:
+  mod000:
+    algorithm: svm
+    fafter1: [pos]
+    fafter2: [pos]
+    fafter3: [pos]
+    fafter4: [pos]
+    fafter5: [pos]
+    fbefore1: [pos]
+    fbefore2: [pos]
+    fbefore3: [pos]
+    fbefore4: [pos]
+    fbefore5: [pos]
+    fcurrent: [pos]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod009:
+    algorithm: svm
+    fafter1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+    fafter2: []
+    fafter3: []
+    fbefore1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars]
+    fbefore2: []
+    fbefore3: []
+    fcurrent: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+numcores: 4
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: d20tDBmERaCRFw5
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/MedLine
+total_time: 0
+trainingFolder: ../data/LaboCase/Train

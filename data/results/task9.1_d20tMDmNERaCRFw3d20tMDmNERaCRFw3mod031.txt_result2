@@ -1,0 +1,23 @@
+accuracy: 0.4320652173913043
+features:  current: 
+[ pos, chunkGroup, ]
+ before1: 
+[ pos, chunkGroup, ]
+ after1: 
+[ pos, chunkGroup, ]
+ before2: 
+[ pos, chunkGroup, ]
+ after2: 
+[ pos, chunkGroup, ]
+ before3: 
+[ ]
+ after3: 
+[ ]
+ before4: 
+[ ]
+ after4: 
+[ ]
+ before5: 
+[ ]
+ after5: 
+[ ]

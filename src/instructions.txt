@@ -1,0 +1,22 @@
+1. open W2vFeatures.py
+	uncomment line 32
+	comment out line 33
+	save :)
+2. run > "python play.py"
+	it will create new file under /data/word2vec/ named:PubMed-w2vcluster.pkl
+3. remove: rm ../data/word2vec/PubMed-w2v.pkl
+4. rename: mv ../data/word2vec/PubMed-w2vcluser.pkl ../data/word2vec/PubMed-w2v.pkl
+5. undo step 1:
+	open W2vFeatures.py
+	delete line 32
+	uncomment line 33
+	delete function: load_dic_workaround() \line 60
+	save :)
+6. open FeatureExtraction.py
+	uncomment line 52 (#self.wordembedding = W2VFeatures())
+	choose which of the word embedding features you wanna add in lines 163-165
+	save :)
+7. delete this file
+8. commit and push
+
+

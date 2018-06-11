@@ -1,0 +1,97 @@
+filepath: ../data/batches/debug_batch2.yaml
+models:
+  mod001:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: null
+    limitTraining: 300
+    modelfile: ../data/models/svm-pipeline_20180517205457.pkl
+    modeltype: ER
+    status: done
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+  mod002:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 50
+    limitTraining: 400
+    modelfile: ../data/models/svm-pipeline_20180517205526.pkl
+    modeltype: ER
+    status: done
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+  mod003:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 50
+    limitTraining: 10
+    modelfile: ../data/models/svm-pipeline_20180517205541.pkl
+    modeltype: ER
+    status: done
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+  mod004:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: null
+    limitTraining: 20
+    modelfile: ../data/models/svm-pipeline_20180517205556.pkl
+    modeltype: ER
+    status: done
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+  mod005:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 50
+    limitTraining: 50
+    modelfile: ../data/models/svm-pipeline_20180517205613.pkl
+    modeltype: ER
+    status: done
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: bm2debug
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/DrugBank
+trainingFolder: ../data/LaboCase/Train

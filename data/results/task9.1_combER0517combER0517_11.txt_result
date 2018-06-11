@@ -1,0 +1,18 @@
+accuracy: 0.7072368421052632
+precision: 0.79
+recall: 0.71
+f1: 0.75
+features:  word: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, ]
+ before1: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, ]
+ after1: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, ]
+ before2: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, ]
+ after2: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, ]
+ before3: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, ]
+ after3: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, ]

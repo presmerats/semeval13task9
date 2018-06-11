@@ -1,0 +1,29 @@
+filepath: ../data/batches/b0520/example.yaml
+models:
+  m000:
+    algorithm: CRF
+    fafter1: [pos, lookup, wordStructure]
+    fafter2: [pos, lookup, wordStructure]
+    fafter3: [pos, lookup, wordStructure]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, lookup, wordStructure]
+    fbefore2: [pos, lookup, wordStructure]
+    fbefore3: [pos, lookup, wordStructure]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [lemma, pos, chunkGroup, lookup, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+numcores: 4
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: tMDmNERaCRF
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/MedLine
+total_time: 0
+trainingFolder: ../data/LaboCase/Train

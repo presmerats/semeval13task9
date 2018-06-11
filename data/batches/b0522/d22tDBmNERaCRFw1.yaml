@@ -1,0 +1,590 @@
+filepath: ../data/batches/b0522/d22tDBmNERaCRFw1.yaml
+models:
+  m1:
+    algorithm: crf
+    fafter1: [lemma, lookup, chunkGroup, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [lemma, lookup, chunkGroup, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [lemma, lookup, chunkGroup, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22tDBmNERaCRFw120180522142040:
+        accuracy_manual: 0.8610169491525423
+        algorithm: CRFtrainer
+        end: 1526998989.6046033
+        modelfile: ../data/models/svm-pipeline_20180522142302.pkl
+        resultsFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m1.txt_result
+        scores:
+          brand: {F1: '0.77', cor: '35', inc: '0', mis: '18', par: '0', prec: '0.92',
+            recall: '0.66', spu: '3', total: '53'}
+          drug: {F1: '0.92', cor: '161', inc: '4', mis: '15', par: '0', prec: '0.95',
+            recall: '0.89', spu: '5', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.87', cor: '253', inc: '11', mis: '40', par: '0', prec: '0.91',
+            recall: '0.83', spu: '15', total: '304'}
+          group: {F1: '0.81', cor: '52', inc: '5', mis: '8', par: '0', prec: '0.81',
+            recall: '0.8', spu: '7', total: '65'}
+          macro: {F1: '0.62', P: '0.67', R: '0.59'}
+          partial: {F1: '0.88', cor: '253', inc: '0', mis: '40', par: '11', prec: '0.91',
+            recall: '0.85', spu: '15', total: '304'}
+          strict: {F1: '0.85', cor: '248', inc: '16', mis: '40', par: '0', prec: '0.89',
+            recall: '0.82', spu: '15', total: '304'}
+          type: {F1: '0.88', cor: '257', inc: '7', mis: '40', par: '0', prec: '0.92',
+            recall: '0.85', spu: '15', total: '304'}
+        scoresFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m1_scores.log
+        start: 1526998840.249282
+        status: done
+        total_time: 149.35532140731812
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m10:
+    algorithm: crf
+    fafter1: [pos, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22tDBmNERaCRFw120180522142040:
+        accuracy_manual: 0.8779661016949153
+        algorithm: CRFtrainer
+        end: 1526999148.1951036
+        modelfile: ../data/models/svm-pipeline_20180522142536.pkl
+        resultsFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m10.txt_result
+        scores:
+          brand: {F1: '0.81', cor: '38', inc: '0', mis: '15', par: '0', prec: '0.93',
+            recall: '0.72', spu: '3', total: '53'}
+          drug: {F1: '0.88', cor: '151', inc: '6', mis: '23', par: '0', prec: '0.92',
+            recall: '0.84', spu: '8', total: '180'}
+          drug_n: {F1: '0.29', cor: '1', inc: '0', mis: '5', par: '0', prec: '1',
+            recall: '0.17', spu: '0', total: '6'}
+          exact: {F1: '0.87', cor: '257', inc: '13', mis: '34', par: '0', prec: '0.9',
+            recall: '0.85', spu: '17', total: '304'}
+          group: {F1: '0.87', cor: '58', inc: '3', mis: '4', par: '0', prec: '0.85',
+            recall: '0.89', spu: '7', total: '65'}
+          macro: {F1: '0.71', P: '0.92', R: '0.65'}
+          partial: {F1: '0.88', cor: '257', inc: '0', mis: '34', par: '13', prec: '0.9',
+            recall: '0.87', spu: '17', total: '304'}
+          strict: {F1: '0.84', cor: '248', inc: '22', mis: '34', par: '0', prec: '0.86',
+            recall: '0.82', spu: '17', total: '304'}
+          type: {F1: '0.87', cor: '257', inc: '13', mis: '34', par: '0', prec: '0.9',
+            recall: '0.85', spu: '17', total: '304'}
+        scoresFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m10_scores.log
+        start: 1526998840.2493358
+        status: done
+        total_time: 307.9457678794861
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m11:
+    algorithm: crf
+    fafter1: [pos, wordStructure, word, lookup, chunkGroup]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, wordStructure, word, lookup, chunkGroup]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lemma, lookup, chunkGroup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22tDBmNERaCRFw120180522142040:
+        accuracy_manual: 0.8372881355932204
+        algorithm: CRFtrainer
+        end: 1526999082.1290162
+        modelfile: ../data/models/svm-pipeline_20180522142434.pkl
+        resultsFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m11.txt_result
+        scores:
+          brand: {F1: '0.73', cor: '32', inc: '0', mis: '21', par: '0', prec: '0.91',
+            recall: '0.6', spu: '3', total: '53'}
+          drug: {F1: '0.91', cor: '158', inc: '5', mis: '17', par: '0', prec: '0.93',
+            recall: '0.88', spu: '6', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.85', cor: '245', inc: '12', mis: '47', par: '0', prec: '0.9',
+            recall: '0.81', spu: '15', total: '304'}
+          group: {F1: '0.81', cor: '51', inc: '4', mis: '10', par: '0', prec: '0.84',
+            recall: '0.78', spu: '6', total: '65'}
+          macro: {F1: '0.61', P: '0.67', R: '0.57'}
+          partial: {F1: '0.86', cor: '245', inc: '0', mis: '47', par: '12', prec: '0.9',
+            recall: '0.83', spu: '15', total: '304'}
+          strict: {F1: '0.84', cor: '241', inc: '16', mis: '47', par: '0', prec: '0.89',
+            recall: '0.79', spu: '15', total: '304'}
+          type: {F1: '0.87', cor: '250', inc: '7', mis: '47', par: '0', prec: '0.92',
+            recall: '0.82', spu: '15', total: '304'}
+        scoresFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m11_scores.log
+        start: 1526998840.2495847
+        status: done
+        total_time: 241.87943148612976
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m2:
+    algorithm: crf
+    fafter1: [lemma, lookup, chunkGroup, wordStructure2]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [lemma, lookup, chunkGroup, wordStructure2]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [lemma, lookup, chunkGroup, wordStructure2]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22tDBmNERaCRFw120180522142040:
+        accuracy_manual: 0.8305084745762712
+        algorithm: CRFtrainer
+        end: 1526999066.0824761
+        modelfile: ../data/models/svm-pipeline_20180522142418.pkl
+        resultsFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m2.txt_result
+        scores:
+          brand: {F1: '0.65', cor: '28', inc: '2', mis: '23', par: '0', prec: '0.85',
+            recall: '0.53', spu: '3', total: '53'}
+          drug: {F1: '0.92', cor: '161', inc: '4', mis: '15', par: '0', prec: '0.95',
+            recall: '0.89', spu: '5', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.85', cor: '244', inc: '11', mis: '49', par: '0', prec: '0.9',
+            recall: '0.8', spu: '16', total: '304'}
+          group: {F1: '0.81', cor: '51', inc: '5', mis: '9', par: '0', prec: '0.84',
+            recall: '0.78', spu: '5', total: '65'}
+          macro: {F1: '0.6', P: '0.66', R: '0.55'}
+          partial: {F1: '0.86', cor: '244', inc: '0', mis: '49', par: '11', prec: '0.9',
+            recall: '0.82', spu: '16', total: '304'}
+          strict: {F1: '0.83', cor: '240', inc: '15', mis: '49', par: '0', prec: '0.89',
+            recall: '0.79', spu: '16', total: '304'}
+          type: {F1: '0.87', cor: '251', inc: '4', mis: '49', par: '0', prec: '0.93',
+            recall: '0.83', spu: '16', total: '304'}
+        scoresFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m2_scores.log
+        start: 1526998840.2497716
+        status: done
+        total_time: 225.83270454406738
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m3:
+    algorithm: crf
+    fafter1: [pos, wordStructure, lookup, chunkGroup]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, wordStructure, lookup, chunkGroup]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lemma, lookup, chunkGroup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22tDBmNERaCRFw120180522142040:
+        accuracy_manual: 0.8372881355932204
+        algorithm: CRFtrainer
+        end: 1526999082.126584
+        modelfile: ../data/models/svm-pipeline_20180522142430.pkl
+        resultsFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m3.txt_result
+        scores:
+          brand: {F1: '0.73', cor: '32', inc: '0', mis: '21', par: '0', prec: '0.91',
+            recall: '0.6', spu: '3', total: '53'}
+          drug: {F1: '0.91', cor: '158', inc: '5', mis: '17', par: '0', prec: '0.93',
+            recall: '0.88', spu: '6', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.85', cor: '245', inc: '12', mis: '47', par: '0', prec: '0.9',
+            recall: '0.81', spu: '15', total: '304'}
+          group: {F1: '0.81', cor: '51', inc: '4', mis: '10', par: '0', prec: '0.84',
+            recall: '0.78', spu: '6', total: '65'}
+          macro: {F1: '0.61', P: '0.67', R: '0.57'}
+          partial: {F1: '0.86', cor: '245', inc: '0', mis: '47', par: '12', prec: '0.9',
+            recall: '0.83', spu: '15', total: '304'}
+          strict: {F1: '0.84', cor: '241', inc: '16', mis: '47', par: '0', prec: '0.89',
+            recall: '0.79', spu: '15', total: '304'}
+          type: {F1: '0.87', cor: '250', inc: '7', mis: '47', par: '0', prec: '0.92',
+            recall: '0.82', spu: '15', total: '304'}
+        scoresFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m3_scores.log
+        start: 1526998840.2504113
+        status: done
+        total_time: 241.8761727809906
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m4:
+    algorithm: crf
+    fafter1: [lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22tDBmNERaCRFw120180522142040:
+        accuracy_manual: 0.888135593220339
+        algorithm: CRFtrainer
+        end: 1526999048.1088858
+        modelfile: ../data/models/svm-pipeline_20180522142400.pkl
+        resultsFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m4.txt_result
+        scores:
+          brand: {F1: '0.77', cor: '35', inc: '0', mis: '18', par: '0', prec: '0.92',
+            recall: '0.66', spu: '3', total: '53'}
+          drug: {F1: '0.92', cor: '161', inc: '4', mis: '15', par: '0', prec: '0.95',
+            recall: '0.89', spu: '5', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.88', cor: '260', inc: '10', mis: '34', par: '0', prec: '0.91',
+            recall: '0.86', spu: '15', total: '304'}
+          group: {F1: '0.88', cor: '59', inc: '3', mis: '3', par: '0', prec: '0.86',
+            recall: '0.91', spu: '7', total: '65'}
+          macro: {F1: '0.64', P: '0.68', R: '0.62'}
+          partial: {F1: '0.89', cor: '260', inc: '0', mis: '34', par: '10', prec: '0.91',
+            recall: '0.87', spu: '15', total: '304'}
+          strict: {F1: '0.87', cor: '255', inc: '15', mis: '34', par: '0', prec: '0.89',
+            recall: '0.84', spu: '15', total: '304'}
+          type: {F1: '0.89', cor: '262', inc: '8', mis: '34', par: '0', prec: '0.92',
+            recall: '0.86', spu: '15', total: '304'}
+        scoresFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m4_scores.log
+        start: 1526998840.2503557
+        status: done
+        total_time: 207.85853004455566
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m5:
+    algorithm: crf
+    fafter1: [pos, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22tDBmNERaCRFw120180522142040:
+        accuracy_manual: 0.8983050847457628
+        algorithm: CRFtrainer
+        end: 1526999204.67149
+        modelfile: ../data/models/svm-pipeline_20180522142637.pkl
+        resultsFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m5.txt_result
+        scores:
+          brand: {F1: '0.81', cor: '38', inc: '0', mis: '15', par: '0', prec: '0.93',
+            recall: '0.72', spu: '3', total: '53'}
+          drug: {F1: '0.92', cor: '162', inc: '4', mis: '14', par: '0', prec: '0.94',
+            recall: '0.9', spu: '6', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.89', cor: '263', inc: '10', mis: '31', par: '0', prec: '0.91',
+            recall: '0.87', spu: '17', total: '304'}
+          group: {F1: '0.87', cor: '58', inc: '3', mis: '4', par: '0', prec: '0.85',
+            recall: '0.89', spu: '7', total: '65'}
+          macro: {F1: '0.65', P: '0.68', R: '0.63'}
+          partial: {F1: '0.89', cor: '263', inc: '0', mis: '31', par: '10', prec: '0.91',
+            recall: '0.88', spu: '17', total: '304'}
+          strict: {F1: '0.87', cor: '258', inc: '15', mis: '31', par: '0', prec: '0.89',
+            recall: '0.85', spu: '17', total: '304'}
+          type: {F1: '0.89', cor: '265', inc: '8', mis: '31', par: '0', prec: '0.91',
+            recall: '0.87', spu: '17', total: '304'}
+        scoresFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m5_scores.log
+        start: 1526998990.3960671
+        status: done
+        total_time: 214.27542281150818
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m6:
+    algorithm: crf
+    fafter1: [pos, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase,
+      hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5,
+      suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22tDBmNERaCRFw120180522142040:
+        accuracy_manual: 0.8949152542372881
+        algorithm: CRFtrainer
+        end: 1526999287.3068104
+        modelfile: ../data/models/svm-pipeline_20180522142759.pkl
+        resultsFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m6.txt_result
+        scores:
+          brand: {F1: '0.79', cor: '37', inc: '0', mis: '16', par: '0', prec: '0.9',
+            recall: '0.7', spu: '4', total: '53'}
+          drug: {F1: '0.92', cor: '162', inc: '5', mis: '13', par: '0', prec: '0.94',
+            recall: '0.9', spu: '5', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.88', cor: '262', inc: '11', mis: '31', par: '0', prec: '0.9',
+            recall: '0.86', spu: '17', total: '304'}
+          group: {F1: '0.86', cor: '57', inc: '3', mis: '5', par: '0', prec: '0.85',
+            recall: '0.88', spu: '7', total: '65'}
+          macro: {F1: '0.64', P: '0.67', R: '0.62'}
+          partial: {F1: '0.89', cor: '262', inc: '0', mis: '31', par: '11', prec: '0.9',
+            recall: '0.88', spu: '17', total: '304'}
+          strict: {F1: '0.86', cor: '256', inc: '17', mis: '31', par: '0', prec: '0.88',
+            recall: '0.84', spu: '17', total: '304'}
+          type: {F1: '0.89', cor: '264', inc: '9', mis: '31', par: '0', prec: '0.91',
+            recall: '0.87', spu: '17', total: '304'}
+        scoresFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m6_scores.log
+        start: 1526999049.2964435
+        status: done
+        total_time: 238.0103669166565
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m7:
+    algorithm: crf
+    fafter1: [pos, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22tDBmNERaCRFw120180522142040:
+        accuracy_manual: 0.9016949152542373
+        algorithm: CRFtrainer
+        end: 1526999313.8709867
+        modelfile: ../data/models/svm-pipeline_20180522142827.pkl
+        resultsFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m7.txt_result
+        scores:
+          brand: {F1: '0.82', cor: '38', inc: '0', mis: '15', par: '0', prec: '0.95',
+            recall: '0.72', spu: '2', total: '53'}
+          drug: {F1: '0.92', cor: '163', inc: '4', mis: '13', par: '0', prec: '0.94',
+            recall: '0.91', spu: '6', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.89', cor: '264', inc: '10', mis: '30', par: '0', prec: '0.91',
+            recall: '0.87', spu: '17', total: '304'}
+          group: {F1: '0.87', cor: '58', inc: '3', mis: '4', par: '0', prec: '0.85',
+            recall: '0.89', spu: '7', total: '65'}
+          macro: {F1: '0.65', P: '0.69', R: '0.63'}
+          partial: {F1: '0.9', cor: '264', inc: '0', mis: '30', par: '10', prec: '0.91',
+            recall: '0.88', spu: '17', total: '304'}
+          strict: {F1: '0.87', cor: '259', inc: '15', mis: '30', par: '0', prec: '0.89',
+            recall: '0.85', spu: '17', total: '304'}
+          type: {F1: '0.89', cor: '266', inc: '8', mis: '30', par: '0', prec: '0.91',
+            recall: '0.88', spu: '17', total: '304'}
+        scoresFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m7_scores.log
+        start: 1526999066.8265612
+        status: done
+        total_time: 247.0444254875183
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m8:
+    algorithm: crf
+    fafter1: [isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix,
+      lensuffix, lenword, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22tDBmNERaCRFw120180522142040:
+        accuracy_manual: 0.8576271186440678
+        algorithm: CRFtrainer
+        end: 1526999296.185358
+        modelfile: ../data/models/svm-pipeline_20180522142809.pkl
+        resultsFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m8.txt_result
+        scores:
+          brand: {F1: '0.78', cor: '35', inc: '0', mis: '18', par: '0', prec: '0.95',
+            recall: '0.66', spu: '2', total: '53'}
+          drug: {F1: '0.87', cor: '150', inc: '5', mis: '25', par: '0', prec: '0.91',
+            recall: '0.83', spu: '10', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.86', cor: '251', inc: '13', mis: '40', par: '0', prec: '0.9',
+            recall: '0.83', spu: '16', total: '304'}
+          group: {F1: '0.88', cor: '58', inc: '3', mis: '4', par: '0', prec: '0.87',
+            recall: '0.89', spu: '6', total: '65'}
+          macro: {F1: '0.63', P: '0.68', R: '0.6'}
+          partial: {F1: '0.87', cor: '251', inc: '0', mis: '40', par: '13', prec: '0.9',
+            recall: '0.85', spu: '16', total: '304'}
+          strict: {F1: '0.83', cor: '243', inc: '21', mis: '40', par: '0', prec: '0.87',
+            recall: '0.8', spu: '16', total: '304'}
+          type: {F1: '0.86', cor: '251', inc: '13', mis: '40', par: '0', prec: '0.9',
+            recall: '0.83', spu: '16', total: '304'}
+        scoresFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m8_scores.log
+        start: 1526999083.2583163
+        status: done
+        total_time: 212.9270417690277
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m9:
+    algorithm: crf
+    fafter1: [lemma, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [lemma, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [lemma, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22tDBmNERaCRFw120180522142040:
+        accuracy_manual: 0.8576271186440678
+        algorithm: CRFtrainer
+        end: 1526999282.9562237
+        modelfile: ../data/models/svm-pipeline_20180522142755.pkl
+        resultsFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m9.txt_result
+        scores:
+          brand: {F1: '0.78', cor: '35', inc: '0', mis: '18', par: '0', prec: '0.95',
+            recall: '0.66', spu: '2', total: '53'}
+          drug: {F1: '0.87', cor: '149', inc: '5', mis: '26', par: '0', prec: '0.91',
+            recall: '0.83', spu: '9', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.86', cor: '251', inc: '13', mis: '40', par: '0', prec: '0.9',
+            recall: '0.83', spu: '14', total: '304'}
+          group: {F1: '0.89', cor: '59', inc: '3', mis: '3', par: '0', prec: '0.87',
+            recall: '0.91', spu: '6', total: '65'}
+          macro: {F1: '0.63', P: '0.68', R: '0.6'}
+          partial: {F1: '0.87', cor: '251', inc: '0', mis: '40', par: '13', prec: '0.9',
+            recall: '0.85', spu: '14', total: '304'}
+          strict: {F1: '0.84', cor: '243', inc: '21', mis: '40', par: '0', prec: '0.87',
+            recall: '0.8', spu: '14', total: '304'}
+          type: {F1: '0.86', cor: '251', inc: '13', mis: '40', par: '0', prec: '0.9',
+            recall: '0.83', spu: '14', total: '304'}
+        scoresFile: ../data/results//task9.1_d22tDBmNERaCRFw1d22tDBmNERaCRFw1m9_scores.log
+        start: 1526999083.4616086
+        status: done
+        total_time: 199.4946150779724
+    resultsFile: null
+    scoresFile: null
+    status: pending
+numcores: 6
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: d22tDBmNERaCRFw1
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/DrugBank
+total_time: 474.7856602668762
+trainingFolder: ../data/LaboCase/Train

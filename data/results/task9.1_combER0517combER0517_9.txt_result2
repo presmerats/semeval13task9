@@ -1,0 +1,15 @@
+accuracy: 0.735593220338983
+features:  word: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, ]
+ before1: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, ]
+ after1: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, ]
+ before2: 
+[ ]
+ after2: 
+[ ]
+ before3: 
+[ ]
+ after3: 
+[ ]

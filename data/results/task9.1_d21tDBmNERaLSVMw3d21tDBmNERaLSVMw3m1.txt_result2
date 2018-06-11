@@ -1,0 +1,23 @@
+accuracy: 0.7457627118644068
+features:  current: 
+[ lemma, pos, lookup, ]
+ before1: 
+[ pos, lookup, wordStructure, ]
+ after1: 
+[ pos, lookup, wordStructure, ]
+ before2: 
+[ pos, lookup, wordStructure, ]
+ after2: 
+[ pos, lookup, wordStructure, ]
+ before3: 
+[ pos, lookup, wordStructure, ]
+ after3: 
+[ pos, lookup, wordStructure, ]
+ before4: 
+[ ]
+ after4: 
+[ ]
+ before5: 
+[ ]
+ after5: 
+[ ]

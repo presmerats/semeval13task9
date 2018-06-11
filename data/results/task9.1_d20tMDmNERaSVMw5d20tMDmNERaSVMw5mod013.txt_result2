@@ -1,0 +1,23 @@
+accuracy: 0.0
+features:  current: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ before1: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ after1: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ before2: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ after2: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ before3: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ after3: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ before4: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ after4: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ before5: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ after5: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]

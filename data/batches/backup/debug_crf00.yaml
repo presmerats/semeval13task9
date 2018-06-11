@@ -1,0 +1,125 @@
+filepath: ../data/batches/debug_crf00.yaml
+models:
+  m060:
+    fafter1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, fcurrentStructure]
+    fafter2: []
+    fafter3: []
+    algorithm: crf
+    fbefore1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, fcurrentStructure]
+    fbefore2: []
+    fbefore3: []
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results:
+      d20tMXmERaCS0020180520125906:
+        accuracy_manual: 0.7767722473604827
+        algorithm: CRFtrainer
+        end: 1526821303.69208
+        modelfile: ../data/models/svm-pipeline_20180520130125.pkl
+        resultsFile: ../data/results//task9.1_d20tMXmERaCS00d20tMXmERaCS00m060.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '59', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '59'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '351', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '351'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '121', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '121'}
+          exact: {F1: '0.8', cor: '513', inc: '30', mis: '143', par: '0', prec: '0.85',
+            recall: '0.75', spu: '59', total: '686'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '155', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '155'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0.81', cor: '513', inc: '0', mis: '143', par: '30', prec: '0.85',
+            recall: '0.77', spu: '59', total: '686'}
+          strict: {F1: '0', cor: '0', inc: '543', mis: '143', par: '0', prec: '0',
+            recall: '0', spu: '59', total: '686'}
+          type: {F1: '0', cor: '0', inc: '543', mis: '143', par: '0', prec: '0', recall: '0',
+            spu: '59', total: '686'}
+        scoresFile: ../data/results//task9.1_d20tMXmERaCS00d20tMXmERaCS00m060_scores.log
+        start: 1526821146.4557354
+        status: done
+        total_time: 157.23634457588196
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, fcurrentStructure]
+  m061:
+    fafter1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, fcurrentStructure]
+    fafter2: []
+    fafter3: []
+    algorithm: svm
+    fbefore1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, fcurrentStructure]
+    fbefore2: []
+    fbefore3: []
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    results: null
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, fcurrentStructure]
+  m06b:
+    fafter1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, fcurrentStructure]
+    fafter2: []
+    fafter3: []
+    algorithm: crf
+    fbefore1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, fcurrentStructure]
+    fbefore2: []
+    fbefore3: []
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: NER
+    results:
+      d20tMXmERaCS0020180520125906:
+        accuracy_manual: 0.77526395173454
+        algorithm: CRFtrainer
+        end: 1526821315.6710436
+        modelfile: ../data/models/svm-pipeline_20180520130139.pkl
+        resultsFile: ../data/results//task9.1_d20tMXmERaCS00d20tMXmERaCS00m06b.txt_result
+        scores:
+          brand: {F1: '0.81', cor: '42', inc: '0', mis: '17', par: '0', prec: '0.93',
+            recall: '0.71', spu: '3', total: '59'}
+          drug: {F1: '0.87', cor: '294', inc: '10', mis: '47', par: '0', prec: '0.9',
+            recall: '0.84', spu: '24', total: '351'}
+          drug_n: {F1: '0.06', cor: '4', inc: '0', mis: '117', par: '0', prec: '1',
+            recall: '0.03', spu: '0', total: '121'}
+          exact: {F1: '0.79', cor: '511', inc: '30', mis: '145', par: '0', prec: '0.85',
+            recall: '0.74', spu: '59', total: '686'}
+          group: {F1: '0.81', cor: '120', inc: '11', mis: '24', par: '0', prec: '0.85',
+            recall: '0.77', spu: '11', total: '155'}
+          macro: {F1: '0.64', P: '0.92', R: '0.59'}
+          partial: {F1: '0.81', cor: '511', inc: '0', mis: '145', par: '30', prec: '0.85',
+            recall: '0.77', spu: '59', total: '686'}
+          strict: {F1: '0.72', cor: '460', inc: '81', mis: '145', par: '0', prec: '0.77',
+            recall: '0.67', spu: '59', total: '686'}
+          type: {F1: '0.75', cor: '480', inc: '61', mis: '145', par: '0', prec: '0.8',
+            recall: '0.7', spu: '59', total: '686'}
+        scoresFile: ../data/results//task9.1_d20tMXmERaCS00d20tMXmERaCS00m06b_scores.log
+        start: 1526821146.455732
+        status: done
+        total_time: 169.2153115272522
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+    fcurrent: [lemma, pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, fcurrentStructure]
+numcores: 7
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: d20tMXmERaCS00
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/mixed
+total_time: 115.62490630149841
+trainingFolder: ../data/LaboCase/Train

@@ -1,0 +1,33 @@
+filepath: ../data/batches/debug_w2v.yaml
+models:
+  mod002:
+    accuracy: 0.29008746355685133
+    accuracy_goldNER: 0.2880116959064328
+    accuracy_manual: 0.3046757164404223
+    f1: '0.44'
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [w2v, pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lensuffix, lenword, moreThan10chars, wordStructure, w2v]
+    goalaccuracy: 0.3980263157894737
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180518151600.pkl
+    modeltype: NER
+    precision: '0.88'
+    recall: '0.29'
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: done
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: dw2v
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/mixed
+total_time: 12.030699014663696
+trainingFolder: ../data/LaboCase/Train

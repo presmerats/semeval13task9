@@ -1,0 +1,66 @@
+accuracy: 0.27631578947368424
+features:  morpho_features: 
+hasDigits
+isUpperCase
+lenprefix
+lensuffix
+lenword
+moreThan10chars
+prefix
+suffix
+wordStructure
+
+ window_1_before: 
+getLemma
+getPOSTag
+hasDigits
+hasStrangeChars
+isLowerCase
+lenprefix
+lensuffix
+moreThan10chars
+prefix
+suffix
+wordStructure
+
+ window_1_after: 
+getLemma
+getPOSTag
+hasStrangeChars
+isLowerCase
+isTitleCase
+isUpperCase
+lenprefix
+lensuffix
+lenword
+prefix
+wordStructure
+
+ window_2_before: 
+getPOSTag
+hasDigits
+hasStrangeChars
+isUpperCase
+wordStructure
+
+ window_2_after: 
+hasStrangeChars
+isLowerCase
+isTitleCase
+isUpperCase
+moreThan10chars
+
+ window_3_before: 
+getPOSTag
+hasDigits
+hasStrangeChars
+isLowerCase
+isUpperCase
+
+ window_3_after: 
+getPOSTag
+hasStrangeChars
+isTitleCase
+isUpperCase
+moreThan10chars
+

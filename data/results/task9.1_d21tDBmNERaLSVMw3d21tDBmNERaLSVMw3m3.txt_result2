@@ -1,0 +1,23 @@
+accuracy: 0.7220338983050848
+features:  current: 
+[ lemma, lookup, chunkGroup, ]
+ before1: 
+[ pos, lookup, wordStructure, ]
+ after1: 
+[ pos, lookup, wordStructure, ]
+ before2: 
+[ pos, lookup, wordStructure, ]
+ after2: 
+[ pos, lookup, wordStructure, ]
+ before3: 
+[ pos, lookup, wordStructure, ]
+ after3: 
+[ pos, lookup, wordStructure, ]
+ before4: 
+[ pos, lookup, wordStructure, ]
+ after4: 
+[ pos, lookup, wordStructure, ]
+ before5: 
+[ pos, lookup, wordStructure, ]
+ after5: 
+[ pos, lookup, wordStructure, ]

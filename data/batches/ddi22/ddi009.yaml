@@ -1,0 +1,145 @@
+filepath: ../data/batches/ddi22/ddi009.yaml
+models:
+  m3:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: 10
+    modelfile: null
+    modeltype: BDDI
+    results:
+      ddi00520180527165124:
+        accuracy_manual: 0.8320987654320988
+        algorithm: lsvm
+        end: 1527439998.392026
+        modelfile: ../data/models/svm-pipeline_20180527165224.pkl
+        resultsFile: ../data/results//task9.1_ddi005ddi005m3.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '0', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0', fn: '298', fp: '0', prec: '0', recall: '0', total: '298',
+            tp: '0'}
+          exact: {F1: '0', fn: '884', fp: '0', prec: '0', recall: '0', total: '884',
+            tp: '0'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0', P: '0', R: '0'}
+          mechanism: {F1: '0', fn: '278', fp: '0', prec: '0', recall: '0', total: '278',
+            tp: '0'}
+          partial: {F1: '0', fn: '884', fp: '0', prec: '0', recall: '0', total: '884',
+            tp: '0'}
+        scoresFile: ../data/results//task9.1_ddi005ddi005m3_scores.log
+        start: 1527439884.8434815
+        status: done
+        total_time: 113.54854440689087
+      ddi00920180527223618:
+        accuracy_manual: 0.9994301994301994
+        algorithm: lsvm
+        end: 1527460680.3825915
+        modelfile: ../data/models/svm-pipeline_20180527223705.pkl
+        resultsFile: ../data/results//task9.1_ddi009ddi009m3.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '0', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0', fn: '298', fp: '0', prec: '0', recall: '0', total: '298',
+            tp: '0'}
+          exact: {F1: '0', fn: '884', fp: '881', prec: '0', recall: '0', total: '884',
+            tp: '0'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0', P: '0', R: '0'}
+          mechanism: {F1: '0', fn: '278', fp: '0', prec: '0', recall: '0', total: '278',
+            tp: '0'}
+          partial: {F1: '0,9983', fn: '3', fp: '0', prec: '1', recall: '0,9966', total: '884',
+            tp: '881'}
+        scoresFile: ../data/results//task9.1_ddi009ddi009m3_scores.log
+        start: 1527460578.9935281
+        status: done
+        total_time: 101.38906335830688
+      ddi00920180527224303:
+        accuracy_manual: 0.9994301994301994
+        algorithm: lsvm
+        end: 1527461093.969877
+        modelfile: ../data/models/svm-pipeline_20180527224355.pkl
+        resultsFile: ../data/results//task9.1_ddi009ddi009m3.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '0', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0', fn: '298', fp: '0', prec: '0', recall: '0', total: '298',
+            tp: '0'}
+          exact: {F1: '0', fn: '884', fp: '881', prec: '0', recall: '0', total: '884',
+            tp: '0'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0', P: '0', R: '0'}
+          mechanism: {F1: '0', fn: '278', fp: '0', prec: '0', recall: '0', total: '278',
+            tp: '0'}
+          partial: {F1: '0,9983', fn: '3', fp: '0', prec: '1', recall: '0,9966', total: '884',
+            tp: '881'}
+        scoresFile: ../data/results//task9.1_ddi009ddi009m3_scores.log
+        start: 1527460983.4879775
+        status: done
+        total_time: 110.48189949989319
+      ddi00920180527224955:
+        accuracy_manual: 0.9994301994301994
+        algorithm: lsvm
+        end: 1527461537.3030097
+        modelfile: ../data/models/svm-pipeline_20180527225101.pkl
+        resultsFile: ../data/results//task9.1_ddi009ddi009m3.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '0', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0', fn: '298', fp: '0', prec: '0', recall: '0', total: '298',
+            tp: '0'}
+          exact: {F1: '0', fn: '884', fp: '881', prec: '0', recall: '0', total: '884',
+            tp: '0'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0', P: '0', R: '0'}
+          mechanism: {F1: '0', fn: '278', fp: '0', prec: '0', recall: '0', total: '278',
+            tp: '0'}
+          partial: {F1: '0,9983', fn: '3', fp: '0', prec: '1', recall: '0,9966', total: '884',
+            tp: '881'}
+        scoresFile: ../data/results//task9.1_ddi009ddi009m3_scores.log
+        start: 1527461395.1419363
+        status: done
+        total_time: 142.1610734462738
+      ddi00920180527232530:
+        accuracy_manual: 0.9994301994301994
+        algorithm: lsvm
+        end: 1527463654.4472992
+        modelfile: ../data/models/svm-pipeline_20180527232628.pkl
+        resultsFile: ../data/results//task9.1_ddi009ddi009m3.txt_result
+        scores:
+          advise: {F1: '0', fn: '214', fp: '0', prec: '0', recall: '0', total: '214',
+            tp: '0'}
+          effect: {F1: '0', fn: '298', fp: '0', prec: '0', recall: '0', total: '298',
+            tp: '0'}
+          exact: {F1: '0', fn: '884', fp: '881', prec: '0', recall: '0', total: '884',
+            tp: '0'}
+          int: {F1: '0', fn: '94', fp: '0', prec: '0', recall: '0', total: '94', tp: '0'}
+          macro: {F1: '0', P: '0', R: '0'}
+          mechanism: {F1: '0', fn: '278', fp: '0', prec: '0', recall: '0', total: '278',
+            tp: '0'}
+          partial: {F1: '0,9983', fn: '3', fp: '0', prec: '1', recall: '0,9966', total: '884',
+            tp: '881'}
+        scoresFile: ../data/results//task9.1_ddi009ddi009m3_scores.log
+        start: 1527463530.3037598
+        status: done
+        total_time: 124.14353942871094
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, dt_count, negationLemma]
+    status: pending
+    topcount: 3
+    topcountfeatures: [trigram, lemma]
+    window: 2
+    windowfeatures: [word, pos]
+    wordfeatures: [pos, ortho]
+numcores: 2
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: ddi009
+testBDDIfile: ../data/features/preprocessBDDIstep3DrugBank-test.json
+testDDIfile: ../data/features/preprocessDDIstep3DrugBank-test.json
+testFeatures: nothing
+testFolder: ../data/LaboCase/Test/Test for DDI Extraction task/DrugBank
+total_time: 128.33711886405945
+trainingBDDIfile: ../data/features/preprocessBDDIstep3DrugBank-test.json
+trainingDDIfile: ../data/features/preprocessDDIstep3DrugBank.json
+trainingFolder: nothing

@@ -1,0 +1,1801 @@
+filepath: ../data/batches/b0522/d22btMXmNERaCRFw3.yaml
+models:
+  m0:
+    algorithm: crf
+    fafter1: [pos, wordStructure, prefix3]
+    fafter2: [pos, wordStructure, prefix3]
+    fafter3: [pos, wordStructure, prefix3]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, wordStructure, prefix3]
+    fbefore2: [pos, wordStructure, prefix3]
+    fbefore3: [pos, wordStructure, prefix3]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522114607:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526989730.6553345
+        modelfile: ../data/models/svm-pipeline_20180522114846.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m0.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m0_scores.log
+        start: 1526989567.4550905
+        status: done
+        total_time: 163.20024394989014
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m1:
+    algorithm: crf
+    fafter1: [pos, wordStructure, prefix4]
+    fafter2: [pos, wordStructure, prefix4]
+    fafter3: [pos, wordStructure, prefix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, wordStructure, prefix4]
+    fbefore2: [pos, wordStructure, prefix4]
+    fbefore3: [pos, wordStructure, prefix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522114607:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526989794.581848
+        modelfile: ../data/models/svm-pipeline_20180522114950.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m1.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m1_scores.log
+        start: 1526989567.455358
+        status: done
+        total_time: 227.1264898777008
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m10:
+    algorithm: crf
+    fafter1: [pos, prefix3, suffix5]
+    fafter2: [pos, prefix3, suffix5]
+    fafter3: [pos, prefix3, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, prefix3, suffix5]
+    fbefore2: [pos, prefix3, suffix5]
+    fbefore3: [pos, prefix3, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522114607:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526989791.3126962
+        modelfile: ../data/models/svm-pipeline_20180522114944.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m10.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m10_scores.log
+        start: 1526989567.45591
+        status: done
+        total_time: 223.85678625106812
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m11:
+    algorithm: crf
+    fafter1: [pos, prefix4, prefix5]
+    fafter2: [pos, prefix4, prefix5]
+    fafter3: [pos, prefix4, prefix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, prefix4, prefix5]
+    fbefore2: [pos, prefix4, prefix5]
+    fbefore3: [pos, prefix4, prefix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522114607:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526989792.9242296
+        modelfile: ../data/models/svm-pipeline_20180522114948.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m11.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m11_scores.log
+        start: 1526989567.4570282
+        status: done
+        total_time: 225.46720147132874
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m12:
+    algorithm: crf
+    fafter1: [pos, prefix4, suffix3]
+    fafter2: [pos, prefix4, suffix3]
+    fafter3: [pos, prefix4, suffix3]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, prefix4, suffix3]
+    fbefore2: [pos, prefix4, suffix3]
+    fbefore3: [pos, prefix4, suffix3]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522114607:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526989822.8851995
+        modelfile: ../data/models/svm-pipeline_20180522115016.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m12.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m12_scores.log
+        start: 1526989567.4576743
+        status: done
+        total_time: 255.42752528190613
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m13:
+    algorithm: crf
+    fafter1: [pos, prefix4, suffix4]
+    fafter2: [pos, prefix4, suffix4]
+    fafter3: [pos, prefix4, suffix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, prefix4, suffix4]
+    fbefore2: [pos, prefix4, suffix4]
+    fbefore3: [pos, prefix4, suffix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522114607:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526989740.720415
+        modelfile: ../data/models/svm-pipeline_20180522114854.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m13.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m13_scores.log
+        start: 1526989567.45798
+        status: done
+        total_time: 173.2624351978302
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m14:
+    algorithm: crf
+    fafter1: [pos, prefix4, suffix5]
+    fafter2: [pos, prefix4, suffix5]
+    fafter3: [pos, prefix4, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, prefix4, suffix5]
+    fbefore2: [pos, prefix4, suffix5]
+    fbefore3: [pos, prefix4, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522114607:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526989967.825262
+        modelfile: ../data/models/svm-pipeline_20180522115241.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m14.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m14_scores.log
+        start: 1526989732.1217105
+        status: done
+        total_time: 235.703551530838
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m15:
+    algorithm: crf
+    fafter1: [pos, prefix5, suffix3]
+    fafter2: [pos, prefix5, suffix3]
+    fafter3: [pos, prefix5, suffix3]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, prefix5, suffix3]
+    fbefore2: [pos, prefix5, suffix3]
+    fbefore3: [pos, prefix5, suffix3]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990432.8725977
+        modelfile: ../data/models/svm-pipeline_20180522120026.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m15.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m15_scores.log
+        start: 1526990219.7542822
+        status: done
+        total_time: 213.11831545829773
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m16:
+    algorithm: crf
+    fafter1: [pos, prefix5, suffix4]
+    fafter2: [pos, prefix5, suffix4]
+    fafter3: [pos, prefix5, suffix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, prefix5, suffix4]
+    fbefore2: [pos, prefix5, suffix4]
+    fbefore3: [pos, prefix5, suffix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990412.8410225
+        modelfile: ../data/models/svm-pipeline_20180522120008.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m16.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m16_scores.log
+        start: 1526990219.754672
+        status: done
+        total_time: 193.086350440979
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m17:
+    algorithm: crf
+    fafter1: [pos, prefix5, suffix5]
+    fafter2: [pos, prefix5, suffix5]
+    fafter3: [pos, prefix5, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, prefix5, suffix5]
+    fbefore2: [pos, prefix5, suffix5]
+    fbefore3: [pos, prefix5, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522114607:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526989953.5914702
+        modelfile: ../data/models/svm-pipeline_20180522115229.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m17.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m17_scores.log
+        start: 1526989793.927759
+        status: done
+        total_time: 159.66371130943298
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m18:
+    algorithm: crf
+    fafter1: [pos, suffix3, suffix4]
+    fafter2: [pos, suffix3, suffix4]
+    fafter3: [pos, suffix3, suffix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, suffix3, suffix4]
+    fbefore2: [pos, suffix3, suffix4]
+    fbefore3: [pos, suffix3, suffix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990431.4989877
+        modelfile: ../data/models/svm-pipeline_20180522120024.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m18.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m18_scores.log
+        start: 1526990219.7552412
+        status: done
+        total_time: 211.74374651908875
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m19:
+    algorithm: crf
+    fafter1: [pos, suffix3, suffix5]
+    fafter2: [pos, suffix3, suffix5]
+    fafter3: [pos, suffix3, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, suffix3, suffix5]
+    fbefore2: [pos, suffix3, suffix5]
+    fbefore3: [pos, suffix3, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990477.2269056
+        modelfile: ../data/models/svm-pipeline_20180522120110.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m19.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m19_scores.log
+        start: 1526990219.755642
+        status: done
+        total_time: 257.47126364707947
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m2:
+    algorithm: crf
+    fafter1: [pos, wordStructure, prefix5]
+    fafter2: [pos, wordStructure, prefix5]
+    fafter3: [pos, wordStructure, prefix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, wordStructure, prefix5]
+    fbefore2: [pos, wordStructure, prefix5]
+    fbefore3: [pos, wordStructure, prefix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990428.6449802
+        modelfile: ../data/models/svm-pipeline_20180522120024.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m2.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m2_scores.log
+        start: 1526990219.7560472
+        status: done
+        total_time: 208.88893294334412
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m20:
+    algorithm: crf
+    fafter1: [pos, suffix4, suffix5]
+    fafter2: [pos, suffix4, suffix5]
+    fafter3: [pos, suffix4, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, suffix4, suffix5]
+    fbefore2: [pos, suffix4, suffix5]
+    fbefore3: [pos, suffix4, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990440.5544646
+        modelfile: ../data/models/svm-pipeline_20180522120035.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m20.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m20_scores.log
+        start: 1526990219.7563741
+        status: done
+        total_time: 220.79809045791626
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m21:
+    algorithm: crf
+    fafter1: [wordStructure, prefix3, prefix4]
+    fafter2: [wordStructure, prefix3, prefix4]
+    fafter3: [wordStructure, prefix3, prefix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [wordStructure, prefix3, prefix4]
+    fbefore2: [wordStructure, prefix3, prefix4]
+    fbefore3: [wordStructure, prefix3, prefix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990654.7654965
+        modelfile: ../data/models/svm-pipeline_20180522120407.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m21.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m21_scores.log
+        start: 1526990413.9620516
+        status: done
+        total_time: 240.80344486236572
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m22:
+    algorithm: crf
+    fafter1: [wordStructure, prefix3, prefix5]
+    fafter2: [wordStructure, prefix3, prefix5]
+    fafter3: [wordStructure, prefix3, prefix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [wordStructure, prefix3, prefix5]
+    fbefore2: [wordStructure, prefix3, prefix5]
+    fbefore3: [wordStructure, prefix3, prefix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990688.1842792
+        modelfile: ../data/models/svm-pipeline_20180522120441.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m22.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m22_scores.log
+        start: 1526990430.3925188
+        status: done
+        total_time: 257.7917604446411
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m23:
+    algorithm: crf
+    fafter1: [wordStructure, prefix3, suffix3]
+    fafter2: [wordStructure, prefix3, suffix3]
+    fafter3: [wordStructure, prefix3, suffix3]
+    fafter4: []
+    fafter5: []
+    fbefore1: [wordStructure, prefix3, suffix3]
+    fbefore2: [wordStructure, prefix3, suffix3]
+    fbefore3: [wordStructure, prefix3, suffix3]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990671.8929155
+        modelfile: ../data/models/svm-pipeline_20180522120425.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m23.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m23_scores.log
+        start: 1526990433.400942
+        status: done
+        total_time: 238.49197340011597
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m24:
+    algorithm: crf
+    fafter1: [wordStructure, prefix3, suffix4]
+    fafter2: [wordStructure, prefix3, suffix4]
+    fafter3: [wordStructure, prefix3, suffix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [wordStructure, prefix3, suffix4]
+    fbefore2: [wordStructure, prefix3, suffix4]
+    fbefore3: [wordStructure, prefix3, suffix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990633.4676726
+        modelfile: ../data/models/svm-pipeline_20180522120346.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m24.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m24_scores.log
+        start: 1526990434.706636
+        status: done
+        total_time: 198.7610366344452
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m25:
+    algorithm: crf
+    fafter1: [wordStructure, prefix3, suffix5]
+    fafter2: [wordStructure, prefix3, suffix5]
+    fafter3: [wordStructure, prefix3, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [wordStructure, prefix3, suffix5]
+    fbefore2: [wordStructure, prefix3, suffix5]
+    fbefore3: [wordStructure, prefix3, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990619.2288039
+        modelfile: ../data/models/svm-pipeline_20180522120332.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m25.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m25_scores.log
+        start: 1526990441.820151
+        status: done
+        total_time: 177.40865278244019
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m26:
+    algorithm: crf
+    fafter1: [wordStructure, prefix4, prefix5]
+    fafter2: [wordStructure, prefix4, prefix5]
+    fafter3: [wordStructure, prefix4, prefix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [wordStructure, prefix4, prefix5]
+    fbefore2: [wordStructure, prefix4, prefix5]
+    fbefore3: [wordStructure, prefix4, prefix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990753.4198816
+        modelfile: ../data/models/svm-pipeline_20180522120546.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m26.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m26_scores.log
+        start: 1526990478.7829213
+        status: done
+        total_time: 274.63696026802063
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m27:
+    algorithm: crf
+    fafter1: [wordStructure, prefix4, suffix3]
+    fafter2: [wordStructure, prefix4, suffix3]
+    fafter3: [wordStructure, prefix4, suffix3]
+    fafter4: []
+    fafter5: []
+    fbefore1: [wordStructure, prefix4, suffix3]
+    fbefore2: [wordStructure, prefix4, suffix3]
+    fbefore3: [wordStructure, prefix4, suffix3]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990816.8873916
+        modelfile: ../data/models/svm-pipeline_20180522120652.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m27.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m27_scores.log
+        start: 1526990620.8132865
+        status: done
+        total_time: 196.07410502433777
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m28:
+    algorithm: crf
+    fafter1: [wordStructure, prefix4, suffix4]
+    fafter2: [wordStructure, prefix4, suffix4]
+    fafter3: [wordStructure, prefix4, suffix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [wordStructure, prefix4, suffix4]
+    fbefore2: [wordStructure, prefix4, suffix4]
+    fbefore3: [wordStructure, prefix4, suffix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990877.390482
+        modelfile: ../data/models/svm-pipeline_20180522120753.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m28.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m28_scores.log
+        start: 1526990635.03924
+        status: done
+        total_time: 242.3512420654297
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m29:
+    algorithm: crf
+    fafter1: [wordStructure, prefix4, suffix5]
+    fafter2: [wordStructure, prefix4, suffix5]
+    fafter3: [wordStructure, prefix4, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [wordStructure, prefix4, suffix5]
+    fbefore2: [wordStructure, prefix4, suffix5]
+    fbefore3: [wordStructure, prefix4, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990903.3496869
+        modelfile: ../data/models/svm-pipeline_20180522120819.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m29.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m29_scores.log
+        start: 1526990656.3760486
+        status: done
+        total_time: 246.97363829612732
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m3:
+    algorithm: crf
+    fafter1: [pos, wordStructure, suffix3]
+    fafter2: [pos, wordStructure, suffix3]
+    fafter3: [pos, wordStructure, suffix3]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, wordStructure, suffix3]
+    fbefore2: [pos, wordStructure, suffix3]
+    fbefore3: [pos, wordStructure, suffix3]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990899.4961355
+        modelfile: ../data/models/svm-pipeline_20180522120812.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m3.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m3_scores.log
+        start: 1526990673.406167
+        status: done
+        total_time: 226.08996844291687
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m30:
+    algorithm: crf
+    fafter1: [wordStructure, prefix5, suffix3]
+    fafter2: [wordStructure, prefix5, suffix3]
+    fafter3: [wordStructure, prefix5, suffix3]
+    fafter4: []
+    fafter5: []
+    fbefore1: [wordStructure, prefix5, suffix3]
+    fbefore2: [wordStructure, prefix5, suffix3]
+    fbefore3: [wordStructure, prefix5, suffix3]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990860.239925
+        modelfile: ../data/models/svm-pipeline_20180522120735.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m30.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m30_scores.log
+        start: 1526990689.7353616
+        status: done
+        total_time: 170.504563331604
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m31:
+    algorithm: crf
+    fafter1: [wordStructure, prefix5, suffix4]
+    fafter2: [wordStructure, prefix5, suffix4]
+    fafter3: [wordStructure, prefix5, suffix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [wordStructure, prefix5, suffix4]
+    fbefore2: [wordStructure, prefix5, suffix4]
+    fbefore3: [wordStructure, prefix5, suffix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526990977.4810922
+        modelfile: ../data/models/svm-pipeline_20180522120933.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m31.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m31_scores.log
+        start: 1526990754.9427855
+        status: done
+        total_time: 222.53830671310425
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m32:
+    algorithm: crf
+    fafter1: [wordStructure, prefix5, suffix5]
+    fafter2: [wordStructure, prefix5, suffix5]
+    fafter3: [wordStructure, prefix5, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [wordStructure, prefix5, suffix5]
+    fbefore2: [wordStructure, prefix5, suffix5]
+    fbefore3: [wordStructure, prefix5, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991033.9241645
+        modelfile: ../data/models/svm-pipeline_20180522121027.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m32.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m32_scores.log
+        start: 1526990818.045406
+        status: done
+        total_time: 215.87875843048096
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m33:
+    algorithm: crf
+    fafter1: [wordStructure, suffix3, suffix4]
+    fafter2: [wordStructure, suffix3, suffix4]
+    fafter3: [wordStructure, suffix3, suffix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [wordStructure, suffix3, suffix4]
+    fbefore2: [wordStructure, suffix3, suffix4]
+    fbefore3: [wordStructure, suffix3, suffix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991041.0164993
+        modelfile: ../data/models/svm-pipeline_20180522121036.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m33.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m33_scores.log
+        start: 1526990861.4184737
+        status: done
+        total_time: 179.59802556037903
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m34:
+    algorithm: crf
+    fafter1: [wordStructure, suffix3, suffix5]
+    fafter2: [wordStructure, suffix3, suffix5]
+    fafter3: [wordStructure, suffix3, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [wordStructure, suffix3, suffix5]
+    fbefore2: [wordStructure, suffix3, suffix5]
+    fbefore3: [wordStructure, suffix3, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991081.9911704
+        modelfile: ../data/models/svm-pipeline_20180522121117.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m34.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m34_scores.log
+        start: 1526990878.9490771
+        status: done
+        total_time: 203.04209327697754
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m35:
+    algorithm: crf
+    fafter1: [wordStructure, suffix4, suffix5]
+    fafter2: [wordStructure, suffix4, suffix5]
+    fafter3: [wordStructure, suffix4, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [wordStructure, suffix4, suffix5]
+    fbefore2: [wordStructure, suffix4, suffix5]
+    fbefore3: [wordStructure, suffix4, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991138.6902666
+        modelfile: ../data/models/svm-pipeline_20180522121214.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m35.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m35_scores.log
+        start: 1526990900.987315
+        status: done
+        total_time: 237.702951669693
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m36:
+    algorithm: crf
+    fafter1: [prefix3, prefix4, prefix5]
+    fafter2: [prefix3, prefix4, prefix5]
+    fafter3: [prefix3, prefix4, prefix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix3, prefix4, prefix5]
+    fbefore2: [prefix3, prefix4, prefix5]
+    fbefore3: [prefix3, prefix4, prefix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991158.8351383
+        modelfile: ../data/models/svm-pipeline_20180522121232.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m36.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m36_scores.log
+        start: 1526990904.4958153
+        status: done
+        total_time: 254.33932304382324
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m37:
+    algorithm: crf
+    fafter1: [prefix3, prefix4, suffix3]
+    fafter2: [prefix3, prefix4, suffix3]
+    fafter3: [prefix3, prefix4, suffix3]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix3, prefix4, suffix3]
+    fbefore2: [prefix3, prefix4, suffix3]
+    fbefore3: [prefix3, prefix4, suffix3]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991220.37091
+        modelfile: ../data/models/svm-pipeline_20180522121336.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m37.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m37_scores.log
+        start: 1526990979.014432
+        status: done
+        total_time: 241.35647797584534
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m38:
+    algorithm: crf
+    fafter1: [prefix3, prefix4, suffix4]
+    fafter2: [prefix3, prefix4, suffix4]
+    fafter3: [prefix3, prefix4, suffix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix3, prefix4, suffix4]
+    fbefore2: [prefix3, prefix4, suffix4]
+    fbefore3: [prefix3, prefix4, suffix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991284.4484036
+        modelfile: ../data/models/svm-pipeline_20180522121436.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m38.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m38_scores.log
+        start: 1526991035.5063715
+        status: done
+        total_time: 248.94203209877014
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m39:
+    algorithm: crf
+    fafter1: [prefix3, prefix4, suffix5]
+    fafter2: [prefix3, prefix4, suffix5]
+    fafter3: [prefix3, prefix4, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix3, prefix4, suffix5]
+    fbefore2: [prefix3, prefix4, suffix5]
+    fbefore3: [prefix3, prefix4, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991221.0639231
+        modelfile: ../data/models/svm-pipeline_20180522121334.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m39.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m39_scores.log
+        start: 1526991042.1190197
+        status: done
+        total_time: 178.94490337371826
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m4:
+    algorithm: crf
+    fafter1: [pos, wordStructure, suffix4]
+    fafter2: [pos, wordStructure, suffix4]
+    fafter3: [pos, wordStructure, suffix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, wordStructure, suffix4]
+    fbefore2: [pos, wordStructure, suffix4]
+    fbefore3: [pos, wordStructure, suffix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991290.4485002
+        modelfile: ../data/models/svm-pipeline_20180522121445.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m4.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m4_scores.log
+        start: 1526991083.1882112
+        status: done
+        total_time: 207.26028895378113
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m40:
+    algorithm: crf
+    fafter1: [prefix3, prefix5, suffix3]
+    fafter2: [prefix3, prefix5, suffix3]
+    fafter3: [prefix3, prefix5, suffix3]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix3, prefix5, suffix3]
+    fbefore2: [prefix3, prefix5, suffix3]
+    fbefore3: [prefix3, prefix5, suffix3]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991406.8082235
+        modelfile: ../data/models/svm-pipeline_20180522121640.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m40.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m40_scores.log
+        start: 1526991140.2841856
+        status: done
+        total_time: 266.5240378379822
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m41:
+    algorithm: crf
+    fafter1: [prefix3, prefix5, suffix4]
+    fafter2: [prefix3, prefix5, suffix4]
+    fafter3: [prefix3, prefix5, suffix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix3, prefix5, suffix4]
+    fbefore2: [prefix3, prefix5, suffix4]
+    fbefore3: [prefix3, prefix5, suffix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991364.843888
+        modelfile: ../data/models/svm-pipeline_20180522121600.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m41.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m41_scores.log
+        start: 1526991160.4196963
+        status: done
+        total_time: 204.42419171333313
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m42:
+    algorithm: crf
+    fafter1: [prefix3, prefix5, suffix5]
+    fafter2: [prefix3, prefix5, suffix5]
+    fafter3: [prefix3, prefix5, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix3, prefix5, suffix5]
+    fbefore2: [prefix3, prefix5, suffix5]
+    fbefore3: [prefix3, prefix5, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991431.0111442
+        modelfile: ../data/models/svm-pipeline_20180522121706.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m42.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m42_scores.log
+        start: 1526991222.2232063
+        status: done
+        total_time: 208.78793787956238
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m43:
+    algorithm: crf
+    fafter1: [prefix3, suffix3, suffix4]
+    fafter2: [prefix3, suffix3, suffix4]
+    fafter3: [prefix3, suffix3, suffix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix3, suffix3, suffix4]
+    fbefore2: [prefix3, suffix3, suffix4]
+    fbefore3: [prefix3, suffix3, suffix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991412.4278893
+        modelfile: ../data/models/svm-pipeline_20180522121645.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m43.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m43_scores.log
+        start: 1526991222.7262828
+        status: done
+        total_time: 189.7016065120697
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m44:
+    algorithm: crf
+    fafter1: [prefix3, suffix3, suffix5]
+    fafter2: [prefix3, suffix3, suffix5]
+    fafter3: [prefix3, suffix3, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix3, suffix3, suffix5]
+    fbefore2: [prefix3, suffix3, suffix5]
+    fbefore3: [prefix3, suffix3, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991551.4209206
+        modelfile: ../data/models/svm-pipeline_20180522121905.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m44.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m44_scores.log
+        start: 1526991286.336473
+        status: done
+        total_time: 265.0844476222992
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m45:
+    algorithm: crf
+    fafter1: [prefix3, suffix4, suffix5]
+    fafter2: [prefix3, suffix4, suffix5]
+    fafter3: [prefix3, suffix4, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix3, suffix4, suffix5]
+    fbefore2: [prefix3, suffix4, suffix5]
+    fbefore3: [prefix3, suffix4, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991544.1521184
+        modelfile: ../data/models/svm-pipeline_20180522121857.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m45.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m45_scores.log
+        start: 1526991292.1488628
+        status: done
+        total_time: 252.00325560569763
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m46:
+    algorithm: crf
+    fafter1: [prefix4, prefix5, suffix3]
+    fafter2: [prefix4, prefix5, suffix3]
+    fafter3: [prefix4, prefix5, suffix3]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix4, prefix5, suffix3]
+    fbefore2: [prefix4, prefix5, suffix3]
+    fbefore3: [prefix4, prefix5, suffix3]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991581.9245377
+        modelfile: ../data/models/svm-pipeline_20180522121935.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m46.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m46_scores.log
+        start: 1526991366.0698066
+        status: done
+        total_time: 215.85473108291626
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m47:
+    algorithm: crf
+    fafter1: [prefix4, prefix5, suffix4]
+    fafter2: [prefix4, prefix5, suffix4]
+    fafter3: [prefix4, prefix5, suffix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix4, prefix5, suffix4]
+    fbefore2: [prefix4, prefix5, suffix4]
+    fbefore3: [prefix4, prefix5, suffix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991576.4902532
+        modelfile: ../data/models/svm-pipeline_20180522121932.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m47.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m47_scores.log
+        start: 1526991408.4417331
+        status: done
+        total_time: 168.0485200881958
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m48:
+    algorithm: crf
+    fafter1: [prefix4, prefix5, suffix5]
+    fafter2: [prefix4, prefix5, suffix5]
+    fafter3: [prefix4, prefix5, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix4, prefix5, suffix5]
+    fbefore2: [prefix4, prefix5, suffix5]
+    fbefore3: [prefix4, prefix5, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991608.5682943
+        modelfile: ../data/models/svm-pipeline_20180522122001.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m48.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m48_scores.log
+        start: 1526991414.0539343
+        status: done
+        total_time: 194.5143599510193
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m49:
+    algorithm: crf
+    fafter1: [prefix4, suffix3, suffix4]
+    fafter2: [prefix4, suffix3, suffix4]
+    fafter3: [prefix4, suffix3, suffix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix4, suffix3, suffix4]
+    fbefore2: [prefix4, suffix3, suffix4]
+    fbefore3: [prefix4, suffix3, suffix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991676.6164608
+        modelfile: ../data/models/svm-pipeline_20180522122109.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m49.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m49_scores.log
+        start: 1526991432.6875687
+        status: done
+        total_time: 243.92889213562012
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m5:
+    algorithm: crf
+    fafter1: [pos, wordStructure, suffix5]
+    fafter2: [pos, wordStructure, suffix5]
+    fafter3: [pos, wordStructure, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, wordStructure, suffix5]
+    fbefore2: [pos, wordStructure, suffix5]
+    fbefore3: [pos, wordStructure, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991780.346283
+        modelfile: ../data/models/svm-pipeline_20180522122256.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m5.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m5_scores.log
+        start: 1526991545.7722054
+        status: done
+        total_time: 234.57407760620117
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m50:
+    algorithm: crf
+    fafter1: [prefix4, suffix3, suffix5]
+    fafter2: [prefix4, suffix3, suffix5]
+    fafter3: [prefix4, suffix3, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix4, suffix3, suffix5]
+    fbefore2: [prefix4, suffix3, suffix5]
+    fbefore3: [prefix4, suffix3, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991722.792525
+        modelfile: ../data/models/svm-pipeline_20180522122158.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m50.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m50_scores.log
+        start: 1526991553.0866523
+        status: done
+        total_time: 169.70587277412415
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m51:
+    algorithm: crf
+    fafter1: [prefix4, suffix4, suffix5]
+    fafter2: [prefix4, suffix4, suffix5]
+    fafter3: [prefix4, suffix4, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix4, suffix4, suffix5]
+    fbefore2: [prefix4, suffix4, suffix5]
+    fbefore3: [prefix4, suffix4, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991749.4967537
+        modelfile: ../data/models/svm-pipeline_20180522122225.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m51.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m51_scores.log
+        start: 1526991577.629443
+        status: done
+        total_time: 171.8673107624054
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m52:
+    algorithm: crf
+    fafter1: [prefix5, suffix3, suffix4]
+    fafter2: [prefix5, suffix3, suffix4]
+    fafter3: [prefix5, suffix3, suffix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix5, suffix3, suffix4]
+    fbefore2: [prefix5, suffix3, suffix4]
+    fbefore3: [prefix5, suffix3, suffix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991807.1725643
+        modelfile: ../data/models/svm-pipeline_20180522122322.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m52.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m52_scores.log
+        start: 1526991583.5425239
+        status: done
+        total_time: 223.6300404071808
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m53:
+    algorithm: crf
+    fafter1: [prefix5, suffix3, suffix5]
+    fafter2: [prefix5, suffix3, suffix5]
+    fafter3: [prefix5, suffix3, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix5, suffix3, suffix5]
+    fbefore2: [prefix5, suffix3, suffix5]
+    fbefore3: [prefix5, suffix3, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991848.1690142
+        modelfile: ../data/models/svm-pipeline_20180522122403.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m53.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m53_scores.log
+        start: 1526991610.1884544
+        status: done
+        total_time: 237.98055982589722
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m54:
+    algorithm: crf
+    fafter1: [prefix5, suffix4, suffix5]
+    fafter2: [prefix5, suffix4, suffix5]
+    fafter3: [prefix5, suffix4, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [prefix5, suffix4, suffix5]
+    fbefore2: [prefix5, suffix4, suffix5]
+    fbefore3: [prefix5, suffix4, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991892.6722689
+        modelfile: ../data/models/svm-pipeline_20180522122448.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m54.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m54_scores.log
+        start: 1526991678.2993643
+        status: done
+        total_time: 214.37290453910828
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m55:
+    algorithm: crf
+    fafter1: [suffix3, suffix4, suffix5]
+    fafter2: [suffix3, suffix4, suffix5]
+    fafter3: [suffix3, suffix4, suffix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [suffix3, suffix4, suffix5]
+    fbefore2: [suffix3, suffix4, suffix5]
+    fbefore3: [suffix3, suffix4, suffix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991913.6221626
+        modelfile: ../data/models/svm-pipeline_20180522122509.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m55.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m55_scores.log
+        start: 1526991724.5785227
+        status: done
+        total_time: 189.04363989830017
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m6:
+    algorithm: crf
+    fafter1: [pos, prefix3, prefix4]
+    fafter2: [pos, prefix3, prefix4]
+    fafter3: [pos, prefix3, prefix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, prefix3, prefix4]
+    fbefore2: [pos, prefix3, prefix4]
+    fbefore3: [pos, prefix3, prefix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991971.8183892
+        modelfile: ../data/models/svm-pipeline_20180522122607.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m6.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m6_scores.log
+        start: 1526991751.1230857
+        status: done
+        total_time: 220.695303440094
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m7:
+    algorithm: crf
+    fafter1: [pos, prefix3, prefix5]
+    fafter2: [pos, prefix3, prefix5]
+    fafter3: [pos, prefix3, prefix5]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, prefix3, prefix5]
+    fbefore2: [pos, prefix3, prefix5]
+    fbefore3: [pos, prefix3, prefix5]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991972.9281223
+        modelfile: ../data/models/svm-pipeline_20180522122608.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m7.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m7_scores.log
+        start: 1526991781.5738335
+        status: done
+        total_time: 191.35428881645203
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m8:
+    algorithm: crf
+    fafter1: [pos, prefix3, suffix3]
+    fafter2: [pos, prefix3, suffix3]
+    fafter3: [pos, prefix3, suffix3]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, prefix3, suffix3]
+    fbefore2: [pos, prefix3, suffix3]
+    fbefore3: [pos, prefix3, suffix3]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526991996.3356326
+        modelfile: ../data/models/svm-pipeline_20180522122632.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m8.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m8_scores.log
+        start: 1526991808.820062
+        status: done
+        total_time: 187.51557064056396
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m9:
+    algorithm: crf
+    fafter1: [pos, prefix3, suffix4]
+    fafter2: [pos, prefix3, suffix4]
+    fafter3: [pos, prefix3, suffix4]
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, prefix3, suffix4]
+    fbefore2: [pos, prefix3, suffix4]
+    fbefore3: [pos, prefix3, suffix4]
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d22btMXmNERaCRFw320180522115659:
+        accuracy_manual: 0
+        algorithm: CRFtrainer
+        end: 1526992023.5817113
+        modelfile: ../data/models/svm-pipeline_20180522122659.pkl
+        resultsFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m9.txt_result
+        scores: {}
+        scoresFile: ../data/results//task9.1_d22btMXmNERaCRFw3d22btMXmNERaCRFw3m9_scores.log
+        start: 1526991849.3875153
+        status: done
+        total_time: 174.19419598579407
+    resultsFile: null
+    scoresFile: null
+    status: pending
+numcores: 6
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: d22btMXmNERaCRFw3
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/Mixed
+total_time: 0.12085294723510742
+trainingFolder: ../data/LaboCase/Train

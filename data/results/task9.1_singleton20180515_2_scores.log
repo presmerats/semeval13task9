@@ -1,0 +1,52 @@
+SCORES FOR THE GROUP: singleton20180515 RUN=2
+
+Strict matching (boundaries + type)
+cor	inc	par	mis	spu	total	prec	recall	F1
+0	160	0	144	0	304	0	0	0
+
+
+
+Exact matching
+cor	inc	par	mis	spu	total	prec	recall	F1
+0	160	0	144	0	304	0	0	0
+
+
+
+Partial matching
+cor	inc	par	mis	spu	total	prec	recall	F1
+0	0	160	144	0	304	0	0.26	0
+
+
+
+type matching
+cor	inc	par	mis	spu	total	prec	recall	F1
+160	0	0	144	0	304	1	0.53	0.69
+
+
+
+SCORES FOR ENTITY TYPE
+Exact matching on drug
+cor	inc	par	mis	spu	total	prec	recall	F1
+0	154	0	26	0	180	0	0	0
+
+
+Exact matching on brand
+cor	inc	par	mis	spu	total	prec	recall	F1
+0	1	0	52	0	53	0	0	0
+
+
+Exact matching on group
+cor	inc	par	mis	spu	total	prec	recall	F1
+0	5	0	60	0	65	0	0	0
+
+
+Exact matching on drug_n
+cor	inc	par	mis	spu	total	prec	recall	F1
+0	0	0	6	0	6	0	0	0
+
+
+MACRO-AVERAGE MEASURES:
+P	R	F1
+0	0	0
+________________________________________________________________________
+

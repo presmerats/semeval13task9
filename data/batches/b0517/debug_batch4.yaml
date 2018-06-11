@@ -1,0 +1,318 @@
+filepath: ../data/batches/debug_batch4.yaml
+models:
+  mod001:
+    accuracy: 0.0
+    fafter1: [pos]
+    fafter2: [pos]
+    fafter3: [pos]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase]
+    fbefore2: [pos]
+    fbefore3: [pos]
+    goalaccuracy: 0.5263157894736842
+    limitTest: null
+    limitTraining: 300
+    modelfile: ../data/models/svm-pipeline_20180517210848.pkl
+    modeltype: ER
+    results:
+      bm2debug20180519125915: {accuracy: 0.0, accuracy_manual: 0.0, f1: '0', modelfile: ../data/models/svm-pipeline_20180519125936.pkl,
+        precision: '0', recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod001_0.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod001_0_scores.log,
+        start: 1526734762.4146423, status: done}
+      bm2debug20180519130228: {accuracy: 0.0, accuracy_manual: 0.0, f1: '0', modelfile: ../data/models/svm-pipeline_20180519130249.pkl,
+        precision: '0', recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod001_0.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod001_0_scores.log,
+        start: 1526734954.9785702, status: done}
+      bm2debug20180519131257: {accuracy: 0.0, accuracy_manual: 0.0, f1: '0', modelfile: ../data/models/svm-pipeline_20180519131318.pkl,
+        precision: '0', recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod001_0.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod001_0_scores.log,
+        start: 1526735583.771668, status: done}
+      bm2debug20180519131438: {accuracy: 0.0, accuracy_manual: 0.0, modelfile: ../data/models/svm-pipeline_20180519131458.pkl,
+        precision: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod001_0.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod001_0_scores.log,
+        start: 1526735684.303613, status: done}
+      bm2debug20180519131634: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526735822.7727106,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519131654.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod001_0.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod001_0_scores.log,
+        start: 1526735800.5575018, status: done, total_time: 22.215208768844604}
+      bm2debug20180519131816: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526735924.578889,
+        modelfile: ../data/models/svm-pipeline_20180519131836.pkl, precision: '0',
+        resultsFile: ../data/results//task9.1_bm2debugbm2debugmod001_0.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod001_0_scores.log,
+        start: 1526735902.5860815, status: done, total_time: 21.992807388305664}
+      bm2debug20180519132226: {status: error}
+      bm2debug20180519132245: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526736193.1809325,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519132305.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod001_0.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod001_0_scores.log,
+        start: 1526736170.9885154, status: done, total_time: 22.19241714477539}
+      bm2debug20180519135246: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526737993.8205316,
+        modelfile: ../data/models/svm-pipeline_20180519135306.pkl, precision: '0',
+        resultsFile: ../data/results//task9.1_bm2debugbm2debugmod001_0.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod001_0_scores.log,
+        start: 1526737972.5181158, status: done, total_time: 21.30241584777832}
+      bm2debug20180519142341: {status: error}
+      default: {f1: '0', recall: '0'}
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_0.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_0_scores.log
+    status: doing
+    fcurrent: [wordStructure, chunk, lookup]
+  mod002:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 50
+    limitTraining: 400
+    modelfile: ../data/models/svm-pipeline_20180517210915.pkl
+    modeltype: ER
+    results:
+      bm2debug20180519125915: {accuracy: 0.0, accuracy_manual: 0.0, f1: '0', modelfile: ../data/models/svm-pipeline_20180519130004.pkl,
+        precision: '0', recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod002_1.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod002_1_scores.log,
+        start: 1526734784.3755484, status: done}
+      bm2debug20180519130228: {accuracy: 0.0, accuracy_manual: 0.0, f1: '0', modelfile: ../data/models/svm-pipeline_20180519130316.pkl,
+        precision: '0', recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod002_1.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod002_1_scores.log,
+        start: 1526734976.821173, status: done}
+      bm2debug20180519131257: {accuracy: 0.0, accuracy_manual: 0.0, f1: '0', modelfile: ../data/models/svm-pipeline_20180519131345.pkl,
+        precision: '0', recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod002_1.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod002_1_scores.log,
+        start: 1526735606.07352, status: done}
+      bm2debug20180519131438: {accuracy: 0.0, accuracy_manual: 0.0, modelfile: ../data/models/svm-pipeline_20180519131526.pkl,
+        precision: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod002_1.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod002_1_scores.log,
+        start: 1526735706.2816727, status: done}
+      bm2debug20180519131634: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526735849.339402,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519131722.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod002_1.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod002_1_scores.log,
+        start: 1526735822.8236637, status: done, total_time: 26.515738248825073}
+      bm2debug20180519131816: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526735951.4596696,
+        modelfile: ../data/models/svm-pipeline_20180519131904.pkl, precision: '0',
+        resultsFile: ../data/results//task9.1_bm2debugbm2debugmod002_1.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod002_1_scores.log,
+        start: 1526735924.633533, status: done, total_time: 26.826136589050293}
+      bm2debug20180519132226: {status: error}
+      bm2debug20180519132245: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526736219.6720386,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519132332.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod002_1.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod002_1_scores.log,
+        start: 1526736193.2384787, status: done, total_time: 26.433559894561768}
+      bm2debug20180519135246: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526738019.849977,
+        modelfile: ../data/models/svm-pipeline_20180519135333.pkl, precision: '0',
+        resultsFile: ../data/results//task9.1_bm2debugbm2debugmod002_1.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod002_1_scores.log,
+        start: 1526737993.8205621, status: done, total_time: 26.029414892196655}
+      bm2debug20180519142341: {status: error}
+      default: {f1: '0', recall: '0'}
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_1.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_1_scores.log
+    status: error
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+  mod003:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 50
+    limitTraining: 10
+    modelfile: ../data/models/svm-pipeline_20180517210930.pkl
+    modeltype: ER
+    results:
+      bm2debug20180519125915: {accuracy: 0.0, accuracy_manual: 0.0, f1: '0', modelfile: ../data/models/svm-pipeline_20180519130020.pkl,
+        precision: '0', recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod003_2.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod003_2_scores.log,
+        start: 1526734811.7303455, status: done}
+      bm2debug20180519130228: {accuracy: 0.0, accuracy_manual: 0.0, f1: '0', modelfile: ../data/models/svm-pipeline_20180519130331.pkl,
+        precision: '0', recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod003_2.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod003_2_scores.log,
+        start: 1526735003.6129205, status: done}
+      bm2debug20180519131257: {accuracy: 0.0, accuracy_manual: 0.0, f1: '0', modelfile: ../data/models/svm-pipeline_20180519131400.pkl,
+        precision: '0', recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod003_2.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod003_2_scores.log,
+        start: 1526735632.2527833, status: done}
+      bm2debug20180519131438: {accuracy: 0.0, accuracy_manual: 0.0, modelfile: ../data/models/svm-pipeline_20180519131541.pkl,
+        precision: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod003_2.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod003_2_scores.log,
+        start: 1526735733.1354866, status: done}
+      bm2debug20180519131634: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526735863.9788907,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519131737.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod003_2.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod003_2_scores.log,
+        start: 1526735849.3891456, status: done, total_time: 14.589745044708252}
+      bm2debug20180519131816: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526735966.1146069,
+        modelfile: ../data/models/svm-pipeline_20180519131919.pkl, precision: '0',
+        resultsFile: ../data/results//task9.1_bm2debugbm2debugmod003_2.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod003_2_scores.log,
+        start: 1526735951.520806, status: done, total_time: 14.593800783157349}
+      bm2debug20180519132226: {status: error}
+      bm2debug20180519132245: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526736233.9894571,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519132347.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod003_2.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod003_2_scores.log,
+        start: 1526736219.731289, status: done, total_time: 14.25816822052002}
+      bm2debug20180519135246: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526738033.7447524,
+        modelfile: ../data/models/svm-pipeline_20180519135347.pkl, precision: '0',
+        resultsFile: ../data/results//task9.1_bm2debugbm2debugmod003_2.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod003_2_scores.log,
+        start: 1526738019.8500068, status: done, total_time: 13.894745588302612}
+      bm2debug20180519142341: {status: error}
+      default: {f1: '0', recall: '0'}
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_2.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_2_scores.log
+    status: error
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+  mod004:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: null
+    limitTraining: 20
+    modelfile: ../data/models/svm-pipeline_20180517210944.pkl
+    modeltype: ER
+    results:
+      bm2debug20180519125915: {accuracy: 0.0, accuracy_manual: 0.0, f1: '0', modelfile: ../data/models/svm-pipeline_20180519130035.pkl,
+        precision: '0', recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod004_3.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod004_3_scores.log,
+        start: 1526734826.605249, status: done}
+      bm2debug20180519130228: {accuracy: 0.0, accuracy_manual: 0.0, f1: '0', modelfile: ../data/models/svm-pipeline_20180519130346.pkl,
+        precision: '0', recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod004_3.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod004_3_scores.log,
+        start: 1526735018.0465317, status: done}
+      bm2debug20180519131257: {accuracy: 0.0, accuracy_manual: 0.0, f1: '0', modelfile: ../data/models/svm-pipeline_20180519131414.pkl,
+        precision: '0', recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod004_3.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod004_3_scores.log,
+        start: 1526735646.5410447, status: done}
+      bm2debug20180519131438: {accuracy: 0.0, accuracy_manual: 0.0, modelfile: ../data/models/svm-pipeline_20180519131556.pkl,
+        precision: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod004_3.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod004_3_scores.log,
+        start: 1526735748.0639946, status: done}
+      bm2debug20180519131634: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526735880.487339,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519131752.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod004_3.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod004_3_scores.log,
+        start: 1526735864.0293105, status: done, total_time: 16.458028554916382}
+      bm2debug20180519131816: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526735982.659803,
+        modelfile: ../data/models/svm-pipeline_20180519131934.pkl, precision: '0',
+        resultsFile: ../data/results//task9.1_bm2debugbm2debugmod004_3.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod004_3_scores.log,
+        start: 1526735966.1698227, status: done, total_time: 16.489980220794678}
+      bm2debug20180519132226: {status: error}
+      bm2debug20180519132245: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526736250.3855588,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519132402.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod004_3.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod004_3_scores.log,
+        start: 1526736234.0492263, status: done, total_time: 16.33633255958557}
+      bm2debug20180519135246: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526738049.5230749,
+        modelfile: ../data/models/svm-pipeline_20180519135401.pkl, precision: '0',
+        resultsFile: ../data/results//task9.1_bm2debugbm2debugmod004_3.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod004_3_scores.log,
+        start: 1526738033.744783, status: done, total_time: 15.778291940689087}
+      bm2debug20180519142341: {status: error}
+      default: {f1: '0', recall: '0'}
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_3.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_3_scores.log
+    status: error
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+  mod005:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 50
+    limitTraining: 50
+    modelfile: ../data/models/svm-pipeline_20180517211001.pkl
+    modeltype: ER
+    results:
+      bm2debug20180519125915: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526734858.810635,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519130052.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod005_4.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod005_4_scores.log,
+        start: 1526734843.0530124, status: done, total_time: 15.757622718811035}
+      bm2debug20180519130228: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526735049.836949,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519130403.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod005_4.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod005_4_scores.log,
+        start: 1526735034.2588415, status: done, total_time: 15.578107595443726}
+      bm2debug20180519131257: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526735677.798213,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519131431.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod005_4.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod005_4_scores.log,
+        start: 1526735662.7215672, status: done, total_time: 15.076645851135254}
+      bm2debug20180519131438: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526735780.525407,
+        modelfile: ../data/models/svm-pipeline_20180519131614.pkl, precision: '0',
+        resultsFile: ../data/results//task9.1_bm2debugbm2debugmod005_4.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod005_4_scores.log,
+        start: 1526735764.6171317, status: done, total_time: 15.908275365829468}
+      bm2debug20180519131634: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526735896.277754,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519131809.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod005_4.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod005_4_scores.log,
+        start: 1526735880.535687, status: done, total_time: 15.742067098617554}
+      bm2debug20180519131816: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526735998.2534692,
+        modelfile: ../data/models/svm-pipeline_20180519131951.pkl, precision: '0',
+        resultsFile: ../data/results//task9.1_bm2debugbm2debugmod005_4.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod005_4_scores.log,
+        start: 1526735982.7141647, status: done, total_time: 15.539304494857788}
+      bm2debug20180519132226: {status: error}
+      bm2debug20180519132245: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526736265.957746,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519132419.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod005_4.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod005_4_scores.log,
+        start: 1526736250.4474366, status: done, total_time: 15.51030945777893}
+      bm2debug20180519133607: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526737068.458692,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519133742.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod005_4.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod005_4_scores.log,
+        start: 1526737053.0990114, status: done, total_time: 15.359680652618408}
+      bm2debug20180519134154: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526737415.4310877,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519134329.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod005_4.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod005_4_scores.log,
+        start: 1526737400.0340154, status: done, total_time: 15.397072315216064}
+      bm2debug20180519135246: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526738064.6000652,
+        modelfile: ../data/models/svm-pipeline_20180519135418.pkl, precision: '0',
+        resultsFile: ../data/results//task9.1_bm2debugbm2debugmod005_4.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod005_4_scores.log,
+        start: 1526738049.5231032, status: done, total_time: 15.076961994171143}
+      bm2debug20180519142341: {status: error}
+      default: {f1: '0', recall: '0', total_time: 5.986485958099365}
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_4.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_4_scores.log
+    status: error
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: bm2debug
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/DrugBank
+trainingFolder: ../data/LaboCase/Train

@@ -1,0 +1,48 @@
+models:
+  m001:
+    accuracy: 0.0
+    after1: [
+      getLemma,
+      getPOSTag,
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isUpperCase,
+      lenprefix,
+      lensuffix,
+      lenword,
+      moreThan10chars,
+      suffix,
+    ]
+    after2: [
+      getPOSTag,
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isTitleCase,
+    ]
+    after3: [
+      getPOSTag,
+      hasStrangeChars,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+    ]
+    fbefore1: [getPOSTag, getLemma, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, suffix, lenprefix, lensuffix, lenword,
+      wordStructure, chunkGroup, chunk]
+    fbefore2: [getPOSTag, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, wordStructure, chunkGroup, chunk]
+    fbefore3: [getPOSTag, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, wordStructure, chunkGroup, chunk]
+    limitTest: 10
+    limitTraining: 10
+    modeltype: ER
+    status: done
+    fcurrent: [isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix, suffix, lenprefix, lensuffix, lenword, wordStructure, chunk, chunkGroup]
+  
+savingFolder: ../data/models/
+session: d0517outputformat
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/DrugBank
+trainingFolder: ../data/LaboCase/Train

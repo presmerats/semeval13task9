@@ -1,0 +1,23 @@
+accuracy: 0.7677224736048266
+features:  current: 
+[ lemma, pos, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ before1: 
+[ pos, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ after1: 
+[ pos, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ before2: 
+[ pos, chunkGroup, ]
+ after2: 
+[ lookup, ]
+ before3: 
+[ pos, chunkGroup, ]
+ after3: 
+[ lookup, ]
+ before4: 
+[ pos, chunkGroup, ]
+ after4: 
+[ lookup, ]
+ before5: 
+[ pos, chunkGroup, ]
+ after5: 
+[ lookup, ]

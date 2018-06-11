@@ -1,0 +1,15 @@
+accuracy: 0.40789473684210525
+features:  word: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, suffix, lenprefix, lenword, ]
+ before1: 
+[ lemma, pos, isUpperCase, isLowerCase, hasDigits, moreThan10chars, prefix, suffix, lenprefix, lenword, wordStructure, ]
+ after1: 
+[ lemma, pos, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, lensuffix, wordStructure, ]
+ before2: 
+[ pos, isUpperCase, isLowerCase, hasDigits, moreThan10chars, ]
+ after2: 
+[ pos, isLowerCase, hasStrangeChars, moreThan10chars, wordStructure, ]
+ before3: 
+[ isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, ]
+ after3: 
+[ isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars, ]

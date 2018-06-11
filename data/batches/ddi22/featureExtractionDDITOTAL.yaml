@@ -1,0 +1,37 @@
+filepath: ../data/batches/ddi22/FeatureExtractionDDITOTAL.yaml
+models:
+  dditop40fv01:
+    algorithm: lsvm
+    wordfeatures: [inSameChunk, verbLemma, negationLemma, posCounts, getWords, getLemmas]
+    windowfeatures: []
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    status: pending
+    topcount: 40
+  dditop40fv01test:
+    algorithm: lsvm
+    wordfeatures: [inSameChunk, verbLemma, negationLemma, posCounts, getWords, getLemmas]
+    windowfeatures: []
+    topcountfeatures: []
+    sentencefeatures: []
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    status: pending
+    topcount: 40
+numcores: 1
+resultsFolder: ../data/results/
+savingFolder: ../data/features/
+session: FeatureExtractionDDITOTAL
+testFolder: 
+total_time: 0
+trainingFolder: '../data/features/d25tDBmDDIaSVM-Dependency-d25tDBmDDIaSVMm0.json'

@@ -1,0 +1,47 @@
+filepath: ../data/batches/d20tDBmERaCRFw5.yam5
+models:
+  mod000:
+    algorithm: svm
+    fafter1: [lookup]
+    fafter2: [lookup]
+    fafter3: [lookup]
+    fafter4: [lookup]
+    fafter5: [lookup]
+    fbefore1: [lookup]
+    fbefore2: [lookup]
+    fbefore3: [lookup]
+    fbefore4: [lookup]
+    fbefore5: [lookup]
+    fcurrent: [lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod009:
+    algorithm: svm
+    fafter1: [isLowerCase,moreThan10chars]
+    fafter2: [chunk]
+    fafter3: [chunk]
+    fbefore1: [isLowerCase, 
+      moreThan10chars]
+    fbefore2: [chunk]
+    fbefore3: [chunk]
+    fcurrent: [isLowerCase, 
+      moreThan10chars]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+numcores: 4
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: d20tDBmERaCRFw5
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/MedLine
+total_time: 0
+trainingFolder: ../data/LaboCase/Train

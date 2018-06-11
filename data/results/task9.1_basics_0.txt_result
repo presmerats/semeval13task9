@@ -1,0 +1,31 @@
+accuracy: 0.27631578947368424
+features:  morpho_features: 
+hasDigits
+hasStrangeChars
+isLowerCase
+isTitleCase
+lensuffix
+lenword
+moreThan10chars
+prefix
+
+ window_1_before: 
+getLemma
+getPOSTag
+
+ window_1_after: 
+getLemma
+getPOSTag
+
+ window_2_before: 
+getPOSTag
+
+ window_2_after: 
+getPOSTag
+
+ window_3_before: 
+getPOSTag
+
+ window_3_after: 
+getPOSTag
+

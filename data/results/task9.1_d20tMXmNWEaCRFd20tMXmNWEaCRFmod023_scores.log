@@ -1,0 +1,52 @@
+task9.1_d20tMXmNWEaCRFd20tMXmNWEaCRFmod023 does not follow the convention file name for the task!
+
+Strict matching (boundaries + type)
+cor	inc	par	mis	spu	total	prec	recall	F1
+228	23	0	53	19	304	0.84	0.75	0.79
+
+
+
+Exact matching
+cor	inc	par	mis	spu	total	prec	recall	F1
+234	17	0	53	19	304	0.87	0.77	0.82
+
+
+
+Partial matching
+cor	inc	par	mis	spu	total	prec	recall	F1
+234	0	17	53	19	304	0.87	0.8	0.83
+
+
+
+type matching
+cor	inc	par	mis	spu	total	prec	recall	F1
+239	12	0	53	19	304	0.89	0.79	0.83
+
+
+
+SCORES FOR ENTITY TYPE
+Exact matching on drug
+cor	inc	par	mis	spu	total	prec	recall	F1
+139	4	0	37	9	180	0.91	0.77	0.84
+
+
+Exact matching on brand
+cor	inc	par	mis	spu	total	prec	recall	F1
+38	2	0	13	2	53	0.9	0.72	0.8
+
+
+Exact matching on group
+cor	inc	par	mis	spu	total	prec	recall	F1
+51	6	0	8	9	65	0.77	0.78	0.78
+
+
+Exact matching on drug_n
+cor	inc	par	mis	spu	total	prec	recall	F1
+0	0	0	6	0	6	0	0	0
+
+
+MACRO-AVERAGE MEASURES:
+P	R	F1
+0.65	0.57	0.6
+________________________________________________________________________
+

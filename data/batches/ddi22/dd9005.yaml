@@ -1,0 +1,32 @@
+filepath: ../data/batches/ddi22/ddi005.yaml
+models:
+  m2:
+    algorithm: lsvm
+    features: [inSameChunk, verbLemma, negationLemma, posCounts, getWords, getLemmas]
+    limitTest: null
+    limitTraining: 2000
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    status: pending
+    topcount: 30
+  m5:
+    algorithm: lsvm
+    features: [inSameChunk, verbLemma, negationLemma, posCounts, getWords, getLemmas]
+    limitTest: null
+    limitTraining: 2000
+    modelfile: null
+    modeltype: BDDI
+    resultsFile: null
+    scoresFile: null
+    status: pending
+    topcount: 30
+numcores: 2
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: ddi005
+testFeatures: ../data/features/FeatureExtractionTest2_countfeatures.json
+testFolder: ../data/LaboCase/Test/Test for DDI Extraction task/DrugBank
+total_time: 119.5966567993164
+trainingFolder: ../data/features/FeatureExtraction2_countfeatures.json

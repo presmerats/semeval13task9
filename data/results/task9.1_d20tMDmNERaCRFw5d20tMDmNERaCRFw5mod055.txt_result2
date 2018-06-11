@@ -1,0 +1,23 @@
+accuracy: 0.6603260869565217
+features:  current: 
+[ lemma, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ before1: 
+[ lemma, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ after1: 
+[ lemma, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ before2: 
+[ lemma, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ after2: 
+[ lemma, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ before3: 
+[ lemma, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, ]
+ after3: 
+[ lemma, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, ]
+ before4: 
+[ lemma, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, ]
+ after4: 
+[ lemma, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, ]
+ before5: 
+[ lemma, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, ]
+ after5: 
+[ lemma, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, ]

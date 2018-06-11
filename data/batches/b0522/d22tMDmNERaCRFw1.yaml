@@ -1,0 +1,271 @@
+filepath: ../data/batches/b0522/d22tMDmNERaCRFw1.yaml
+models:
+  m1:
+    algorithm: crf
+    fafter1: [lemma, lookup, chunkGroup, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [lemma, lookup, chunkGroup, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [lemma, lookup, chunkGroup, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m10:
+    algorithm: crf
+    fafter1: [pos, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m11:
+    algorithm: crf
+    fafter1: [pos, wordStructure, word, lookup, chunkGroup]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, wordStructure, word, lookup, chunkGroup]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lemma, lookup, chunkGroup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m2:
+    algorithm: crf
+    fafter1: [lemma, lookup, chunkGroup, wordStructure2]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [lemma, lookup, chunkGroup, wordStructure2]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [lemma, lookup, chunkGroup, wordStructure2]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m3:
+    algorithm: crf
+    fafter1: [pos, wordStructure, lookup, chunkGroup]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, wordStructure, lookup, chunkGroup]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, wordStructure, lemma, lookup, chunkGroup]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m4:
+    algorithm: crf
+    fafter1: [lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m5:
+    algorithm: crf
+    fafter1: [pos, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m6:
+    algorithm: crf
+    fafter1: [pos, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase,
+      hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5,
+      suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m7:
+    algorithm: crf
+    fafter1: [pos, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, lookup, chunk, isTitleCase, isUpperCase, isLowerCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix,
+      suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m8:
+    algorithm: crf
+    fafter1: [isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix,
+      lensuffix, lenword, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+  m9:
+    algorithm: crf
+    fafter1: [lemma, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [lemma, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [lemma, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, lenprefix, lensuffix, lenword, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+numcores: 6
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: d22tMDmNERaCRFw1
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/MedLine
+total_time: 0
+trainingFolder: ../data/LaboCase/Train

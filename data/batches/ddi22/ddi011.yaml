@@ -1,0 +1,56 @@
+filepath: ../data/batches/ddi22/ddi011.yaml
+models:
+  m22:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: [word, trigram, lemma, pos]
+    windowfeatures: [word, pos, prefix, prefix3, prefix4, prefix5, suffix, suffix3,
+      suffix4, suffix5, wordStructure]
+    wordfeatures: [word, pos]
+  # m23:
+  #   algorithm: lsvm
+  #   limitTest: null
+  #   limitTraining: null
+  #   modelfile: null
+  #   modeltype: DDI
+  #   resultsFile: null
+  #   scoresFile: null
+  #   sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+  #   topcount: 30
+  #   topcountfeatures: [word, trigram, lemma, pos]
+  #   windowfeatures: [word, pos, prefix, prefix3, prefix4, prefix5, suffix, suffix3,
+  #     suffix4, suffix5, wordStructure]
+  #   wordfeatures: [word, pos]
+  m24notop:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: [vb_count, cc_count, md_count, dt_count, negationLemma]
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [word, pos, prefix, prefix3, prefix4, prefix5, suffix, suffix3,
+      suffix4, suffix5, wordStructure]
+    wordfeatures: [word, pos]
+numcores: 2
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: ddi011
+testBDDIfile: ../data/features/preprocessBDDIstep3Medline-test.json
+testDDIfile: ../data/features/preprocessDDIstep3Medline-test.json
+testFeatures: nothing
+testFolder: ../data/LaboCase/Test/Test for DDI Extraction task/MedLine
+total_time: 2259.376899242401
+trainingBDDIfile: ../data/features/preprocessBDDIstep3Medline.json
+trainingDDIfile: ../data/features/preprocessDDIstep3Medline.json
+trainingFolder: nothing

@@ -1,0 +1,2650 @@
+\documentclass[a4paper]{article}
+
+%%%%%%%% CREATE DOCUMENT STRUCTURE %%%%%%%%
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{subfig}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+
+\usepackage{pdflscape}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage{sectsty}
+%\usepackage{apacite}
+\usepackage{float}
+\usepackage{titling} 
+\usepackage{blindtext}
+\usepackage[square,sort,comma,numbers]{natbib}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{xcolor}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[linesnumbered,algoruled,boxed,lined]{algorithm2e}
+\setlength\parskip{.5\baselineskip plus .1\baselineskip  minus .1\baselineskip}
+\setlength{\parindent}{1em}
+\definecolor{darkgreen}{rgb}{0.0, 0.4, 0.0}
+
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+
+\title{AHLT DNR report}
+\author{Pau Rodríguez Esmerats, Asaf Badouh }
+\begin{document}
+
+\begin{landscape}
+
+\section{ Best models}
+\begin{center}
+\begin{tabular}{ |l|c|c|c|c|c|c|}  
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Scores \\
+ \hline
+ 
+ 	
+ 		
+ 		\small{ ddi006m65 } & DDI & LSVM & +ort++  &  80 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,6513 & 0,448 & 0.5308 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5778 & 0,3415 & \textbf{ 0.4293 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m66 } & DDI & LSVM & +pos++  &  32 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,6513 & 0,448 & 0.5308 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5778 & 0,3415 & \textbf{ 0.4293 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m70 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tw,tri,tl,tp+sent  &  257 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,6513 & 0,448 & 0.5308 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5778 & 0,3415 & \textbf{ 0.4293 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m71 } & DDI & LSVM & +pos,ort+tw,tri+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,6513 & 0,448 & 0.5308 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5778 & 0,3415 & \textbf{ 0.4293 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m65 } & DDI & LSVM & +ort++  &  80 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,6513 & 0,448 & 0.5308 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5778 & 0,3415 & \textbf{ 0.4293 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m66 } & DDI & LSVM & +pos++  &  32 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,6513 & 0,448 & 0.5308 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5778 & 0,3415 & \textbf{ 0.4293 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m70 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tw,tri,tl,tp+sent  &  257 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,6513 & 0,448 & 0.5308 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5778 & 0,3415 & \textbf{ 0.4293 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m71 } & DDI & LSVM & +pos,ort+tw,tri+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,6513 & 0,448 & 0.5308 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5778 & 0,3415 & \textbf{ 0.4293 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m44 } & DDI & LSVM & +ort++  &  88 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,523 & 0,4762 & 0.4985 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4129 & 0,3122 & \textbf{ 0.3556 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m54 } & DDI & LSVM & +ort++  &  88 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,523 & 0,4762 & 0.4985 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4129 & 0,3122 & \textbf{ 0.3556 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m43 } & DDI & LSVM & +lm,ort++  &  96 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5748 & 0,4695 & 0.5168 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4292 & 0,3024 & \textbf{ 0.3548 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m53 } & DDI & LSVM & +lm,ort++  &  96 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5748 & 0,4695 & 0.5168 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4292 & 0,3024 & \textbf{ 0.3548 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m42 } & DDI & LSVM & +pos,ort++  &  104 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,577 & 0,4661 & 0.5156 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4269 & 0,3025 & \textbf{ 0.3541 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m52 } & DDI & LSVM & +pos,ort++  &  104 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,577 & 0,4661 & 0.5156 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4269 & 0,3025 & \textbf{ 0.3541 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m22 } & DDI & LSVM & +pos,ort+tw,tri,tl,tp+sent  &  113 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,3492 & 0,2316 & 0.2785 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5099 & 0,2531 & \textbf{ 0.3383 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m23 } & DDI & LSVM & +pos,ort+tw,tri,tl,tp+sent  &  113 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,3492 & 0,2316 & 0.2785 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5099 & 0,2531 & \textbf{ 0.3383 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m24notop } & DDI & LSVM & +pos,ort++sent  &  109 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,3492 & 0,2316 & 0.2785 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5099 & 0,2531 & \textbf{ 0.3383 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m25notop } & DDI & LSVM & +pos,ort++sent  &  109 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,3492 & 0,2316 & 0.2785 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5099 & 0,2531 & \textbf{ 0.3383 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m26 } & DDI & LSVM & +pos,ort+tw+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,3492 & 0,2316 & 0.2785 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5099 & 0,2531 & \textbf{ 0.3383 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m27 } & DDI & LSVM & +pos,ort+tw+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,3492 & 0,2316 & 0.2785 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5099 & 0,2531 & \textbf{ 0.3383 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m28 } & DDI & LSVM & +pos,ort+tri+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,3492 & 0,2316 & 0.2785 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5099 & 0,2531 & \textbf{ 0.3383 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m29 } & DDI & LSVM & +pos,ort+tri+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,3492 & 0,2316 & 0.2785 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5099 & 0,2531 & \textbf{ 0.3383 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m30 } & DDI & LSVM & +pos,ort+tl+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,3492 & 0,2316 & 0.2785 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5099 & 0,2531 & \textbf{ 0.3383 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m31 } & DDI & LSVM & +pos,ort+tl+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,3492 & 0,2316 & 0.2785 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,5099 & 0,2531 & \textbf{ 0.3383 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m45 } & DDI & LSVM & +ort++  &  80 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5951 & 0,4423 & 0.5075 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4128 & 0,2806 & \textbf{ 0.3341 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m55 } & DDI & LSVM & +ort++  &  80 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5951 & 0,4423 & 0.5075 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4128 & 0,2806 & \textbf{ 0.3341 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m2 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tw,tri,tl,tp+sent  &  257 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5847 & 0,457 & 0.513 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4097 & 0,2806 & \textbf{ 0.3331 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m3 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tw,tri,tl,tp+sent  &  257 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5847 & 0,457 & 0.513 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4097 & 0,2806 & \textbf{ 0.3331 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m4notop } & DDI & LSVM & +lm,pos,ch,chg,lo,ort++sent  &  253 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5847 & 0,457 & 0.513 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4097 & 0,2806 & \textbf{ 0.3331 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m5notop } & DDI & LSVM & +lm,pos,ch,chg,lo,ort++sent  &  253 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5847 & 0,457 & 0.513 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4097 & 0,2806 & \textbf{ 0.3331 } \end{tabular} \\
+ 			\hline 
+ 		
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |l|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Scores \\
+ \hline
+
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m6 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tw+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5847 & 0,457 & 0.513 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4097 & 0,2806 & \textbf{ 0.3331 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m7 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tw+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5847 & 0,457 & 0.513 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4097 & 0,2806 & \textbf{ 0.3331 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m8 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tri+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5847 & 0,457 & 0.513 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4097 & 0,2806 & \textbf{ 0.3331 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m9 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tri+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5847 & 0,457 & 0.513 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4097 & 0,2806 & \textbf{ 0.3331 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m22 } & DDI & LSVM & +pos,ort+tw,tri,tl,tp+sent  &  113 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5554 & 0,4649 & 0.5062 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3971 & 0,286 & \textbf{ 0.3325 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m23 } & DDI & LSVM & +pos,ort+tw,tri,tl,tp+sent  &  113 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5554 & 0,4649 & 0.5062 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3971 & 0,286 & \textbf{ 0.3325 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m24notop } & DDI & LSVM & +pos,ort++sent  &  109 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5554 & 0,4649 & 0.5062 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3971 & 0,286 & \textbf{ 0.3325 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m25notop } & DDI & LSVM & +pos,ort++sent  &  109 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5554 & 0,4649 & 0.5062 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3971 & 0,286 & \textbf{ 0.3325 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m26 } & DDI & LSVM & +pos,ort+tw+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5554 & 0,4649 & 0.5062 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3971 & 0,286 & \textbf{ 0.3325 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m27 } & DDI & LSVM & +pos,ort+tw+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5554 & 0,4649 & 0.5062 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3971 & 0,286 & \textbf{ 0.3325 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m28 } & DDI & LSVM & +pos,ort+tri+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5554 & 0,4649 & 0.5062 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3971 & 0,286 & \textbf{ 0.3325 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m29 } & DDI & LSVM & +pos,ort+tri+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5554 & 0,4649 & 0.5062 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3971 & 0,286 & \textbf{ 0.3325 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m30 } & DDI & LSVM & +pos,ort+tl+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5554 & 0,4649 & 0.5062 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3971 & 0,286 & \textbf{ 0.3325 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m31 } & DDI & LSVM & +pos,ort+tl+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5554 & 0,4649 & 0.5062 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3971 & 0,286 & \textbf{ 0.3325 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m47 } & DDI & LSVM & +pos,chg++  &  40 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,6179 & 0,4446 & 0.5171 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4031 & 0,2784 & \textbf{ 0.3293 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m57 } & DDI & LSVM & +pos,chg++  &  40 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,6179 & 0,4446 & 0.5171 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4031 & 0,2784 & \textbf{ 0.3293 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m46 } & DDI & LSVM & +pos++  &  32 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,6082 & 0,4355 & 0.5076 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3981 & 0,2727 & \textbf{ 0.3237 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m56 } & DDI & LSVM & +pos++  &  32 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,6082 & 0,4355 & 0.5076 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3981 & 0,2727 & \textbf{ 0.3237 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m48 } & DDI & LSVM & +lm,chg,ort++  &  40 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5812 & 0,4412 & 0.5016 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4043 & 0,2693 & \textbf{ 0.3233 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m58 } & DDI & LSVM & +lm,chg,ort++  &  40 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,5812 & 0,4412 & 0.5016 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4043 & 0,2693 & \textbf{ 0.3233 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m42 } & DDI & LSVM & +pos,ort++  &  104 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,371 & 0,2421 & 0.293 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3992 & 0,2635 & \textbf{ 0.3175 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m52 } & DDI & LSVM & +pos,ort++  &  104 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,371 & 0,2421 & 0.293 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3992 & 0,2635 & \textbf{ 0.3175 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m2 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tw,tri,tl,tp+sent  &  257 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,3906 & 0,2632 & 0.3145 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3651 & 0,2427 & \textbf{ 0.2916 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m3 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tw,tri,tl,tp+sent  &  257 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,3906 & 0,2632 & 0.3145 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3651 & 0,2427 & \textbf{ 0.2916 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m4notop } & DDI & LSVM & +lm,pos,ch,chg,lo,ort++sent  &  253 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,3906 & 0,2632 & 0.3145 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3651 & 0,2427 & \textbf{ 0.2916 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m47 } & DDI & LSVM & +pos,chg++  &  40 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,3438 & 0,2316 & 0.2767 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,2779 & 0,2363 & \textbf{ 0.2554 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m43 } & DDI & LSVM & +lm,ort++  &  96 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,4464 & 0,2632 & 0.3311 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4172 & 0,1466 & \textbf{ 0.217 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m53 } & DDI & LSVM & +lm,ort++  &  96 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,4464 & 0,2632 & 0.3311 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,4172 & 0,1466 & \textbf{ 0.217 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m45 } & DDI & LSVM & +ort++  &  80 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,4182 & 0,2421 & 0.3067 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3889 & 0,1281 & \textbf{ 0.1927 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m44 } & DDI & LSVM & +ort++  &  88 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,338 & 0,2526 & 0.2892 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3537 & 0,1241 & \textbf{ 0.1837 } \end{tabular} \\
+ 			\hline 
+ 		
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |l|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Scores \\
+ \hline
+
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m54 } & DDI & LSVM & +ort++  &  88 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,338 & 0,2526 & 0.2892 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,3537 & 0,1241 & \textbf{ 0.1837 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m48 } & DDI & LSVM & +lm,chg,ort++  &  40 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,3509 & 0,2105 & 0.2632 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,2361 & 0,1073 & \textbf{ 0.1475 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m46 } & DDI & LSVM & +pos++  &  32 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,3538 & 0,2421 & 0.2875 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1956 & 0,1154 & \textbf{ 0.1451 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi003m2 } & DDI & LSVM & +++  &  0 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,3136 & 0,1437 & 0.1971 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1739 & 0,0612 & \textbf{ 0.0906 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi005m2 } & DDI & LSVM & +++  &  0 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,2615 & 0,1154 & 0.1601 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1595 & 0,0589 & \textbf{ 0.0861 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m10 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tl+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m11 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tl+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m2 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tw,tri,tl,tp+sent  &  257 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m22 } & DDI & LSVM & +pos,ort+tw,tri,tl,tp+sent  &  113 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m23 } & DDI & LSVM & +pos,ort+tw,tri,tl,tp+sent  &  113 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m24notop } & DDI & LSVM & +pos,ort++sent  &  109 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m25notop } & DDI & LSVM & +pos,ort++sent  &  109 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m26 } & DDI & LSVM & +pos,ort+tw+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m27 } & DDI & LSVM & +pos,ort+tw+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m28 } & DDI & LSVM & +pos,ort+tri+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m3 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tw,tri,tl,tp+sent  &  257 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m10 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tl+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006m11 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tl+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m10 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tl+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m11 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tl+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m55 } & DDI & LSVM & +ort++  &  80 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m56 } & DDI & LSVM & +pos++  &  32 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m57 } & DDI & LSVM & +pos,chg++  &  40 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m58 } & DDI & LSVM & +lm,chg,ort++  &  40 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m5notop } & DDI & LSVM & +lm,pos,ch,chg,lo,ort++sent  &  253 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m6 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tw+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m7 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tw+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m8 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tri+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007m9 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tri+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mm10 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tl+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |l|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Scores \\
+ \hline
+
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mm11 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tl+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mm2 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tw,tri,tl,tp+sent  &  257 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mm22 } & DDI & LSVM & +pos,ort+tw,tri,tl,tp+sent  &  113 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mm23 } & DDI & LSVM & +pos,ort+tw,tri,tl,tp+sent  &  113 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mm24notop } & DDI & LSVM & +pos,ort++sent  &  109 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mm25notop } & DDI & LSVM & +pos,ort++sent  &  109 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mm26 } & DDI & LSVM & +pos,ort+tw+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mm27 } & DDI & LSVM & +pos,ort+tw+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mm28 } & DDI & LSVM & +pos,ort+tri+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mm3 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tw,tri,tl,tp+sent  &  257 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007mm10 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tl+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007mm11 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tl+sent  &  254 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007mm2 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tw,tri,tl,tp+sent  &  257 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007mm22 } & DDI & LSVM & +pos,ort+tw,tri,tl,tp+sent  &  113 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007mm23 } & DDI & LSVM & +pos,ort+tw,tri,tl,tp+sent  &  113 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007mm24notop } & DDI & LSVM & +pos,ort++sent  &  109 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007mm25notop } & DDI & LSVM & +pos,ort++sent  &  109 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007mm26 } & DDI & LSVM & +pos,ort+tw+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007mm27 } & DDI & LSVM & +pos,ort+tw+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007mm28 } & DDI & LSVM & +pos,ort+tri+sent  &  110 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007mm3 } & DDI & LSVM & +lm,pos,ch,chg,lo,ort+tw,tri,tl,tp+sent  &  257 &  -3:+3  &  
+ 		
+ 		\begin{tabular}{|c|c|c|} 
+ 			\hline   
+ 			P & R & F1  \\
+ 			\hline 
+ 			0,321 & 0,0588 & 0.0994 \\ 
+ 			\hline  
+ 			macro-P & macro-R & \textbf{macro-F1} \\ 
+ 			\hline 
+ 			0,1319 & 0,0218 & \textbf{ 0.0374 } \end{tabular} \\
+ 			\hline 
+ 		
+
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+\end{landscape}
+
+
+
+\end{document}

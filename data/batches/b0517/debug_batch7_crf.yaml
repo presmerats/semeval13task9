@@ -1,0 +1,385 @@
+filepath: ../data/batches/b0517/debug_batch7_crf.yaml
+models:
+  mod000:
+    algorithm: svm
+    fafter1: [pos]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod000b:
+    algorithm: svm
+    fafter1: [pos]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod009:
+    algorithm: svm
+    fafter1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+    fafter2: []
+    fafter3: []
+    fbefore1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars]
+    fbefore2: []
+    fbefore3: []
+    fcurrent: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod010:
+    algorithm: svm
+    fafter1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+    fafter2: []
+    fafter3: []
+    fbefore1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars]
+    fbefore2: []
+    fbefore3: []
+    fcurrent: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod011:
+    algorithm: svm
+    fafter1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+    fafter2: []
+    fafter3: []
+    fbefore1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars]
+    fbefore2: []
+    fbefore3: []
+    fcurrent: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod012:
+    algorithm: svm
+    fafter1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod013:
+    algorithm: svm
+    fafter1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod014:
+    algorithm: svm
+    fafter1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars,
+      prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fbefore1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fcurrent: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod016:
+    algorithm: svm
+    fafter1: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod017:
+    algorithm: svm
+    fafter1: [wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod033:
+    algorithm: svm
+    fafter1: [chunk]
+    fafter2: []
+    fafter3: []
+    fbefore1: [chunk]
+    fbefore2: []
+    fbefore3: []
+    fcurrent: [chunk]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod034:
+    algorithm: svm
+    fafter1: [chunk]
+    fafter2: []
+    fafter3: []
+    fbefore1: [chunk]
+    fbefore2: []
+    fbefore3: []
+    fcurrent: [chunk]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod035:
+    algorithm: svm
+    fafter1: [chunk]
+    fafter2: []
+    fafter3: []
+    fbefore1: [chunk]
+    fbefore2: []
+    fbefore3: []
+    fcurrent: [chunk]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod042:
+    algorithm: svm
+    fafter1: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fcurrent: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod043:
+    algorithm: svm
+    fafter1: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fcurrent: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod044:
+    algorithm: svm
+    fafter1: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fbefore1: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fcurrent: [pos, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod048:
+    algorithm: svm
+    fafter1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod049:
+    algorithm: svm
+    fafter1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod050:
+    algorithm: svm
+    fafter1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fafter2: []
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    fbefore2: []
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [pos, lookup, chunk, isLowerCase, isTitleCase, isUpperCase, hasDigits,
+      hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+numcores: 4
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: debug_batch7_crf
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/MedLine
+total_time: 0
+trainingFolder: ../data/LaboCase/Train

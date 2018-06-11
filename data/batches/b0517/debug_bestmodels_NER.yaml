@@ -1,0 +1,221 @@
+models:
+  mod001:
+    accuracy: 0.0
+    goalaccuracy:  0.5263157894736842
+    fafter1: [
+      lemma,
+      pos,
+      hasDigits,
+      hasStrangeChars,
+      isTitleCase,
+      isUpperCase,
+      lenprefix,
+      lensuffix,
+      lenword,
+      prefix,
+      suffix,
+    ]
+    fafter2: [
+      pos,
+      hasDigits,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+    ]
+    fafter3: [
+      pos,
+      hasDigits,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+    ]
+    fbefore1: [
+      pos,
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+      lenprefix,
+      lenword,
+      moreThan10chars,
+      prefix,
+      suffix,
+    ]
+    fbefore2: [
+      pos,
+      hasStrangeChars,
+      isLowerCase,
+      isUpperCase,
+      wordStructure,
+    ]
+    fbefore3: [
+      pos,
+      hasDigits,
+      isTitleCase,
+      moreThan10chars,
+      wordStructure,
+    ]
+    modeltype: NER
+    status: done
+    fcurrent: [
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+      lensuffix,
+      lenword,
+      moreThan10chars,
+      wordStructure,
+    ]
+  
+  mod002:
+    accuracy: 0.0
+    goalaccuracy:  0.27960526315789475
+    fafter1: [
+      lemma,
+      pos,
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isUpperCase,
+      lenprefix,
+      lensuffix,
+      lenword,
+      moreThan10chars,
+      suffix,
+
+    ]
+    fafter2: [
+      pos,
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isTitleCase,
+    ]
+    fafter3: [
+      pos,
+      hasStrangeChars,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+    ]
+    fbefore1: [
+      lemma,
+      pos,
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isUpperCase,
+      lensuffix,
+      moreThan10chars,
+      prefix,
+      suffix,
+      wordStructure,
+    ]
+    fbefore2: [
+      pos,
+      hasStrangeChars,
+      isTitleCase,
+      isUpperCase,
+      wordStructure,
+    ]
+    fbefore3: [
+      pos,
+      hasStrangeChars,
+      isLowerCase,
+      moreThan10chars,
+      wordStructure,
+    ]
+    modeltype: NER
+    status: done
+    fcurrent: [
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+      lenprefix,
+      lensuffix,
+      suffix,
+      wordStructure,
+    ]
+  
+  mod003:
+    accuracy: 0.0
+    goalaccuracy:  0.3125
+    fafter1: [
+      lemma,
+      pos,
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+      lensuffix,
+      moreThan10chars,
+      prefix,
+      wordStructure,
+    ]
+    fafter2: [
+      pos,
+      hasStrangeChars,
+      isLowerCase,
+      moreThan10chars,
+      wordStructure,
+
+    ]
+    fafter3: [
+      hasDigits,
+      hasStrangeChars,
+      isTitleCase,
+      isUpperCase,
+      moreThan10chars,
+    ]
+    fbefore1: [
+      lemma,
+      pos,
+      hasDigits,
+      isLowerCase,
+      isUpperCase,
+      lenprefix,
+      lenword,
+      moreThan10chars,
+      prefix,
+      suffix,
+      wordStructure,
+    ]
+    fbefore2: [
+      pos,
+      hasDigits,
+      isLowerCase,
+      isUpperCase,
+      moreThan10chars,
+    ]
+    fbefore3: [
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isUpperCase,
+      moreThan10chars,
+    ]
+    modeltype: NER
+    status: done
+    fcurrent: [
+      hasDigits,
+      hasStrangeChars,
+      isLowerCase,
+      isTitleCase,
+      isUpperCase,
+      lenprefix,
+      lenword,
+      moreThan10chars,
+      suffix,
+    ]
+
+savingFolder: ../data/models/
+session: bmNER
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/DrugBank
+trainingFolder: ../data/LaboCase/Train
+resultsFolder: ../data/results/

@@ -1,0 +1,2 @@
+DDI-DrugBank.d749.s0|54-60|Macugen|null
+DDI-DrugBank.d749.s1|0-9|Pegaptanib|null

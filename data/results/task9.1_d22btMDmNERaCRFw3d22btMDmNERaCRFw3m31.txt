@@ -1,0 +1,343 @@
+DDI-MedLine.d175.s0|35-44|colchicine|drug
+DDI-MedLine.d175.s1|0-9|Colchicine|drug
+DDI-MedLine.d175.s3|44-53|colchicine|drug
+DDI-MedLine.d175.s3|99-108|colchicine|drug
+DDI-MedLine.d175.s3|164-173|colchicine|drug
+DDI-MedLine.d175.s3|311-320|colchicine|drug
+DDI-MedLine.d175.s5|53-62|colchicine|drug
+DDI-MedLine.d175.s6|45-54|colchicine|drug
+DDI-MedLine.d175.s7|68-77|colchicine|drug
+DDI-MedLine.d175.s7|124-133|colchicine|drug
+DDI-MedLine.d175.s7|212-221|colchicine|drug
+DDI-MedLine.d175.s8|86-95|colchicine|drug
+DDI-MedLine.d175.s10|24-33|colchicine|drug
+DDI-MedLine.d175.s11|0-9|Colchicine|drug
+DDI-MedLine.d175.s13|0-9|Colchicine|drug
+DDI-MedLine.d175.s14|24-33|colchicine|drug
+DDI-MedLine.d157.s1|51-54|kava|drug
+DDI-MedLine.d157.s1|82-82|f|drug
+DDI-MedLine.d157.s1|85-94|Piperaceae|brand
+DDI-MedLine.d157.s2|0-3|Kava|drug
+DDI-MedLine.d157.s3|74-77|kava|drug
+DDI-MedLine.d157.s5|153-156|kava|drug
+DDI-MedLine.d202.s8|114-135|immunosuppressive drug|group
+DDI-MedLine.d228.s2|136-137|TB|brand
+DDI-MedLine.d228.s3|9-10|TB|brand
+DDI-MedLine.d205.s2|81-82|TB|brand
+DDI-MedLine.d205.s3|52-54|ART|brand
+DDI-MedLine.d205.s4|55-57|ART|brand
+DDI-MedLine.d205.s5|113-114|TB|brand
+DDI-MedLine.d205.s7|103-104|TB|brand
+DDI-MedLine.d178.s0|1-10|Ticagrelor|drug
+DDI-MedLine.d178.s0|15-38|novel antiplatelet agent|group
+DDI-MedLine.d178.s1|0-9|Ticagrelor|drug
+DDI-MedLine.d178.s2|125-135|clopidogrel|drug
+DDI-MedLine.d156.s0|0-2|ABC|drug
+DDI-MedLine.d156.s0|59-68|moxidectin|drug
+DDI-MedLine.d156.s1|5-7|ABC|drug
+DDI-MedLine.d156.s3|78-80|MDR|brand
+DDI-MedLine.d156.s4|88-97|ivermectin|drug
+DDI-MedLine.d156.s5|18-20|ABC|drug
+DDI-MedLine.d156.s5|113-122|moxidectin|drug
+DDI-MedLine.d156.s6|39-41|ABC|drug
+DDI-MedLine.d156.s7|21-30|moxidectin|drug
+DDI-MedLine.d156.s7|51-53|ABC|drug
+DDI-MedLine.d156.s7|107-116|moxidectin|drug
+DDI-MedLine.d156.s9|23-25|ABC|drug
+DDI-MedLine.d156.s9|65-74|moxidectin|drug
+DDI-MedLine.d144.s3|26-29|PHAs|brand
+DDI-MedLine.d203.s0|54-68|antidepressants|group
+DDI-MedLine.d203.s1|129-143|antidepressants|group
+DDI-MedLine.d203.s1|172-173|VA|drug
+DDI-MedLine.d203.s6|0-38|Selective serotonin reuptake inhibitors|group
+DDI-MedLine.d203.s7|63-76|antidepressant|group
+DDI-MedLine.d203.s8|42-56|antidepressants|group
+DDI-MedLine.d203.s12|227-228|CI|brand
+DDI-MedLine.d203.s13|87-96|anxiolytic|group
+DDI-MedLine.d203.s14|35-49|antidepressants|group
+DDI-MedLine.d203.s16|68-81|antidepressant|group
+DDI-MedLine.d158.s0|25-27|ABC|drug
+DDI-MedLine.d158.s1|81-83|ABC|drug
+DDI-MedLine.d158.s3|117-119|ABC|drug
+DDI-MedLine.d158.s3|159-176|chondroitinase ABC|drug_n
+DDI-MedLine.d158.s3|179-182|N - [ N|drug
+DDI-MedLine.d158.s3|262-268|insulin|drug
+DDI-MedLine.d158.s10|41-43|ABC|drug
+DDI-MedLine.d173.s2|28-29|TB|brand
+DDI-MedLine.d173.s4|0-25|New antituberculosis drugs|group
+DDI-MedLine.d232.s4|141-160|vitamin K antagonist|group
+DDI-MedLine.d232.s4|165-171|aspirin|brand
+DDI-MedLine.d232.s6|97-117|vitamin K antagonists|group
+DDI-MedLine.d232.s7|33-46|anticoagulants|group
+DDI-MedLine.d232.s8|15-28|anticoagulants|group
+DDI-MedLine.d232.s8|85-105|vitamin K antagonists|group
+DDI-MedLine.d207.s2|193-199|alcohol|drug
+DDI-MedLine.d207.s2|233-239|alcohol|drug
+DDI-MedLine.d170.s1|1-17|Aminobutyric acid|drug
+DDI-MedLine.d170.s1|20-23|GABA|drug
+DDI-MedLine.d170.s3|175-178|GABA|drug
+DDI-MedLine.d170.s3|363-372|gramicidin|drug
+DDI-MedLine.d170.s4|157-160|GABA|drug
+DDI-MedLine.d170.s4|168-172|IPSCs|brand
+DDI-MedLine.d170.s5|306-314|K ( + ) -2Cl|drug
+DDI-MedLine.d170.s6|180-181|SE|brand
+DDI-MedLine.d153.s0|17-41|propiverine hydrochloride|drug
+DDI-MedLine.d153.s1|169-193|propiverine hydrochloride|drug
+DDI-MedLine.d153.s1|234-243|cetirizine|drug
+DDI-MedLine.d153.s2|40-52|ethyl acetate|drug
+DDI-MedLine.d153.s2|147-171|methanol-ammonium acetate|drug
+DDI-MedLine.d153.s3|134-134|m|drug
+DDI-MedLine.d153.s4|10-20|propiverine|drug
+DDI-MedLine.d153.s4|26-26|m|drug
+DDI-MedLine.d153.s6|143-167|propiverine hydrochloride|drug
+DDI-MedLine.d153.s8|146-170|propiverine hydrochloride|drug
+DDI-MedLine.d222.s0|13-20|nicotine|drug
+DDI-MedLine.d222.s0|47-57|varenicline|drug
+DDI-MedLine.d222.s1|0-10|Varenicline|drug
+DDI-MedLine.d222.s1|36-42|Chantix|brand
+DDI-MedLine.d222.s2|155-166|bupropion SR|drug
+DDI-MedLine.d222.s3|0-10|Varenicline|drug
+DDI-MedLine.d222.s3|20-27|nicotine|drug
+DDI-MedLine.d222.s3|72-79|nicotine|drug
+DDI-MedLine.d222.s4|101-111|varenicline|drug
+DDI-MedLine.d222.s6|145-155|varenicline|drug
+DDI-MedLine.d229.s0|51-60|Bortezomib|drug
+DDI-MedLine.d229.s1|4-23|proteasome inhibitor|group
+DDI-MedLine.d229.s1|25-34|Bortezomib|drug
+DDI-MedLine.d229.s3|83-92|Bortezomib|drug
+DDI-MedLine.d219.s4|67-86|antiretroviral drugs|group
+DDI-MedLine.d145.s0|46-56|doxorubicin|drug
+DDI-MedLine.d145.s2|147-157|doxorubicin|drug
+DDI-MedLine.d145.s3|64-74|doxorubicin|drug
+DDI-MedLine.d145.s4|44-54|doxorubicin|drug
+DDI-MedLine.d220.s0|75-82|apigenin|drug
+DDI-MedLine.d220.s1|65-72|apigenin|drug
+DDI-MedLine.d220.s2|13-20|apigenin|drug
+DDI-MedLine.d220.s3|40-47|apigenin|drug
+DDI-MedLine.d220.s4|70-77|apigenin|drug
+DDI-MedLine.d220.s5|53-60|apigenin|drug
+DDI-MedLine.d220.s6|51-58|apigenin|drug
+DDI-MedLine.d220.s6|93-100|apigenin|drug
+DDI-MedLine.d220.s6|209-216|apigenin|drug
+DDI-MedLine.d220.s7|69-78|isoflavone|drug
+DDI-MedLine.d220.s7|154-161|apigenin|drug
+DDI-MedLine.d198.s1|84-90|alcohol|drug
+DDI-MedLine.d198.s2|58-61|GLIC|brand
+DDI-MedLine.d198.s3|17-20|GLIC|brand
+DDI-MedLine.d198.s3|118-124|ethanol|drug
+DDI-MedLine.d198.s3|211-217|ethanol|drug
+DDI-MedLine.d198.s4|11-18|residues|group
+DDI-MedLine.d198.s4|33-39|alcohol|drug
+DDI-MedLine.d198.s4|80-86|glycine|drug
+DDI-MedLine.d198.s4|92-108|aminobutyric acid|drug
+DDI-MedLine.d198.s4|115-127|acetylcholine|drug
+DDI-MedLine.d198.s5|111-117|alcohol|drug
+DDI-MedLine.d198.s7|42-48|alcohol|drug
+DDI-MedLine.d198.s7|159-165|alcohol|drug
+DDI-MedLine.d198.s8|148-154|alcohol|drug
+DDI-MedLine.d171.s0|54-55|II|group
+DDI-MedLine.d171.s0|58-77|Antiretroviral drugs|group
+DDI-MedLine.d171.s2|30-57|highly active antiretroviral|group
+DDI-MedLine.d171.s4|71-91|antiretroviral agents|group
+DDI-MedLine.d171.s5|63-94|reverse transcriptase inhibitors|group
+DDI-MedLine.d171.s5|119-164|non-nucleoside reverse transcriptase inhibitor|group
+DDI-MedLine.d171.s5|177-194|protease inhibitor|group
+DDI-MedLine.d171.s5|197-198|PI|group
+DDI-MedLine.d171.s5|207-225|integrase inhibitor|group
+DDI-MedLine.d171.s6|44-74|antiretroviral drug resistances|group
+DDI-MedLine.d212.s0|15-24|colchicine|drug
+DDI-MedLine.d212.s0|64-70|eugenol|drug
+DDI-MedLine.d212.s1|14-20|eugenol|drug
+DDI-MedLine.d212.s1|25-34|colchicine|drug
+DDI-MedLine.d212.s2|14-20|eugenol|drug
+DDI-MedLine.d212.s3|14-20|eugenol|drug
+DDI-MedLine.d212.s3|50-59|colchicine|drug
+DDI-MedLine.d212.s4|4-13|colchicine|drug
+DDI-MedLine.d212.s4|67-73|eugenol|drug
+DDI-MedLine.d212.s4|85-91|ethanol|drug
+DDI-MedLine.d212.s4|97-101|water|drug
+DDI-MedLine.d212.s4|108-114|eugenol|drug
+DDI-MedLine.d212.s6|18-27|colchicine|drug
+DDI-MedLine.d212.s6|147-156|colchicine|drug
+DDI-MedLine.d212.s7|30-36|eugenol|drug
+DDI-MedLine.d212.s7|41-50|colchicine|drug
+DDI-MedLine.d212.s7|80-89|colchicine|drug
+DDI-MedLine.d212.s8|29-38|colchicine|drug
+DDI-MedLine.d212.s8|100-109|colchicine|drug
+DDI-MedLine.d212.s8|266-275|colchicine|drug
+DDI-MedLine.d212.s9|58-67|colchicine|drug
+DDI-MedLine.d212.s9|99-105|eugenol|drug
+DDI-MedLine.d212.s10|31-37|eugenol|drug
+DDI-MedLine.d212.s10|146-155|colchicine|drug
+DDI-MedLine.d230.s0|47-56|amiodarone|drug
+DDI-MedLine.d230.s1|0-9|Amiodarone|drug
+DDI-MedLine.d230.s1|72-74|III|brand
+DDI-MedLine.d230.s2|137-143|Nelumbo|brand
+DDI-MedLine.d230.s2|212-221|amiodarone|drug
+DDI-MedLine.d230.s4|19-28|amiodarone|drug
+DDI-MedLine.d230.s5|107-116|amiodarone|drug
+DDI-MedLine.d230.s5|138-144|RP-HPLC|brand
+DDI-MedLine.d230.s7|81-90|amiodarone|drug
+DDI-MedLine.d230.s7|275-284|amiodarone|drug
+DDI-MedLine.d230.s8|22-31|amiodarone|drug
+DDI-MedLine.d196.s0|75-85|fenofibrate|drug
+DDI-MedLine.d196.s1|0-10|Fenofibrate|drug
+DDI-MedLine.d196.s2|0-10|Fenofibrate|drug
+DDI-MedLine.d196.s2|70-84|fenofibric acid|drug_n
+DDI-MedLine.d196.s3|33-47|fenofibric acid|drug_n
+DDI-MedLine.d196.s3|85-95|fenofibrate|drug
+DDI-MedLine.d196.s4|70-84|fenofibric acid|drug_n
+DDI-MedLine.d196.s4|98-108|fenofibrate|drug
+DDI-MedLine.d196.s4|248-262|fenofibric acid|drug_n
+DDI-MedLine.d196.s5|91-105|fenofibric acid|drug_n
+DDI-MedLine.d196.s5|132-142|fenofibrate|drug
+DDI-MedLine.d196.s7|185-187|fat|drug
+DDI-MedLine.d196.s9|99-99|C|brand
+DDI-MedLine.d196.s10|99-113|fenofibric acid|drug_n
+DDI-MedLine.d196.s10|115-125|fenofibrate|drug
+DDI-MedLine.d196.s26|99-113|fenofibric acid|drug
+DDI-MedLine.d196.s26|235-245|fenofibrate|drug
+DDI-MedLine.d196.s26|294-308|fenofibric acid|drug_n
+DDI-MedLine.d196.s27|0-14|Fenofibric acid|drug
+DDI-MedLine.d221.s1|33-40|etizolam|drug
+DDI-MedLine.d221.s1|43-55|phenobarbital|drug
+DDI-MedLine.d221.s1|58-69|promethazine|drug
+DDI-MedLine.d221.s1|75-88|chlorpromazine|drug
+DDI-MedLine.d221.s2|70-77|etizolam|drug
+DDI-MedLine.d221.s2|80-92|phenobarbital|drug
+DDI-MedLine.d221.s2|95-106|promethazine|drug
+DDI-MedLine.d221.s2|112-125|chlorpromazine|drug
+DDI-MedLine.d224.s1|53-71|manganese gluconate|drug
+DDI-MedLine.d224.s4|74-82|manganese|drug
+DDI-MedLine.d224.s6|42-42|E|brand
+DDI-MedLine.d224.s10|13-21|manganese|drug
+DDI-MedLine.d165.s2|4-9|Casein|drug
+DDI-MedLine.d165.s4|21-26|casein|drug
+DDI-MedLine.d165.s5|39-44|Casein|drug
+DDI-MedLine.d182.s0|42-45|zinc|drug
+DDI-MedLine.d182.s3|17-20|zinc|drug
+DDI-MedLine.d182.s3|111-113|MBC|brand
+DDI-MedLine.d182.s12|0-2|MBC|drug_n
+DDI-MedLine.d182.s13|0-3|Zinc|drug
+DDI-MedLine.d182.s18|0-3|Zinc|drug
+DDI-MedLine.d182.s23|36-39|zinc|drug
+DDI-MedLine.d197.s0|1-9|Vitamin D|group
+DDI-MedLine.d197.s1|31-39|vitamin D|group
+DDI-MedLine.d197.s4|41-49|vitamin D|group
+DDI-MedLine.d197.s5|127-127|D|drug
+DDI-MedLine.d197.s6|69-87|antiepileptic drugs|group
+DDI-MedLine.d197.s6|97-106|rifampicin|drug
+DDI-MedLine.d197.s6|142-160|protease inhibitors|group
+DDI-MedLine.d197.s6|170-178|ritonavir|drug
+DDI-MedLine.d197.s6|184-193|saquinavir|drug
+DDI-MedLine.d197.s7|56-64|vitamin D|group
+DDI-MedLine.d197.s7|151-157|statins|group
+DDI-MedLine.d206.s0|46-53|curcumin|drug
+DDI-MedLine.d206.s0|80-89|fluoxetine|drug
+DDI-MedLine.d206.s0|95-104|imipramine|drug
+DDI-MedLine.d206.s1|0-7|Curcumin|drug
+DDI-MedLine.d206.s2|58-65|curcumin|drug
+DDI-MedLine.d206.s2|92-101|fluoxetine|drug
+DDI-MedLine.d206.s2|107-116|imipramine|drug
+DDI-MedLine.d206.s2|306-308|FST|brand
+DDI-MedLine.d206.s2|315-319|water|drug
+DDI-MedLine.d206.s3|155-162|curcumin|drug
+DDI-MedLine.d206.s3|184-191|curcumin|drug
+DDI-MedLine.d206.s3|214-223|fluoxetine|drug
+DDI-MedLine.d206.s3|245-254|imipramine|drug
+DDI-MedLine.d206.s3|276-283|curcumin|drug
+DDI-MedLine.d206.s3|300-309|fluoxetine|drug
+DDI-MedLine.d206.s3|334-341|curcumin|drug
+DDI-MedLine.d206.s3|358-367|imipramine|drug
+DDI-MedLine.d206.s5|62-64|FST|brand
+DDI-MedLine.d206.s5|71-75|water|drug
+DDI-MedLine.d206.s5|134-141|curcumin|drug
+DDI-MedLine.d206.s6|14-21|curcumin|drug
+DDI-MedLine.d206.s6|58-67|fluoxetine|drug
+DDI-MedLine.d206.s6|73-82|imipramine|drug
+DDI-MedLine.d206.s6|115-124|fluoxetine|drug
+DDI-MedLine.d206.s6|130-139|imipramine|drug
+DDI-MedLine.d206.s7|0-7|Curcumin|drug
+DDI-MedLine.d206.s7|147-160|norepinephrine|drug
+DDI-MedLine.d206.s8|0-7|Curcumin|drug
+DDI-MedLine.d187.s5|141-143|THC|brand
+DDI-MedLine.d187.s6|58-60|THC|brand
+DDI-MedLine.d187.s7|33-44|cannabinoids|group
+DDI-MedLine.d187.s7|87-89|THC|brand
+DDI-MedLine.d151.s3|0-37|Angiotensin converting enzyme blockers|group
+DDI-MedLine.d151.s4|64-76|antiagregants|group
+DDI-MedLine.d151.s4|82-95|anticoagulants|group
+DDI-MedLine.d151.s5|21-44|calcium channel blockers|group
+DDI-MedLine.d151.s5|47-55|diuretics|group
+DDI-MedLine.d151.s5|61-67|digoxin|drug
+DDI-MedLine.d148.s3|44-50|Rev-erb|brand
+DDI-MedLine.d215.s0|92-102|antibiotics|group
+DDI-MedLine.d215.s5|0-4|Davis|brand
+DDI-MedLine.d215.s5|42-46|cumin|drug
+DDI-MedLine.d215.s5|67-76|Peppermint|drug
+DDI-MedLine.d215.s5|186-191|plants|group
+DDI-MedLine.d215.s5|197-207|antibiotics|group
+DDI-MedLine.d215.s6|162-163|DC|drug
+DDI-MedLine.d215.s6|221-222|DM|drug
+DDI-MedLine.d215.s6|342-343|DC|drug
+DDI-MedLine.d215.s6|419-420|DC|drug
+DDI-MedLine.d215.s12|28-37|Gentamicin|drug
+DDI-MedLine.d215.s12|52-62|Cephalothin|drug
+DDI-MedLine.d215.s12|77-87|Ceftriaxone|drug
+DDI-MedLine.d215.s12|102-109|Nystatin|drug
+DDI-MedLine.d215.s14|93-103|antibiotics|group
+DDI-MedLine.d174.s0|1-25|Cyclooxygenase inhibitors|group
+DDI-MedLine.d174.s0|54-73|acetylsalicylic acid|drug
+DDI-MedLine.d174.s0|98-133|nonsteroidal anti-inflammatory drugs|group
+DDI-MedLine.d174.s1|0-35|Nonsteroidal anti-inflammatory drugs|group
+DDI-MedLine.d174.s1|38-43|NSAIDs|group
+DDI-MedLine.d174.s2|61-65|NSAID|brand
+DDI-MedLine.d174.s2|124-128|NSAID|group
+DDI-MedLine.d174.s2|228-234|aspirin|brand
+DDI-MedLine.d174.s3|67-91|cyclooxygenase inhibitors|group
+DDI-MedLine.d174.s3|97-116|acetylsalicylic acid|drug
+DDI-MedLine.d191.s0|59-63|water|drug
+DDI-MedLine.d191.s0|108-116|cisplatin|drug
+DDI-MedLine.d191.s1|53-57|water|drug
+DDI-MedLine.d191.s1|111-119|cisplatin|drug
+DDI-MedLine.d191.s2|72-80|cisplatin|drug
+DDI-MedLine.d191.s2|127-132|MWCHCP|drug_n
+DDI-MedLine.d191.s4|75-80|MWCHCP|brand
+DDI-MedLine.d191.s6|15-23|cisplatin|drug
+DDI-MedLine.d191.s6|29-34|MWCHCP|brand
+DDI-MedLine.d191.s7|34-39|MWCHCP|brand
+DDI-MedLine.d191.s7|90-98|cisplatin|drug
+DDI-MedLine.d191.s7|169-177|cisplatin|drug
+DDI-MedLine.d149.s0|101-105|Abeta|brand
+DDI-MedLine.d149.s1|65-69|Abeta|brand
+DDI-MedLine.d149.s1|122-128|ginseng|drug
+DDI-MedLine.d149.s3|169-170|AP|drug
+DDI-MedLine.d149.s4|27-33|ginseng|drug
+DDI-MedLine.d149.s6|15-15|L|drug
+DDI-MedLine.d149.s7|11-14|EGGB|brand
+DDI-MedLine.d149.s7|23-23|L|drug
+DDI-MedLine.d183.s3|30-31|PD|brand
+DDI-MedLine.d183.s4|99-100|PD|brand
+DDI-MedLine.d183.s5|105-108|MPTP|brand
+DDI-MedLine.d183.s6|56-59|MPTP|brand
+DDI-MedLine.d183.s6|153-160|dopamine|drug
+DDI-MedLine.d168.s3|14-26|noradrenaline|drug
+DDI-MedLine.d168.s6|27-33|glycine|drug
+DDI-MedLine.d186.s9|50-71|monoaminergic agonists|group
+DDI-MedLine.d186.s10|40-61|noradrenergic agonists|group
+DDI-MedLine.d172.s2|0-2|DDI|drug
+DDI-MedLine.d172.s2|123-125|DDI|drug
+DDI-MedLine.d172.s3|173-175|DDI|drug
+DDI-MedLine.d172.s6|230-239|Evaluation|brand
+DDI-MedLine.d172.s9|4-6|DDI|drug
+DDI-MedLine.d172.s13|14-16|DDI|drug
+DDI-MedLine.d172.s14|21-23|DDI|drug
+DDI-MedLine.d146.s0|40-50|oseltamivir|drug
+DDI-MedLine.d146.s3|39-49|oseltamivir|drug
+DDI-MedLine.d146.s3|246-255|tacrolimus|drug
+DDI-MedLine.d146.s4|0-10|Oseltamivir|drug
+DDI-MedLine.d192.s1|85-87|NAc|drug
+DDI-MedLine.d192.s3|74-76|NAc|drug
+DDI-MedLine.d192.s7|73-75|NAc|drug
+DDI-MedLine.d192.s7|148-150|NAc|drug
+DDI-MedLine.d192.s7|182-189|morphine|drug

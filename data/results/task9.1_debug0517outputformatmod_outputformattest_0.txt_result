@@ -1,0 +1,15 @@
+accuracy: 0.0
+features:  word: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, suffix, lenprefix, lensuffix, lenword, wordStructure, chunk, chunkGroup, ]
+ before1: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, suffix, lenprefix, lensuffix, lenword, wordStructure, chunk, chunkGroup, ]
+ after1: 
+[ isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, suffix, lenprefix, lensuffix, lenword, ]
+ before2: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, wordStructure, chunk, chunkGroup, ]
+ after2: 
+[ isTitleCase, isLowerCase, hasDigits, hasStrangeChars, ]
+ before3: 
+[ isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, wordStructure, chunk, chunkGroup, ]
+ after3: 
+[ isTitleCase, isUpperCase, isLowerCase, hasStrangeChars, ]

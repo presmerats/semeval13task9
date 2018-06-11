@@ -1,0 +1,290 @@
+filepath: ../data/batches/debug_batch6.yaml
+models:
+  mod001:
+    accuracy: 0.0
+    fafter1: [pos]
+    fafter2: [pos]
+    fafter3: [pos]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase]
+    fbefore2: [pos]
+    fbefore3: [pos]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 40
+    limitTraining: 30
+    modelfile: ../data/models/svm-pipeline_20180517210848.pkl
+    modeltype: ER
+    results: null
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_0.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_0_scores.log
+    status: doing
+    fcurrent: [wordStructure, chunk, lookup]
+  mod002:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 50
+    limitTraining: 40
+    modelfile: ../data/models/svm-pipeline_20180517210915.pkl
+    modeltype: ER
+    results: null
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_1.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_1_scores.log
+    status: error
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+  mod003:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 50
+    limitTraining: 10
+    modelfile: ../data/models/svm-pipeline_20180517210930.pkl
+    modeltype: ER
+    results: null
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_2.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_2_scores.log
+    status: error
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+  mod004:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 2
+    limitTraining: 20
+    modelfile: ../data/models/svm-pipeline_20180517210944.pkl
+    modeltype: ER
+    results:
+      bm2debug20180519214935:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526766600.2340357
+        modelfile: ../data/models/svm-pipeline_20180519214949.pkl
+        resultsFile: ../data/results//task9.1_bm2debugbm2debugmod004.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod004_scores.log
+        start: 1526766576.0222392
+        status: done
+        total_time: 24.211796522140503
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_3.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_3_scores.log
+    status: error
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+  mod005:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 50
+    limitTraining: 50
+    modelfile: ../data/models/svm-pipeline_20180517211001.pkl
+    modeltype: ER
+    results: null
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_4.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_4_scores.log
+    status: error
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+  mod045:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 50
+    limitTraining: 50
+    modelfile: ../data/models/svm-pipeline_20180517211001.pkl
+    modeltype: ER
+    results: null
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_4.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_4_scores.log
+    status: error
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+  mod051:
+    accuracy: 0.0
+    fafter1: [pos]
+    fafter2: [pos]
+    fafter3: [pos]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase]
+    fbefore2: [pos]
+    fbefore3: [pos]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 40
+    limitTraining: 30
+    modelfile: ../data/models/svm-pipeline_20180517210848.pkl
+    modeltype: ER
+    results: null
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_0.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_0_scores.log
+    status: doing
+    fcurrent: [wordStructure, chunk, lookup]
+  mod052:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 50
+    limitTraining: 40
+    modelfile: ../data/models/svm-pipeline_20180517210915.pkl
+    modeltype: ER
+    results: null
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_1.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_1_scores.log
+    status: error
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+  mod053:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 50
+    limitTraining: 10
+    modelfile: ../data/models/svm-pipeline_20180517210930.pkl
+    modeltype: ER
+    results: null
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_2.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_2_scores.log
+    status: error
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+  mod054:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 2
+    limitTraining: 20
+    modelfile: ../data/models/svm-pipeline_20180517210944.pkl
+    modeltype: ER
+    results:
+      bm2debug20180519214935:
+        accuracy_manual: 0.0
+        algorithm: SVMtrainer
+        end: 1526766600.8884234
+        modelfile: ../data/models/svm-pipeline_20180519214950.pkl
+        resultsFile: ../data/results//task9.1_bm2debugbm2debugmod054.txt_result
+        scores:
+          brand: {F1: '0', cor: '0', inc: '0', mis: '53', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '53'}
+          drug: {F1: '0', cor: '0', inc: '0', mis: '180', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          group: {F1: '0', cor: '0', inc: '0', mis: '65', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '65'}
+          macro: {F1: '0', P: '0', R: '0'}
+          partial: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0',
+            recall: '0', spu: '0', total: '304'}
+          strict: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+          type: {F1: '0', cor: '0', inc: '0', mis: '304', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '304'}
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod054_scores.log
+        start: 1526766576.1105995
+        status: done
+        total_time: 24.77782392501831
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_3.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_3_scores.log
+    status: error
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+  mod055:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 50
+    limitTraining: 50
+    modelfile: ../data/models/svm-pipeline_20180517211001.pkl
+    modeltype: ER
+    results: null
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_4.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_4_scores.log
+    status: error
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+numcores: 2
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: bm2debug
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/DrugBank
+total_time: 17.080596685409546
+trainingFolder: ../data/LaboCase/Train

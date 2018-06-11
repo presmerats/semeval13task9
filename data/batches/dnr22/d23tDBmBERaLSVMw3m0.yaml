@@ -1,0 +1,29 @@
+filepath: ../data/batches/svmdebug/d23tDBmNERaLSVMw3.yaml
+models:
+  m0:
+    algorithm: lsvm
+    fafter1: [pos, lookup, chunkGroup, wordStructure]
+    fafter2: [pos, lookup, chunkGroup, wordStructure]
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, lookup, chunkGroup, wordStructure]
+    fbefore2: [pos, lookup, chunkGroup, wordStructure]
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [lemma, pos, lookup, chunkGroup, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    resultsFile: null
+    scoresFile: null
+    status: pending
+numcores: 4
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: d23tDBmNERaLSVMw3
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/DrugBank
+total_time: 13013.62637925148
+trainingFolder: ../data/LaboCase/Train

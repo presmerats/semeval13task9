@@ -1,0 +1,23 @@
+accuracy: 0.0
+features:  current: 
+[ lemma, ]
+ before1: 
+[ lemma, ]
+ after1: 
+[ lemma, ]
+ before2: 
+[ lemma, ]
+ after2: 
+[ lemma, ]
+ before3: 
+[ lemma, ]
+ after3: 
+[ lemma, ]
+ before4: 
+[ lemma, ]
+ after4: 
+[ lemma, ]
+ before5: 
+[ lemma, ]
+ after5: 
+[ lemma, ]

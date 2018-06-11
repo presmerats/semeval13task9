@@ -1,0 +1,15 @@
+accuracy: 0.0
+features:  word: 
+[ lemma, ]
+ before1: 
+[ lemma, ]
+ after1: 
+[ lemma, ]
+ before2: 
+[ lemma, ]
+ after2: 
+[ lemma, ]
+ before3: 
+[ lemma, ]
+ after3: 
+[ lemma, ]

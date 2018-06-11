@@ -1,0 +1,18 @@
+accuracy: 0.0
+precision: 0
+recall: 0
+f1: 0
+features:  word: 
+[ lemma, pos, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ before1: 
+[ pos, ]
+ after1: 
+[ pos, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, wordStructure, ]
+ before2: 
+[ pos, ]
+ after2: 
+[ pos, ]
+ before3: 
+[ pos, ]
+ after3: 
+[ pos, ]

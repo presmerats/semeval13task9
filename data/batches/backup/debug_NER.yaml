@@ -1,0 +1,26 @@
+filepath: ../data/batches/debug_NER.yaml
+models:
+  mod002:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, lenword, prefix, suffix]
+    fafter2: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fafter3: [pos, hasDigits, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lenprefix, lenword, moreThan10chars, prefix, suffix]
+    fbefore2: [pos, hasStrangeChars, isLowerCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasDigits, isTitleCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.5263157894736842
+    modeltype: NER
+    results:
+    status: error
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lensuffix,
+      lenword, moreThan10chars, wordStructure]
+numcores: 7
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: bm
+testFolder2: ../data/LaboCase/Train/DrugBank
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/DrugBank
+total_time: 28.306050777435303
+trainingFolder: ../data/LaboCase/Train

@@ -1,0 +1,15 @@
+accuracy: 0.0
+features:  word: 
+[ pos, ]
+ before1: 
+[ pos, ]
+ after1: 
+[ pos, ]
+ before2: 
+[ ]
+ after2: 
+[ ]
+ before3: 
+[ ]
+ after3: 
+[ ]

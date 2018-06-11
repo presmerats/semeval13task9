@@ -1,0 +1,2692 @@
+\documentclass[a4paper]{article}
+
+%%%%%%%% CREATE DOCUMENT STRUCTURE %%%%%%%%
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{subfig}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+
+\usepackage{pdflscape}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage{sectsty}
+%\usepackage{apacite}
+\usepackage{float}
+\usepackage{titling} 
+\usepackage{blindtext}
+\usepackage[square,sort,comma,numbers]{natbib}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{xcolor}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[linesnumbered,algoruled,boxed,lined]{algorithm2e}
+\setlength\parskip{.5\baselineskip plus .1\baselineskip  minus .1\baselineskip}
+\setlength{\parindent}{1em}
+\definecolor{darkgreen}{rgb}{0.0, 0.4, 0.0}
+
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+
+\title{AHLT DNR report}
+\author{Pau Rodríguez Esmerats, Asaf Badouh }
+\begin{document}
+
+\begin{landscape}
+
+\section{ Best models}
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+ 
+ 	
+ 		
+ 		\small{ ddi006mmmm10 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmmm11 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmmm2 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmmm22 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmmm23 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmmm24notop } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmmm25notop } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmmm26 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmmm27 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmmm28 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmmm3 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmmm10 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmmm11 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmmm2 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmmm22 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmmm23 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmmm24notop } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmmm25notop } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmmm26 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmmm27 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmmm28 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmmm3 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi009m3 } & BDDI & LSVM & +  &  0 &  :  &  1 & 0,9966 & 0.9983  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm65 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm66 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm70 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm71 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm65 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm66 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm70 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 		
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm71 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m65 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m66 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m70 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m71 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm22 } & BDDI & LSVM & +  &  0 &  :  &  0,4734 & 0,5226 & 0.4968  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm23 } & BDDI & LSVM & +  &  0 &  :  &  0,4734 & 0,5226 & 0.4968  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm10 } & BDDI & LSVM & +  &  0 &  :  &  0,4768 & 0,5124 & 0.494  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm11 } & BDDI & LSVM & +  &  0 &  :  &  0,4768 & 0,5124 & 0.494  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi003m3 } & BDDI & LSVM & +  &  0 &  :  &  0,3818 & 0,2794 & 0.3227  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi003m5 } & BDDI & LSVM & +  &  0 &  :  &  0,3818 & 0,2794 & 0.3227  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm2 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm24notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm25notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm26 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm27 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm28 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm29 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm3 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm30 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm31 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm42 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm43 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm44 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm45 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm46 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm47 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm48 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm4notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm52 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm53 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm54 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm55 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm56 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm57 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm58 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm5notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm6 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm7 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm8 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi006mmm9 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm10 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm11 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm2 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm22 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm23 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm24notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm25notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm26 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm27 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm28 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm29 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm3 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm30 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm31 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm42 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm43 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm44 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm45 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm46 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm47 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm48 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm4notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm52 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm53 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm54 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm55 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm56 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm57 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm58 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm5notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm6 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm7 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm8 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi007mmm9 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m10 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m11 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m2 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m22 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m23 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m24notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m25notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m26 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m27 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m28 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m29 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m3 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m30 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m31 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m42 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m43 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m44 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m45 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m46 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m47 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m48 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m4notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m52 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m53 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m54 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m55 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m56 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m57 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m58 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m5notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m6 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m7 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m8 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ BDDI007m9 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ preprocessDDIMedlinem0 } & BDDI & LSVM & +  &  0 &  :  &  0,129 & 0,0226 & 0.0385  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ d25tDBmDDIaSVMm0 } & BDDI & LSVM & +  &  0 &  :  &  0,129 & 0,0226 & 0.0385  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 		
+ 		\small{ ddi005m2 } & BDDI & LSVM & +  &  0 &  :  &  0,9091 & 0,0113 & 0.0223  &  0 & 0 & 0.0 \\
+ 		
+
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ 	
+ 
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+\section{All model }
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+ 
+ 	
+ 	\small{ ddi006mmmm10 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm11 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm2 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm22 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm23 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm24notop } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm25notop } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm26 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm27 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm28 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm3 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm10 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm11 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm2 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm22 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm23 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm24notop } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm25notop } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm26 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm27 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm28 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm3 } & BDDI & LSVM & +  &  0 &  :  &  0,321 & 0,0588 & 0.0994  &  0,1319 & 0,0218 & 0.0374 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi009m3 } & BDDI & LSVM & +  &  0 &  :  &  1 & 0,9966 & 0.9983  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm65 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm66 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm70 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm71 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm65 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm66 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm70 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 	
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm71 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m65 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m66 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m70 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m71 } & BDDI & LSVM & +  &  0 &  :  &  0,5182 & 0,5328 & 0.5254  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm22 } & BDDI & LSVM & +  &  0 &  :  &  0,4734 & 0,5226 & 0.4968  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm23 } & BDDI & LSVM & +  &  0 &  :  &  0,4734 & 0,5226 & 0.4968  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm10 } & BDDI & LSVM & +  &  0 &  :  &  0,4768 & 0,5124 & 0.494  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm11 } & BDDI & LSVM & +  &  0 &  :  &  0,4768 & 0,5124 & 0.494  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi003m3 } & BDDI & LSVM & +  &  0 &  :  &  0,3818 & 0,2794 & 0.3227  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi003m5 } & BDDI & LSVM & +  &  0 &  :  &  0,3818 & 0,2794 & 0.3227  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm2 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm24notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm25notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm26 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm27 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm28 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm29 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm3 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm30 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm31 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm42 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm43 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm44 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm45 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm46 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm47 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm48 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm4notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm52 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm53 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm54 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm55 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm56 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm57 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm58 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm5notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm6 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm7 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm8 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmm9 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm10 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm11 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm2 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm22 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm23 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm24notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm25notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm26 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm27 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm28 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm29 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm3 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm30 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm31 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm42 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm43 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm44 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm45 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm46 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm47 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm48 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm4notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm52 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm53 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm54 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm55 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm56 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm57 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm58 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm5notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm6 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm7 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm8 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmm9 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m10 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m11 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m2 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m22 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m23 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m24notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m25notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m26 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m27 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m28 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m29 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m3 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m30 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m31 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m42 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m43 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m44 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m45 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m46 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m47 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m48 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m4notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m52 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m53 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m54 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m55 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m56 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m57 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m58 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m5notop } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m6 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m7 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m8 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m9 } & BDDI & LSVM & +  &  0 &  :  &  0,3928 & 0,1595 & 0.2269  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ preprocessDDIMedlinem0 } & BDDI & LSVM & +  &  0 &  :  &  0,129 & 0,0226 & 0.0385  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ d25tDBmDDIaSVMm0 } & BDDI & LSVM & +  &  0 &  :  &  0,129 & 0,0226 & 0.0385  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi005m2 } & BDDI & LSVM & +  &  0 &  :  &  0,9091 & 0,0113 & 0.0223  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi005m5 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi005m5 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ preprocessBDDIstep3Medlinem0 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ preprocessBDDIstep3DrugBank-testm0 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi003m5 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ d26tDBmDDIaLSVMm0 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ d26tDBmDDIaLSVMm1 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ d26tDBmDDIaLSVMm2 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 	
+
+ 
+ 	
+ 	\small{ d26tDBmDDIaLSVMm3 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ d26tDBmDDIaLSVMm4 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ d26tDBmDDIaLSVMm5 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm29 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm30 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm31 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm42 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm43 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm44 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm45 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm46 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm47 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm48 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm4notop } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm52 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm53 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm54 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm55 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm56 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm57 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm58 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm5notop } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm6 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm65 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm66 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm7 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm70 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm71 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm8 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi006mmmm9 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 	
+
+ 
+ 	
+ 	\small{ preprocessBDDIstep3Medline-testm0 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ preprocessBDDIstep3DrugBankm0 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm29 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm30 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm31 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm42 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm43 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm44 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm45 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm46 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm47 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm48 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm4notop } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm52 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm53 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm54 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm55 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm56 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm57 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm58 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm5notop } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm6 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm65 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm66 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm7 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm70 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm71 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm8 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ ddi007mmmm9 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m2 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m3 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m4notop } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m5notop } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m6 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m7 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m8 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m9 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m10 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m11 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m22 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m23 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m24notop } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m25notop } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m26 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m27 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m28 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m29 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m30 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m31 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m42 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m43 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m44 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m45 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m46 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m47 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m48 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m52 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m53 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m54 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m55 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m56 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m57 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m58 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m65 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m66 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m70 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ 	
+ 	\small{ BDDI007m71 } & BDDI & LSVM & +  &  0 &  :  &  0 & 0 & 0.0  &  0 & 0 & 0.0 \\
+ 	
+
+ 
+ \hline
+\end{tabular}
+\end{center}
+
+\end{landscape}
+
+
+
+\end{document}

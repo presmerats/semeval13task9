@@ -1,0 +1,64 @@
+filepath: ../data/batches/ddi22/ddi010.yaml
+models:
+  # m44:
+  #   algorithm: lsvm
+  #   limitTest: null
+  #   limitTraining: null
+  #   modelfile: null
+  #   modeltype: DDI
+  #   resultsFile: null
+  #   scoresFile: null
+  #   sentencefeatures: []
+  #   topcount: 30
+  #   topcountfeatures: []
+  #   windowfeatures: [word, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+  #     suffix5, wordStructure]
+  #   wordfeatures: [pos]
+  # m45:
+  #   algorithm: lsvm
+  #   limitTest: null
+  #   limitTraining: null
+  #   modelfile: null
+  #   modeltype: DDI
+  #   resultsFile: null
+  #   scoresFile: null
+  #   sentencefeatures: []
+  #   topcount: 30
+  #   topcountfeatures: []
+  #   windowfeatures: [prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+  #     suffix5, wordStructure]
+  #   wordfeatures: [ortho]
+
+  m4notop:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: DDI
+
+  m65:
+    algorithm: lsvm
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: DDI
+    resultsFile: null
+    scoresFile: null
+    sentencefeatures: []
+    topcount: 30
+    topcountfeatures: []
+    windowfeatures: [prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4,
+      suffix5, wordStructure]
+    wordfeatures: [ortho]
+numcores: 2
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: ddi010
+testBDDIfile: ../data/features/preprocessBDDIstep3DrugBank-test.json
+testDDIfile: ../data/features/preprocessDDIstep3DrugBank-test.json
+testFeatures: nothing
+testFolder: ../data/LaboCase/Test/Test for DDI Extraction task/DrugBank
+total_time: 2263.6533653736115
+trainingBDDIfile: ../data/features/preprocessBDDIstep3DrugBank.json
+trainingDDIfile: ../data/features/preprocessDDIstep3DrugBank.json
+trainingFolder: nothing

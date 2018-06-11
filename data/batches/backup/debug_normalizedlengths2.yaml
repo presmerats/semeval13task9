@@ -1,0 +1,114 @@
+filepath: ../data/batches/debug_normalizedlengths2.yaml
+models:
+  mod001:
+    accuracy: 0.0
+    fafter1: [pos]
+    fafter2: [pos]
+    fafter3: [pos]
+    fbefore1: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase]
+    fbefore2: [pos]
+    fbefore3: [pos]
+    goalaccuracy: 0.5263157894736842
+    limitTest: 40
+    limitTraining: 30
+    modelfile: ../data/models/svm-pipeline_20180517210848.pkl
+    modeltype: ER
+    results:
+      bm2debug20180519154138: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526744512.8405266,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519154147.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod001.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod001_scores.log, start: 1526744498.3993838,
+        status: done, total_time: 14.441142797470093}
+      bm2debug20180519154526: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526744738.7484262,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519154533.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod001.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod001_scores.log, start: 1526744726.7634878,
+        status: done, total_time: 11.984938383102417}
+      bm2debug20180519154701: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526744833.7196171,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519154708.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod001.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod001_scores.log, start: 1526744821.7110646,
+        status: done, total_time: 12.008552551269531}
+      bm2debug20180519154847: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526744939.988412,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519154854.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod001.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod001_scores.log, start: 1526744928.0588613,
+        status: done, total_time: 11.929550647735596}
+      bm2debug20180519154912: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526744963.2052882,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519154918.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod001.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod001_scores.log, start: 1526744952.4087849,
+        status: done, total_time: 10.79650330543518}
+      bm2debug20180519172411: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526750661.4844024,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519172416.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod001.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod001_scores.log, start: 1526750651.082939,
+        status: done, total_time: 10.401463508605957}
+      bm2debug20180519172705: {accuracy: 0.0, accuracy_manual: 0.0, end: 1526750837.876301,
+        f1: '0', modelfile: ../data/models/svm-pipeline_20180519172711.pkl, precision: '0',
+        recall: '0', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod001.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod001_scores.log, start: 1526750825.5155087,
+        status: done, total_time: 12.360792398452759}
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_0.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_0_scores.log
+    status: doing
+    fcurrent: [wordStructure, chunk, lookup]
+  mod002:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isLowerCase, isUpperCase, lenprefix,
+      lensuffix, lenword, moreThan10chars, suffix]
+    fafter2: [pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase]
+    fafter3: [pos, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase]
+    fbefore1: [lemma, pos, hasDigits, hasStrangeChars, isLowerCase, isUpperCase, lensuffix,
+      moreThan10chars, prefix, suffix, wordStructure]
+    fbefore2: [pos, hasStrangeChars, isTitleCase, isUpperCase, wordStructure]
+    fbefore3: [pos, hasStrangeChars, isLowerCase, moreThan10chars, wordStructure]
+    goalaccuracy: 0.3881578947368421
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517210848.pkl
+    modeltype: ER
+    results:
+      bm2debug20180519172705: {accuracy: 0.35855263157894735, accuracy_manual: 0.376271186440678,
+        end: 1526752536.0781233, f1: '0.52', modelfile: ../data/models/svm-pipeline_20180519175506.pkl,
+        precision: '0.92', recall: '0.36', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod002.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod002_scores.log, start: 1526750825.5158908,
+        status: done, total_time: 1710.5622324943542}
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_0.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_0_scores.log
+    status: doing
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lenprefix,
+      lensuffix, suffix, wordStructure]
+  mod003:
+    accuracy: 0.0
+    fafter1: [lemma, pos, hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase,
+      lensuffix, moreThan10chars, prefix, wordStructure]
+    fafter2: [pos, hasStrangeChars, isLowerCase, moreThan10chars, wordStructure]
+    fafter3: [hasDigits, hasStrangeChars, isTitleCase, isUpperCase, moreThan10chars]
+    fbefore1: [lemma, pos, hasDigits, isLowerCase, isUpperCase, lenprefix, lenword,
+      moreThan10chars, prefix, suffix, wordStructure]
+    fbefore2: [pos, hasDigits, isLowerCase, isUpperCase, moreThan10chars]
+    fbefore3: [hasDigits, hasStrangeChars, isLowerCase, isUpperCase, moreThan10chars]
+    goalaccuracy: 0.40789473684210525
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517210848.pkl
+    modeltype: ER
+    results:
+      bm2debug20180519172705: {accuracy: 0.3782894736842105, accuracy_manual: 0.39661016949152544,
+        end: 1526752773.3265522, f1: '0.54', modelfile: ../data/models/svm-pipeline_20180519175905.pkl,
+        precision: '0.93', recall: '0.38', resultsFile: ../data/results//task9.1_bm2debugbm2debugmod003.txt_result,
+        scoresFile: ../data/results//task9.1_bm2debugbm2debugmod003_scores.log, start: 1526750825.5162587,
+        status: done, total_time: 1947.8102934360504}
+    resultsFile: ../data/results//task9.1_bm2debugbm2debug_0.txt_result
+    scoresFile: ../data/results//task9.1_bm2debugbm2debug_0_scores.log
+    status: doing
+    fcurrent: [hasDigits, hasStrangeChars, isLowerCase, isTitleCase, isUpperCase, lenprefix,
+      lenword, moreThan10chars, suffix]
+numcores: 7
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: bm2debug
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/DrugBank
+total_time: 1948.80597782135
+trainingFolder: ../data/LaboCase/Train

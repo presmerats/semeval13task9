@@ -1,0 +1,23 @@
+accuracy: 0.8813559322033898
+features:  current: 
+[ lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ before1: 
+[ lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ after1: 
+[ lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ before2: 
+[ lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ after2: 
+[ lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ before3: 
+[ lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ after3: 
+[ lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ before4: 
+[ lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ after4: 
+[ lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ before5: 
+[ lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]
+ after5: 
+[ lemma, lookup, chunkGroup, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix, prefix3, prefix4, prefix5, suffix, suffix3, suffix4, suffix5, lenprefix, lensuffix, lenword, wordStructure, ]

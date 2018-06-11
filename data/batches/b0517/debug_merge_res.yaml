@@ -1,0 +1,83 @@
+filepath: ../data/batches/b0517/debug_merge_res.yaml
+models:
+  mod000:
+    algorithm: svm
+    fafter1: [pos]
+    fafter2: [pos]
+    fafter3: [pos]
+    fafter4: [pos]
+    fafter5: [pos]
+    fbefore1: [pos]
+    fbefore2: [pos]
+    fbefore3: [pos]
+    fbefore4: [pos]
+    fbefore5: [pos]
+    fcurrent: [pos]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod000b:
+    algorithm: svm
+    fafter1: [lookup]
+    fafter2: [lookup]
+    fafter3: [lookup]
+    fafter4: [lookup]
+    fafter5: [lookup]
+    fbefore1: [lookup]
+    fbefore2: [lookup]
+    fbefore3: [lookup]
+    fbefore4: [lookup]
+    fbefore5: [lookup]
+    fcurrent: [lookup]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod009:
+    algorithm: svm
+    fafter1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars, moreThan10chars]
+    fafter2: []
+    fafter3: []
+    fbefore1: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars]
+    fbefore2: []
+    fbefore3: []
+    fcurrent: [isLowerCase, isTitleCase, isUpperCase, hasDigits, hasStrangeChars,
+      moreThan10chars]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+  mod009b:
+    algorithm: svm
+    fafter1: [isLowerCase, moreThan10chars]
+    fafter2: [chunk]
+    fafter3: [chunk]
+    fbefore1: [isLowerCase, moreThan10chars]
+    fbefore2: [chunk]
+    fbefore3: [chunk]
+    fcurrent: [isLowerCase, moreThan10chars]
+    limitTest: null
+    limitTraining: null
+    modelfile: ../data/models/svm-pipeline_20180517212700.pkl
+    modeltype: ER
+    resultsFile: ../data/results//task9.1_bm3bm3_0.txt_result
+    scoresFile: ../data/results//task9.1_bm3bm3_0_scores.log
+    status: pending
+numcores: 4
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: debug_merge_res
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/MedLine
+total_time: 0
+trainingFolder: ../data/LaboCase/Train

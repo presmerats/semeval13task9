@@ -1,0 +1,23 @@
+accuracy: 0.6817496229260935
+features:  current: 
+[ lemma, pos, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, ]
+ before1: 
+[ pos, ]
+ after1: 
+[ pos, isTitleCase, isUpperCase, isLowerCase, hasDigits, hasStrangeChars, moreThan10chars, prefix3, prefix4, prefix5, ]
+ before2: 
+[ pos, ]
+ after2: 
+[ pos, ]
+ before3: 
+[ pos, ]
+ after3: 
+[ pos, ]
+ before4: 
+[ ]
+ after4: 
+[ ]
+ before5: 
+[ ]
+ after5: 
+[ ]

@@ -1,0 +1,86 @@
+filepath: ../data/batches/svmdebug/d23tDBmNERaSVMw3.yaml
+models:
+  m0:
+    algorithm: lsvm
+    fafter1: [pos, lookup, chunkGroup, wordStructure]
+    fafter2: [pos, lookup, chunkGroup, wordStructure]
+    fafter3: []
+    fafter4: []
+    fafter5: []
+    fbefore1: [pos, lookup, chunkGroup, wordStructure]
+    fbefore2: [pos, lookup, chunkGroup, wordStructure]
+    fbefore3: []
+    fbefore4: []
+    fbefore5: []
+    fcurrent: [lemma, pos, lookup, chunkGroup, wordStructure]
+    limitTest: null
+    limitTraining: null
+    modelfile: null
+    modeltype: NER
+    results:
+      d21tDBmNERaLSVMw320180522224647:
+        accuracy_manual: 0.6033898305084746
+        algorithm: SVMtrainer
+        end: 1527029416.4878042
+        modelfile: ../data/models/svm-pipeline_20180522225008.pkl
+        resultsFile: ../data/results//task9.1_d21tDBmNERaLSVMw3d21tDBmNERaLSVMw3m0.txt_result
+        scores:
+          brand: {F1: '0.43', cor: '16', inc: '2', mis: '35', par: '0', prec: '0.73',
+            recall: '0.3', spu: '4', total: '53'}
+          drug: {F1: '0.74', cor: '129', inc: '20', mis: '31', par: '0', prec: '0.77',
+            recall: '0.72', spu: '19', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.62', cor: '178', inc: '40', mis: '86', par: '0', prec: '0.66',
+            recall: '0.59', spu: '51', total: '304'}
+          group: {F1: '0.43', cor: '25', inc: '14', mis: '26', par: '0', prec: '0.5',
+            recall: '0.38', spu: '11', total: '65'}
+          macro: {F1: '0.4', P: '0.5', R: '0.35'}
+          partial: {F1: '0.66', cor: '178', inc: '0', mis: '86', par: '40', prec: '0.66',
+            recall: '0.65', spu: '51', total: '304'}
+          strict: {F1: '0.59', cor: '170', inc: '48', mis: '86', par: '0', prec: '0.63',
+            recall: '0.56', spu: '51', total: '304'}
+          type: {F1: '0.72', cor: '205', inc: '13', mis: '86', par: '0', prec: '0.76',
+            recall: '0.67', spu: '51', total: '304'}
+        scoresFile: ../data/results//task9.1_d21tDBmNERaLSVMw3d21tDBmNERaLSVMw3m0_scores.log
+        start: 1527029207.6827366
+        status: done
+        total_time: 208.8050675392151
+      d23tDBmNERaLSVMw320180522234750:
+        accuracy_manual: 0.8169491525423729
+        algorithm: SVMtrainer
+        end: 1527045882.982728
+        modelfile: ../data/models/svm-pipeline_20180523032433.pkl
+        resultsFile: ../data/results//task9.1_d23tDBmNERaLSVMw3d23tDBmNERaLSVMw3m0.txt_result
+        scores:
+          brand: {F1: '0.7', cor: '31', inc: '0', mis: '22', par: '0', prec: '0.89',
+            recall: '0.58', spu: '4', total: '53'}
+          drug: {F1: '0.88', cor: '154', inc: '8', mis: '18', par: '0', prec: '0.9',
+            recall: '0.86', spu: '9', total: '180'}
+          drug_n: {F1: '0', cor: '0', inc: '0', mis: '6', par: '0', prec: '0', recall: '0',
+            spu: '0', total: '6'}
+          exact: {F1: '0.81', cor: '240', inc: '21', mis: '43', par: '0', prec: '0.83',
+            recall: '0.79', spu: '29', total: '304'}
+          group: {F1: '0.75', cor: '48', inc: '6', mis: '11', par: '0', prec: '0.76',
+            recall: '0.74', spu: '9', total: '65'}
+          macro: {F1: '0.58', P: '0.64', R: '0.54'}
+          partial: {F1: '0.83', cor: '240', inc: '0', mis: '43', par: '21', prec: '0.83',
+            recall: '0.82', spu: '29', total: '304'}
+          strict: {F1: '0.78', cor: '233', inc: '28', mis: '43', par: '0', prec: '0.8',
+            recall: '0.77', spu: '29', total: '304'}
+          type: {F1: '0.83', cor: '247', inc: '14', mis: '43', par: '0', prec: '0.85',
+            recall: '0.81', spu: '29', total: '304'}
+        scoresFile: ../data/results//task9.1_d23tDBmNERaLSVMw3d23tDBmNERaLSVMw3m0_scores.log
+        start: 1527032870.0945115
+        status: done
+        total_time: 13012.888216495514
+    resultsFile: null
+    scoresFile: null
+    status: pending
+numcores: 4
+resultsFolder: ../data/results/
+savingFolder: ../data/models/
+session: d23tDBmNERaLSVMw3
+testFolder: ../data/LaboCase/Test/Test for DrugNER task/DrugBank
+total_time: 13013.62637925148
+trainingFolder: ../data/LaboCase/Train
