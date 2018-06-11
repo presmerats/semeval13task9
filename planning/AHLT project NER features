@@ -1,0 +1,57 @@
+AHLT project NER features
+=========================
+
+
+https://www.hindawi.com/journals/cmmm/2015/913489/
+
+
+
+DNR
+	-> BILOU outperforms BIO
+
+Algo
+	CRF
+		open source inmplementation www.chokkan.org
+
+
+
+
+CRF with Sci-kit learn
+
+	https://sklearn-crfsuite.readthedocs.io/en/latest/
+
+	http://eli5.readthedocs.io/en/latest/tutorials/sklearn_crfsuite.html
+
+
+singleton features
+	word
+	pos
+*	chunk feature
+	orthographic feature
+		5 classes: all-capitalized, is-capitalized,all-digits, alphanumeric, hyphen or not
+	affix feature: 
+		prefixes and suffices of the length 3,4,5
+	wordshape feature
+		generalized word class: Xxxxx00xxOxx
+		brief word class: Xx0xOx
+*	dictionary feature:
+		whether a word appear in the dictionary
+			drugbank 
+			drugs@FDA
+			jochem
+*	word embeddings feature:
+		skip-gram model
+
+conjunction features
+	word and POS within context window
+	word conjunction 2 words (bi-gram?)
+
+	combine
+		word, pos, chunk, ortho, drugbank, FDA, Jochem, word embedding, prefix l3, prefix l4, prefix l5, suffix l3, suffix l4 , suffix l5, word shape generalized, word shape brief
+	in a 2-tuple conjuntion
+	with a window of 5
+
+		combine fi in 0 -1, -1 -2, 0 1, 1 2, 2 3 , -2 -3 ,...
+		combine fi fj in 0, 1,2,3,4,5,-1,-2,-3,-4,-5
+
+feature selection

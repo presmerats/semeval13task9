@@ -1,0 +1,12 @@
+We observe that our CRF model for DNR has a similar performance than the winner of the 2013 SemEval task. In fact, we should perform crossvalidation with our best 3 models, and evaluate the one that generalizes better over validation data. Otherwise we can say that we are overfitting over the testing data set, and we cannot assure that the model will generalize well.\\
+We also observe that our model for DDI task obatins a similar performance than the second best model of the SemEval 2013 task 9.2. However, all the models that we have trained for this DDI task have been performing around 35\% of the Macro F1 score and this particular case obtains 42\% by limiting the training data to 1000 pairs of drug interactions. We conclude that due to classe imbalance, the limitation over the training set has somehow balanced the classes allowing the model to perform better. Again, with this treatment we cannot assure that the model will generalize as expected.
+
+
+We proposed a series of improvements over the current work:
+\begin{itemize}
+    \item Word embedding - use a more suitable ready-made word2vec db (with less dimensions) or perform a K-means clustering to cluster words based on their word2vec vectors. It has been proposed as a third alternative solution to use the word2vec model to obtain the mosst similar word from the word2vec model for an input word. This resulting similar word could be searched in the lookup over the Drugbank dictionary to see if it is a drug name or not. All those approaches will have to be done by preprocessing the training and test set and saving the intermediate results on files on the disk.
+
+    \item feature selection by frequency of appearance in the dataset, or entropy computation
+    \item model selection by cross-validation
+
+\end{itemize}

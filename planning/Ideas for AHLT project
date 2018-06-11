@@ -1,0 +1,18 @@
+Ideas for AHLT project
+
+feature engineering:
+	- frequent longwords
+	- collocations, bigrams
+	- concordance
+	- freqdist
+	- length freqdist
+	- letters per word
+	- words per sentence
+	- vocab diversity
+	- modal verbs frequencies
+
+xml 
+	- entity recognition: drug names
+		- word window apperance
+		- prefixes, suffixes
+

@@ -1,0 +1,21 @@
+\begin{table}[H]
+\centering
+\begin{tabular}{lll}
+\multicolumn{3}{l}{Drug-Drug Interaction Features}                                       \\ \hline
+
+$f_{1}$ & All DNR SVM features        & for each entity of the pair   \\
+\rowcolor[HTML]{DAE8FC} 
+$f_{2}$ & All DNR SVM features in a window        & \begin{tabular}[c]{@{}l@{}}for each word  \\ in a window 0 to 5 \end{tabular}                      \\
+$f_{3}$ & Appearance of most frequent 3-gram sequences & from dependency tree shortest path    \\
+\rowcolor[HTML]{DAE8FC} 
+$f_{4}$ &  Appearance of most frequent Word/Lemma  &        \\
+$f_{5}$  & Appearance of most frequent POS  & from CFG parse tree shortest path    \\
+\rowcolor[HTML]{DAE8FC} 
+$f_{6}$ &  Word count in the shortest path  & from dependency tree shortest path        \\
+$f_{7}$ &  Counts of POS tags in sentence   &  specific tags: VB, CC, MD, DT
+
+\end{tabular}
+\caption{DDI features}
+\label{table:DDIfeatures}
+\end{table}
+

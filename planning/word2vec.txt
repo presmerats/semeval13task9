@@ -1,0 +1,10 @@
+Biomedical natural language processing
+---------------------------------------
+http://bio.nlplab.org/
+
+Word vectors were induced from PubMed and PMC texts and their combination using the word2vec (google) tool
+
+
+
+word vector pre-trained can be found here:
+http://evexdb.org/pmresources/vec-space-models/

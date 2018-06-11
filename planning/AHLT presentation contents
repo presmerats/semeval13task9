@@ -1,0 +1,72 @@
+AHLT presentation contents
+
+
+
+
+	- title
+	- quick TOC
+
+	- task 9.1: statement & inspiration papers
+	- task 9.1: approaches, 
+				how we organized exploration and model selection
+				our pipeline(components schema) and automated report
+
+	- task 9.1:svm approach: Features used
+**		- feature structure
+		- summary table:
+		[- task 9.1:svm approach: Features used, zoom on lookup,]
+			description and links and preprocessing
+		[- task 9.1:svm approach: Features used, zoom on chunk,]
+			quick nltk + NP chunker 
+		[- task 9.1:svm approach: Features used, zoom on w2v]
+*			decription download, number of features, ..
+
+	- task 9.1:crf approach: Features used
+**		- feature structure: by sentence & how crf work
+*			-> schema of the features
+		- ???? forgot now which features are used!! -> same? word, lemma, pos, ortho
+		- exploration made on the features
+
+	- task 9.1:approach: NER result tables
+*			best 3 models (or best models that are also diverse)
+			winners and losers of the semeval task
+			seeing the list of features in the table
+
+
+	- task 9.2: statement & inspiration papers
+	- task 9.2: svm approach: Features used,
+		- the feature structure: by pair-sentence
+		- features: entity ortho,word, pos, lemma, 
+					parsed tree + shortest path + trigram +  frequency + appearance of 
+*						-> example, schema!,
+*						-> cite the source!
+					parsed tree + shortest path + word +  frequency + appearance of 
+*						-> example schema!
+* 		- workflow: multiple preprocessings of train and test then training,  probably pipeline as it's different (compoenents) 
+
+
+	- task 9.3: svm approach: DDI result table and comments
+*			best 3 models (or best models that are also diverse)
+			winners and losers of the semeval task
+			seeing the list of features in the table
+
+
+	- Conclusion:
+		- what worked
+		- possible improvements
+			- testing other algorithms: like neural networks
+
+			- improvements on our work
+				- 9.1 svm apply clustering on w2v so to have a less memory demanding feature
+				- cross-validation
+*				- 9.2 add orthografic , lemma, pos of othe words in the sentence
+*				- perform feature selection through other techniques:
+					- feature frequency in the dataset
+					- compute feature entropy
+					- explore: statistical tests, correlation,PCA
+
+
+
+
+- References
+- Thx and Questions

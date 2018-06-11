@@ -1,0 +1,41 @@
+FeatureExtraction skeleton
+==========================
+
+
+class or function??
+
+class to save datastruct in mem for the moment
+
+
+datastruct
+	dict
+	{ sentenceid :
+		{
+			text
+			entities: [entity{},..]
+			pairs: [pair]
+			features:
+				tokens
+				POS
+				lemma
+				parsing
+				...and other...
+		}}
+
+extractor
+	parse xmls
+		walk filesystem
+		read xml
+		parse
+		translate into the datastruct?
+
+featurer
+	-load libraries (nltk, freeling, stanford?)
+	- process each sentence text
+	- save results
+		-tokens
+		-POS
+		-lemma
+		-parsing
+		....
+		*plugin architecture?

@@ -1,0 +1,66 @@
+\begin{table}[H]
+\centering
+\scalebox{0.7}{
+\begin{tabular}{ |l|c|c|c|c|c|c|c|c|c|c|c|} 
+ \hline
+ 	Name & Type & Algo. & Features & \# Ftrs & Window & Prec & Rec & F1 & M-Prec & M-Rec & M-F1\\
+ \hline
+ \rowcolor[HTML]{DAE8FC}
+ 		\small{ d24tMDmNERaCRFw1m10 } & NER & CRF & pos,ort+pos,ort  &  57 &  -1:+1  &  0.9 & 0.85 & 0.87  &  0.92 & 0.65 & \textbf{0.71} \\
+ 		\small{ d22btDBmNERaCRFw3m5 } & NER & CRF & pos,ort,lo+pos,ort  &  21 &  -3:+3  &  0.9 & 0.82 & 0.86  &  0.92 & 0.63 & 0.7 \\
+ 		\small{ d23tDBmNERaLSVMw3m0 } & NER & SVM &
+ 		
+ 		\begin{tabular}{c} 
+   
+ 		    lm,pos,lo,chg,ort \\
+        
+ 			+ pos,lo,chg,ort \\ 
+ 		 \end{tabular}
+ 			
+ 			  &  21 &  -2:+2  &  0.83 & 0.79 & 0.81  &  0.64 & 0.54 & 0.58 \\
+ 		
+ 		% DrugBank Winner for macro-F1
+ 		
+ 		%WBI	3	
+
+ %\hline
+ \rowcolor[HTML]{FFCCC9}
+ 		\small{ SemEval'13	WBI(DrugBank) } & NER &  &   &   &    & 0.921 & 0.914  & 0.917  &  0.653 & 0.659 & \textbf{0.656} \\
+\rowcolor[HTML]{FFCCC9}
+ 		\small{ SemEval'13	UTurku(MedLine) } & NER &  &   &   &    & 0.809 & 	0.521 & 0.634 &  0.649	& 0.528 & \textbf{0.582} \\
+ 		%remoark our model is overfitted!
+ \hline
+ 
+  \rowcolor[HTML]{DAE8FC}
+ \small{ ddi006m65(DrugBank) } & DDI & SVM & ort+ort  & 80 &  -3:+3  &  0.6513 & 0.448 & 0.5308  &  0.5778 & 0.3415 & \textbf{0.4293} \\
+ 		
+\small{ ddi006m53(DrugBank) } & DDI & SVM & lm,ort+lm,ort &  96 &  -3:+3  &  0.5748 & 0.4695 & 0.5168  &  0.4292 & 0.3024 & 0.3548 \\
+
+\small{ ddi007m22(MedLine) } & DDI & SVM & 
+
+\begin{tabular}{c} 
+   
+ 		    pos,ort+sent \\
+        
+ 			+ tw,tri,tl,tp \\ 
+ 		 \end{tabular}
+ 
+
+                                &  113 &  -3:+3  &  03492 & 02316 & 0.2785  &  05099 & 02531 & 0.3383 \\
+
+ 
+	
+	
+ \rowcolor[HTML]{FFCCC9}
+\small{ SemEval'13	FBK-irst(DrugBank) } & DDI &  &   &  & &  0.816	& 0.838	& 0.827   &  0.708 &	0.639 &	\textbf{0.672} \\
+ \rowcolor[HTML]{FFCCC9}
+\small{ SemEval'13	FBK-irst(MedLine) } & DDI &  &   &  & & 0.558 &	0.505 &	0.53  &  0.384 &	0.514 & \textbf{0.44} \\
+ 		
+ 		
+
+
+\hline
+ 
+\end{tabular}
+} %scale
+\end{table}

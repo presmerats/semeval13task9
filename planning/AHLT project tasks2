@@ -1,0 +1,1101 @@
+AHLT project tasks
+==================
+
+
+basic groups of tasks
+	- preparation: BIO tagging, POS, feature engineering
+	- training: scikit tutos, algo select(svm, forest), train (LONG process)
+	- validation/evaluation: K-foldcv, accuracy, precision, recall
+	- documentation
+	- improvement
+
+
+ok 	-first questions
+	ok- dataset clasifications
+		no need for the txt's just xmls
+	ok- feature extraction 
+		in mem?
+		to bd?
+		for hadoop processing?
+		see scikit farmework needs then decide. Surely from disk but json?csv?
+
+
+
+ok- Datasets
+	ok-training and test datasets visualize
+	ok- xml parser, + raw, word, sentence
+		ok- xml parser to datastruct (in mem list or data frame)
+		ok- BD? (ask ): wait unutil sci-kit learn strategy is prepared<
+		ok- store (json?, yaml?, BD?) -> see learning framework for that
+
+ok- datastruct:
+	list of tuples
+	for each tuple:
+		- word
+		- pos tag
+		- BIO
+		- other features...
+
+
+	- 
+
+
+20180409
+	ok- BIO
+  	 	- IMPLEMENT bio from info on xml
+		('Word','O'), (word2, 'B'), (..)
+		do 2 parsings to avoid errors
+		ko- parsing from words 
+			-> error prone for some wordTokenizer
+			-> offset in text is lost, and sometimes is difficult to recover
+			(\r\n as 2 chars, but in words it's not present so assumed one ' ')
+		- mark on text before tokenize? 
+			ok-> surely It won't be badly tokenized
+			ok-> replace by ENTITY01a ENITTY01b (for multiword names)
+			ok-> then tokenize and POS tag
+			ok-> then replace ENTITY01a, ENTITY01b,... by current word, and add B'I tags
+			ok- get rid of _BI_ and _BIO_
+			ok- treat 120-122;03-04 hierarchically
+			- error incrementing offset deviation when adding _BI_ and _BIO_
+				problem consecutive adding _BI_ _BIO_
+					before another _BI_
+					or in between..
+						ko->save deviationo and point from which it applies?
+						ok-> split the sentence by all the points in advance, then add the tags
+
+			ok- sort BIO points before inserting them
+			ok- remove old functions
+			ok- error verification, take crossings into account
+			ok- estrogen repeated
+				last_offset update take care if i2 < last_offset
+			ok- BIO verification count fix - correct indexes
+			ok- BIO verification count Drugword from text and offset, not entity text
+				merge the offsets that overlap!
+			ok- delta(1)- and kappa-selective
+				- change the behaviour of an _BI_ if there is another _BI_ just before
+
+			ko- , between 2 B,I -> is also an I
+
+
+	ok- refactor the feature preparation nested ifs?
+
+	ok- use Freeling
+		ok- test basic freeling
+			https://talp-upc.gitbooks.io/freeling-tutorial/content/example04.html
+		ok- embedd in featureExtration code
+			ok- class that initializes freeling object
+			ok- generates the vector of features
+			- split generating the tokens and the rest, 
+				ko-option1
+					- string with _BI_ and _BIO_ -> tokens -> BIO tag -> feature -> reanalyze with freeling 
+				ok-option2
+					- string with _BI_ -> freeling analyze -> BIO tag and remove tokens from result list
+						(see if this affects the POS tagging or not) 
+				option3
+					- string with BBBBBBIII and BBBBBBIIOOOO -> Freeling tokenize
+					- process the Freelink word list
+					- Freeling tag and lemma
+
+			ok- adapt BIOfeaturesTag to use the vector of features
+
+			ok-once tokenized -> if word contains BItag_word, word_BIOtag or BItag_word_BIOtag
+				-> clean it!
+				ok-> or deactivate the Freeling that tokenizes this like that
+					False #NERecognition when creating the freeling components
+
+			ok- BIO tagging in a class alone
+	  and then the FeatureExtraction instanciates BIO and Freeling classes
+
+			ok- BIOverification uses nltk.tokenizer... -> use Freeling for consistency
+
+	PENDING
+
+
+			ok- clean data before using (clean \n\r)
+			 and then use tokenized (freeling alows a token to ask it's offset)
+
+
+			ko- ask prof: if it affects pos taging?
+
+
+			ko- add an "header" to know each field in the vector of features?
+				(word, BIOtag, lemma, POStag)
+				just BIO
+
+		ok- what is drug and drug_n
+
+		ok- beta- and alfa-drug
+			don't worry about those cases
+		
+		ok- adapt the BIOtag to use the Freeling list of words ?
+				currently it tokenizes and tags with self.BItag and BIOtags
+				ASK about this!!
+				ok- structure 
+				ok-clean \r\n
+				ok-verify offsets from token are the same as offsets from string
+					ok-Freeling offset
+					ok- extract Entities from tokens and offsets
+					ok- compare Extracted entities from entities["text"]
+					ok- save some type of counter
+					ok- modify printerrors
+
+					ok- Freeling tokenizer tuning
+
+				- Correct \r\n
+					ok-> verification
+					
+					ok-> detection of the problem on the 
+					tokens
+					
+
+					ok- extract entities as tokens at the same time as offsets are aextracted
+						-> offsetgroups
+						[
+							(offset1, offset2, [token, token, ...]),
+							(offset1, offset2, [token, token, ...]),
+							...
+						]
+
+
+					ok-> offsets need to be decremented from certain point
+						ok->regexp approach using offset of the found elem
+							ok-verify decrementing mechanism
+							ok-verify the offsets are ok
+
+					ok- modify also the charOffset of the entity
+
+					ok-verfy
+						manually, in total there's 6
+
+			    ko->traverse by char approach.. 
+			    	+ simpler
+			    	+ can be done at the beginning
+			    	+ will be easire later to do verifications
+			    	- it's another approach to implement
+
+				ok- compare tokens in features with tokens in token_entities
+					- count how many are mismatched
+						only "cannot"
+						-> jsut a separation ok!
+					- fix it!
+						no fix needed
+
+
+				ok-apply BIO taggin on offsets from tokens
+					ok- easy approach : simple belongs to 			
+
+				- BIOTAG check
+					ko- checking biotags:
+						ok- extract tokens from text and offsets
+						- extract b and i tagged tokens
+						- compare both lists
+						- if not identical -> error
+							-> this is simply redoing it , not correct
+
+					ok- check 2:
+						- count number of total B and I tags in an element
+						- count total number of tags from entities
+							each entity text tokenize
+							+ multiply by number of  ';' in charOffset 
+					
+					ko- error cases
+						PCP-induced
+							PCP is B , induced is another word..
+								-> active Freeling separation of words??
+
+						antiretroviral and antineoplastic drugs
+							instead of 4 it counts 3 -> OK!!
+
+
+						1,25-Dihydroxycholecalciferol D3
+
+						vitamin-d-mediated
+						estrogen-dependent
+							-> clearly Freeling separation?
+							multiwords detection?
+							-> may i can use another condition
+
+						ok--> only 35 cases
+							skip this!
+
+Features
+========
+		ok- pos 
+		ok- lemma
+		- word (morphology?)
+			ok- isTitleCase
+			ok- isUPPercase
+			ok- islower
+			ok- hasDigits
+			ok- hasStrangeSymbols -,/,_,,,.
+			ok- morethan10chars
+			
+			ok- prefix
+			ok- suffix,
+
+			ok-different length prefixes/suffixes			
+				-2char suffix
+				-3char suffix
+				-4char suffix
+
+				-2char  prefix
+				-3char prefix
+				-4char prefix
+
+			ok- len(suffix)
+			ok- len(prefix)
+			ok- len(word)
+			
+
+			ok- number of UpperCase letters
+			ok- number of digits and -,/,. symbols
+
+-->
+**		- more
+			http://www.aclweb.org/anthology/W09-1119
+			ok-https://www.hindawi.com/journals/cmmm/2015/913489/tab1/
+			https://www.hindawi.com/journals/cmmm/2015/913489/
+			http://www.mdpi.com/2078-2489/6/4/790/htm
+
+	
+		
+		- context
+			ok- word in a n-window
+			ok- lemmas in a n-window
+			ok- pos tags in a n-window
+				1, 2, 3 window
+			ok- chunk
+				http://www.aclweb.org/anthology/P02-1060
+*			- word embeddings feature
+				http://www.sersc.org/journals/IJSEIA/vol10_no2_2016/8.pdf
+
+				http://www.aclweb.org/anthology/W15-2608
+
+				http://www.cis.uni-muenchen.de/~fraser/information_extraction_2017_lecture/08_nn_ner.pdf
+
+			ok- dictionary (Drugbank)
+			ok- class exercices
+			ok- affix (length 3,4,5 for suffix, and prefix)
+			- bio tag 1,2,3 window before and after
+
+
+		-conjunctions(as bigrams)
+			- fi in different positions
+			- fi, fj in same position
+
+
+
+classification
+==============
+
+    ok-supervised data
+		ok- Clean data struct: 
+		ok- final words with features as a dictionary?
+			ok-option1
+				[ {word with features}] 
+			ko-option2
+				[ [sentence with a list of words with features..]]
+		ok- save to disk 
+		ok- (and load!)
+		ok- adapt to format for scikit-learn svm algorithm
+	
+ 	ok- sci-kit learn
+		ok- start: http://scikit-learn.org/stable/tutorial/index.html
+		ok- http://scikit-learn.org/stable/modules/feature_extraction.html
+			ok- data format (list of word_feature_dicts)
+			ok- transform to numeric -> 
+			ok- separate class from features?
+			ok- feed to svm algorithm?
+		ok- http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html
+		ok- http://scikit-learn.org/stable/modules/svm.html
+			ok-data dic -> features
+				json as dict with name = str(index)
+				dataFormatting()
+					load json and separate dict["6"], dict["0"] word from the rest
+			ok- basic svm 
+				problems with input Y and X
+		
+	ok- save/load data.json
+	ok- save/load vectorized data with pickle
+	ok- save/load model as pickle [T]
+
+   ok- predict with a model
+		ok- featurize,vectorize,predict
+			problem with vectorizer -> generates different number of features for training and testing set...!
+				-> how to force test set to adapt to the final format ?
+				sol
+				https://stackoverflow.com/questions/24152282/saving-a-feature-vector-for-new-data-in-scikit-learn
+
+		ok- change data files to another folder
+		ok- encapsulate previous steps? in a class
+			- make a class that saves
+				pipeline
+				data
+			- train pipeline
+			- save pipeline to disk
+			- load pipeline
+			- use pipeline (predict)
+			
+			ok- test it works
+			ok- setdatafile funcs, integrate also into save and load
+
+	ok- memory error 
+		ok-> sparse matrix!
+		ko-> reduce features?
+		ko-> sequential/incremental model fitting?
+
+
+	ok- parse result info desired output format
+		code in another submodule
+
+		->output: only entities with offset and sentence id..
+			ok-add a "hidden" feature= offset(already), sentencid
+			ok-match result with training features by order
+			ok-add drug type to the set of features from BIOtagger 
+				-position 7
+				-save drug type in offsets
+				-set in bIOtag
+
+			-create the list of BI's matching offset, IdSentence, mention=word, type=drug(for now)
+			-with the BI matched -> group them by Idsentence,mention,type
+				-> offsets transformed to list by BIII..I
+			- write to file
+
+	ko- extractFeatures_withoutTarget
+		input data file -> features dict -> 
+		even if no target -> the bio tag place in the tuple should be filled
+		-Transform to data prepared for lack of target
+		-feature extraction looking only at element["text"]
+		- NO NEED, the test has all 'O'
+
+	ok- run different classifiers and save the models
+		ok-if something fails the execution must continue
+			try catch
+			luigi if dependencies
+		ok-different instances of MyFeatures with different ok-lists of features
+		ok-launch the evaluator by python shell  
+		ok-test everything
+			test on small dataset! -> quick train
+
+
+	ok- quick evaluation test!
+		ok-run a full NER that detects some drugs!
+		ok- use test as goldstandard
+			java -jar evaluateNER.jar ../data/LaboCase/Test/DrugBankOutput/   ../data/models/201805092249-output.csv 
+		
+
+	ok- training multiple models in batch
+		try - catches
+		parse result with list of features also -> save on file
+		model batch name for results file on disk
+
+	ok- drug type output
+		modify one of those and check
+
+	- svm theory 
+		- http://cs229.stanford.edu/notes/cs229-notes3.pdf
+*   	- svm for multiclass
+		- svm linear 
+		- parallelized svm?
+		- manually compute accuracy for feature-model selection?
+
+	- NER BIO-drugtype training
+
+	- CRF and BILOU
+
+
+evaluation
+==========
+	
+	ko- K-fold CV
+		- measures: precision?recall?f-1?confusion?...
+		- add validation of the model params
+		- decide on the K value
+
+	- format: https://www.cs.york.ac.uk/semeval-2013/task9/index.php%3Fid=format-of-the-submission.html
+	- evaluation script: https://www.cs.york.ac.uk/semeval-2013/task9/index.php%3Fid=evaluation.html
+	https://www.cs.york.ac.uk/semeval-2013/task9/index.php%3Fid=format-of-the-submission.html
+	https://www.cs.york.ac.uk/semeval-2013/task9/data/uploads/task-9.1-drug-ner.pdf
+	https://www.cs.york.ac.uk/semeval-2013/task9/data/uploads/semeval_2013-task-9_1-evaluation-metrics.pdf
+	https://www.cs.york.ac.uk/semeval-2013/task9/data/uploads/readme.txt
+
+	ok- preparation
+		- all data set?
+			ok- read training data and testing ?
+					for now all xml inside Train
+
+	- understand evaluation metrics
+
+	- cross-validation
+		use GoldNER validator but with subsets of the training set -> to select the best model
+		then do on the test set.
+
+	- feature selection 
+		- chisq, 
+
+
+Questions:
+	ko- goldstandard -> is what we already have in the test?
+	- evaluation -> isolated test over Medline and Drugbank?
+	- strategy for NER: diff features and retrain models?
+		but if we use the evaluation -> overfitting to the testing set?
+		or can we replace the goldstandard from a part of the training set?
+	- NER with type? needed for the evaluation right?
+
+
+
+
+Further steps
+	- NER with drug type
+	- Drug interaction
+
+	- other algorithms	
+		- or random forest (but you need to train them separately)
+		- CRF (nltk has something to train, not just a trained one)
+
+
+
+SUMMARY 20180515
+================
+
+ok-featuretuple to dict
+
+ok-features list config file
+	ok- yaml file
+	ok- __init__ of MyFeatures following func names in lists
+	ok- done/running/pending/error
+	ok- test
+		ok-read all params correctly
+		ok-create feature set correctly
+		ok-writeback
+	ok-training and testing before next model
+	ok- eval ok
+
+ok-batch test
+	ko- debug simple models
+	ok- debug with testing with same training set
+	ok- debug null for non found drugetype (manually)
+		in case of no drugtype -> use null
+
+
+
+- features from the nice paper
+	ok- chunking
+		ok-nltk.ne_chunk - binary
+		ok-nltk.ne chunk - not binary
+		ko-Freeling chunking
+	ok- other simple features
+		ok- wrodstruct long
+		ok- suffix/prefix 3.4.5
+	ok- dictionary
+		ok- class
+		ok- saving loading pickle
+		ok- adapt to a new feature
+	
+	ok- reorgranize custom features
+		ok- names of functions in the before/after/.. 
+			list shouldnot be saved with the same name as word features!
+		ok- it should add remove features from Feature Extraction
+			ok- dummy functions for basic features 
+			ok- aux feature dict until all elements and their features are saved
+			ok- test few features
+
+		ok- saving results to  results folder
+		
+		ok- writing back results, file, and..
+		ok- results file
+			self.predictionResultFile+'_result'
+			self.predictionResultFile+'_eval'
+		
+		ok- parsing correctly results when doing ER
+
+		ok- normalized lengths
+			ko-over word length?
+			ok-over corpus max word length?
+			ok-test! compare a WORKING model w/o normalization
+				model bm2debugmod002:
+				accuracy 0.35855263157894735 precision 0.92 recall 0.36 F1 0.52
+				accuracy 0.376271186440678 total 295 cor 111 par 4 mis 180 
+				job time: 1710.5622324943542
+
+				model bm2debugmod003:
+				accuracy 0.3782894736842105 precision 0.93 recall 0.38 F1 0.54
+				accuracy 0.39661016949152544 total 295 cor 117 par 4 mis 174 
+				job time: 1947.8102934360504
+
+				small improvement!
+
+
+**	- skipgram
+		- word2vec + clustering = feature cluster nº
+			ok- download trained model
+			- dimesions can play a role for non appearing word
+				200 to 1000 dimensions ->
+			- u can assing all 0 vectors to missing word
+			- u cann assing center of gravity
+			- another poss. by POS -> center of all N, V, ADV, -> and assign unknown word to its POS center
+		- other versions of w2v
+
+	- conjunctions
+		bigrams models and how they are used
+		non linear kernel 
+
+
+
+- models
+	- SVM
+		ok- theory
+		- scikit internals
+*			- linear SVM, quadratic SVM,  
+1->			- scaling features!
+***				lenword, lensuffix, lenprefix, 
+				ok-word2vec already normalized?
+			ok- parallelization
+				ok-svm cannot be parallelized itself but
+				multiple models trained in different core
+				
+				http://matthewrocklin.com/blog/work/2017/02/07/dask-sklearn-simple
+
+				ok- small test
+				ok- save time training and testing in results
+				ok- result list in batchfile model
+				ok- writeConf 
+					ok-> load at the begining
+					ok-> copy of conf file for each job
+					ok-> write to disk at the end
+					ok-> write only the model part (reload dict and change the specific model part)
+					ok-> take this part out of the parallel job for now!
+				ok- parallelize
+					ok- pickle problem
+						- MyFeature
+							ok- pickling + Freeling error
+							- avoid pickling
+
+				ok- verify final results writing
+				ok- refactor batchtraining codes!
+			ok- parallelized
+				write from insider parallel section
+				-> mutual exclusion using variables (Concurrency theory)
+
+				https://eli.thegreenplace.net/2012/01/04/shared-counter-with-pythons-multiprocessing
+
+				https://stackoverflow.com/questions/25557686/python-sharing-a-lock-between-processes
+
+	- model evaluation
+		ok- implement a manual accuracy evaluation..
+			ok-test set to parsed results list
+			ok-compare prediction with this parsedFeatures&result
+			ok- fix predictionOutput error!
+				prediction word is just the detected word
+				not the entity word
+				1-what happens to the other word?
+					DDi-DrugBank.d767.s1 vincristine sulfate 20-39
+					print the output
+
+				2-does I get well classified?
+					yes, it gets and I
+					-> so the problem is on the parser: NO
+					-> the classifier didn't find I's in that instance
+					->ok!
+				ok-> deactivate devbugging
+			ok-compare with the Evaluation code
+
+		ok- correct the ER evaluation: verify par, use Exact boundary and COR
+			-> a bit different
+			-> use the generated goldNER.txt
+				-> the offset2 is using Python list offset
+				-> we need to convert it to mathematical offset
+				partial: 
+					DDI-DrugBank.d768.s5|125-134|cytarabine|drug
+ 					DDI-DrugBank.d768.s5|125-135|cytarabine|null
+
+ 		ok- fix error manual evaluation
+
+		ok-evaluation: combine medline and drugbank for test
+			ok- test medline
+			ok- combine all files in a third folder
+		
+		-crossval : rightnow no time 
+				-> define a validation set from the training
+				-> 2-fold cv 
+
+	-cron execution
+		cron
+		script looks at config file
+		executes any non executed "model trainig" or "model testing" 
+		-send email when finished?
+		
+		
+3->	- CRF
+		- basic tutorial
+			ok-we don't need the vectorizer??
+			ok-algo from batch
+		- features/labels per sentence in a list of dicts/string
+			ok- batch algo: "crf"
+			ok- feature Extraction get this param "crf"
+			ok- feature Extraction prepare features/labels per sentence
+			ok- move feature/labels separation inside FeatureExtraction code
+				datadict = all features and labels
+				X = features only
+				Y = labels only
+			ok- CRFtrainer and SVMtrainer receive X,Y from FeatureExtraction
+			ok- CRFtrainer reads X and Y directly without transforming them
+			ok- SVMtrainer blindly transform X and Y by the Vectorizer
+			- test svm and crf in parallel!
+		-parseOutput
+		- features
+
+	- SVM linear
+		by sentence or as now by word?
+	- SVM quadratic
+
+
+- feature selection
+-->	- lists of combinations:
+		20180517:
+		-	w|pos + pos
+		-	w|pos + pos w2
+		-	w|pos + pos w3
+		-	w|l   + l
+		-	w|l   + pos
+		-	w|pos + l
+		-	w|ortho + ortho
+		-	w|pos|otrho + pos|otrho
+		-	w|l|ortho + l|ortho
+		-	w,l,pos,ortho + pos
+		-	w|l|pos|ortho + pos|ortho|wordStruct
+		-	w|l|pos|ortho + l|ortho| wordStruc
+			w|l|pos|ortho|wordstructure + pos|wordstruct
+		-	w|pos|chunk + pos|chunk
+		-	w|pos|chunkG + pos|chunG
+		-	w|chunk  + pos|chunk
+		-	w|chunkG  + pos|chunkG
+		-	w|ortho|pos|chunk + pos|ortho|chunk
+		-	w|pos|chunk|ortho|lookup + pos|chunk|ortho|lookup
+		-	w|l|chunk|ortho|lookup + l|chunk|ortho|lookup
+		-	w|l|pos|chunk|ortho|lookup + pos|chunk|ortho|lookup
+		-	best accuracy model repeat
+			best accuracy model as NER
+	- run a lot of models and select
+**	- frequencies
+		-> remove features that happend less than 2,5,10,20 times?
+	- run some Chisq / PCA / or ..
+
+
+- Named entity recognition
+		ok- Named Entity Recognition: add the drugtype to biotagger 
+		ok- train for NER (drug group) -> target is 2 columns,etc...
+		ok- test
+			ok- feature extraction ok
+			ok- model training set to NER
+			ok- feature extraction from test ok
+			ok- model predict set to NER also
+			ok- output
+2-->	- debug NER features and targets
+			ok- paralleltraining: add possibility to load model from disk (already trained)
+			ok- load the NER model pkl file
+				-rw-rw-r-- 1 pau pau   17M mai 19 19:19 svm-pipeline_20180519171952.pkl
+				-rw-rw-r-- 1 pau pau   15M mai 19 18:24 svm-pipeline_20180519162359.pkl
+			ok- debug biotag missing
+				deepcopy applied to the features that are served to the model
+		- debug NER results
+
+
+- Drug interaction
+		https://www.nltk.org/book/ch07.html
+
+- Documentation
+	- presentation notebook
+		- results table
+		- plots ?..
+	- presentation
+	- report
+	ok- reporting table: 
+		ok- modify batches code: save all results inside a results sublist: dict{date,results}
+		ko- gather from all result files and from batches
+		ok- save all scores
+		ok- save algorithm
+		ok- featuretypes
+		ok- numfeatures
+		ok- print scores acording to type problem (ER,NER)
+		- table listing (dict/json/csv)
+			name|type|algo|featuretypes|numfeatures|scores
+		ok- latex output
+			http://akuederle.com/Automatization-with-Latex-and-Python-2
+
+
+-------------------------------------
+
+20180519
+========
+
+	ok- scitkit parallelized?
+	ok- normalize length vars
+	ok- reporting table: 
+	ok- improve parallelization: write to disk before syncing all threads!
+
+
+	-------
+	ok- run: models and select -> create new batch
+
+	ok- reporting: 
+		ok- add window length
+		ok- horizontal page
+		ok- exact and macro scores
+
+	ok- algo: CRF scikit
+
+	ok- parallelization
+		ok- run: batchTesting adapt also to changes?
+	    ok- run: parallelized memory consumption fix 
+
+
+	ok- features: 
+		ok-different length suffixes
+		ok-word.lower(), 
+		ok-word.lower() in window
+		
+		ok-window of 5, 
+		ok-change batchfile features lists: f+1,f+2,..,f-1,..,f-5
+		ok-verify: reduce size of wdict if a feature is not present
+		ok-reporting: add window size
+
+
+	-------------
+
+	ok- debugging batch run
+		- debug gc
+		- using __del__(self)
+		- using with NERmodel() as model:
+		- reduce the number of core in batch files with window 5  (w5) to 4
+		- use more than 4 but distributing highly mem consumtiopn threads in a separate weay
+
+->	- batch files modification script
+		ok- write a backup of the file
+		ok- remove results
+		ok-remove resultsold
+		ok- reset total time
+		ok- change the statuses
+		ok- float accuracy manual div by 0
+		ok- remove models by name
+		ok- remove model by pattern
+		ok- replicate to CRF, SVM, Medline, Mixed, Drugbank, ER, NER, DDI 
+		ok- replicate w3 to w4, to w5
+		ok- convert all to w3,w4,w5,..
+
+		ok- mix w3 and w5 patterns
+		
+
+		ok- generate models
+			ok-asymetric window
+			ok-select from list + window
+			ok-2-select type + all from type + windo
+			ok-5-select type word + select type for window + window
+			ok-3-select type + how many + random + window
+			ok-4-select type + all combinations + window
+			5-replicate for all
+				- root + automatic name
+				- MD,DB,MX
+				- ER,NER,DDI
+				- w3,w4,w5
+
+		ok- examples of modifications and replications!
+			ok- w5 clean -> crf,svm,md,db,mx,er,ner
+			- w3 clean -> crf,svm,md,db,mx,er,ner
+			ok- w3 clean -> w5 -> crf,svm,md,db,mx,er,ner
+			- w3 -> w4 -> crf,svm,md,db,mx,er,ner
+			ok- mix(w3clean, w5clean)
+
+
+	ok- run: CRF/SVM/SVM2,ER/NER,mixed/db/Medline,window1-5,w2v
+		- prepare
+			- clean w5 patterns
+			- clean w3 patterns
+			- replicate w3 to
+				- w4
+				- w5
+				- MD, DB, Mx
+				- ER, NER
+				- CRF, SVM
+			- mixed batch w3,w5
+				every 8 w3's put a w5
+			- mixed batch svm, crf?
+
+		- selection (with window 1-5 or replicate window3 to 5)
+
+			ok-crf-ner-medline-w3 d20tMDmNERaCRFw3
+			crf-ner-medline-w5 d20tMDmNERaCRFw5
+			crf-ner-mixed-w3  d20tMDmNERaCRFw3
+			crf-ner-mixed-w5 d20tMXmNERaCRFw5
+			crf-ner-drugbank-w3 d20tDBmNERaCRFw3
+			crf-ner-drugbank-w5 d20tDBmNERaCRFw5
+
+
+			crf-er-medline-w3   d20tMDmERaCRFw3
+			crf-er-medline-w5   d20tMDmERaCRFw5b
+			crf-er-mixed-w3     d20tMXmERaCRFw3
+			crf-er-mixed-w5     d20tMXmERaCRFw5
+			crf-er-drugbank-w3  d20tDBmERaCRFw3
+			crf-er-drugbank-w5  d20tDBmERaCRFw5
+
+
+			svm-ner-medline-w3   d20tMDmERaSVMw3
+			svm-ner-mixed-w3     d20tMXmERaSVMw3
+			svm-ner-drugbank-w3  d20tDBmERaSVMw3
+
+			svm-ner-medline-w5   d20tMDmNERaSVMw5
+			svm-ner-mixed-w5     d20tMXmNERaSVMw5
+			svm-ner-drugbank-w5  d20tDBmNERaSVMw5
+
+			svm-er-medline-w5   d20tMDmERaSVMw5
+			svm-er-mixed-w5     d20tMXmERaSVMw5
+			svm-er-drugbank-w5  d20tDBmERaSVMw5
+
+	----------------
+	ok- DDI 
+		ok- parse training
+		
+		ok- create features specific for DDI
+			- count of pos tags
+			
+		ok- train
+			ok-CustomFeaturesDDI
+			ok-FeatureExtractionDDI
+				ok-svm features version?
+				ok-TransformToXY
+				ok-svm linear kernel setup
+			ok-DDImodel
+				ok-trainTestModel
+				ko-TestModel
+				ok-parallelBatchTraining
+				ko-paralelBatchTesting
+				ok-parseTestSetOutput
+				ok-parseSingleTagOutput
+				ko-formatPrediction
+				ok-writePredictionOutput
+				ok-parsePredictionOutput
+				ok-autoEvaluation
+
+				ok-parseEvaluation
+					ok- matchdict
+					ok- execute model see parsePRedictOutput
+					ok- parseEvaluation create
+					ok- manualEvaluation
+					ok- writing the algorithm back
+			ok-Test
+
+		ok- evaluate
+			parseResult from DDImodel
+			run the evaluator
+
+		ko- crf for ddi?
+				paper: do they apply crf for ddi?
+				-crf features version?
+					NER:  sent: w1+f1+t1, w2+f2+t2,...
+					DDI:  choose one entity as the origin: wi
+						  sent: w1+f1+t1+e1, w2+f2+t2+e2, ...
+						  		wi+fi+ti+ei
+						  	f1: w1 features
+						  	t1: '' if not interacting with wi
+						  	e2: '' if it is the destiny entity or not
+
+	- SVM
+		ko- algo: svm verify modifications for NER
+			didn't work cuz brf kernel  ->use linear
+		ok- add a new modifier for batch files and report
+			-lsvm
+			-lwsvm
+		ok- kernel='linear'  
+			ok-> test macro f1 0.4!
+		ko- class_weight, sample_weight 
+			to weight more the B-XXX, I-XXX classes than the O-
+
+	-------------
+
+	- DDI features
+--->	- features
+			- paper:other features to apply
+				- dependency trees
+					- https://www.nltk.org/book/ch08.html
+					- nktk -> get dependency tree
+					- shortest path between e1 to e2
+					- extract 3-grams, save most frequent
+					- feature is 3-gram is present
+				ok- parse trees
+					- nltk parse trees
+					- shortest pos tag path from e1 to e2
+					- extract 3-gram sequence of pos tags from path
+					- add the more frequent as appearance feature?
+			- parse tree frequetn trigrams
+				ok- parse tree inside Feature Extraction
+				ok- entity from offset problem
+					-> debug
+				- entity value (casesentivie) extract from offset from text? or from word?
+				- problem with same entity appearing twice in a sentence
+					-> get both appearances and contexts and filter from the parse tree?
+				- parsetree/dependency features and write to json..-> reuse this instead of the DrugBank,Medline train files
+				- trigram frequencies and save the top 50
+				- transform top 50 trigram into appearance feature
+
+				strategy:
+					1)parsetrees + shortestpaths between entities (count num errors) + ddi + type -> save to json
+					2)dependencytree + shorttespaths between e + ddi + type -> save to json
+					3) 3-grams extractions for all shortestpaths
+					4) count frequencies of those 3-grams appearing in a positive ddi
+					5) save this list of trigrams and counts
+					6) parse again json, -> counting the appearance of each selected trigram -> saving it to a variable
+					7) train over this model
+
+					8) predicting
+						- extract features + parsetrees + dependency trees
+						- extract shortestpaths?
+						- predict with trigram presence
+
+					==> we do the same offline preprocessing of training and test data:
+						- parsetrees
+						- dependencytrees
+						- shortestpaths
+						- trigrams
+
+					==> but on training we count the trigrams frequencies and we select the top 20, 100, as appearing features
+
+					planning
+						train -> parsetree -> shortestpath -> trigrams
+						train ->depdendencytree -> shortest path -> trigram
+						ranking of trigrams (both types, and only of ddi true)
+						train -> appearance of top trigrams as features
+						MODEL TRAIN
+						test -> parsetree -> shortestpath -> trigrams
+						test ->depdendencytree -> shortest path -> trigram
+						test -> appearance of top trigrams as features
+						MODEL PREDICT
+
+					tasks
+						- train: parsetree + shortestpath + tojson + countnumerrors + error log 
+						- test: parsetree + shortestpath + tojson + countnumerrors
+						- dependency parsing: install, test, shortestpath
+						- train: read json +  dependency tree + shoresttpath + tojson
+						- test: read json + depedenecy tree + shortestpath + tjson
+						- train: trigrams
+						- test: trigrams
+						- train: count trigram freqs when ddi is 1
+						- top 100 trigram
+
+					error
+						- offset/case/strange symbols 
+							-> use the offset of word before and after
+							-> find them on the tree, then find the word in the middle that should correspond to the one wanted.
+
+					
+
+			- samechunk
+			- specific chunks subject vs Object?
+			- specific pos around ei's
+			- presence of specific pairs (word,pos=VB)
+	- k-fold cross validation
+	- algo: svm weighted linear
+
+		- class_weight -> seems easier than sample_weight
+			-> how to now which class is which?
+		-sample_weight  -> seems not to be working
+			to weight more the B-XXX, I-XXX classes than the O-
+
+	-------------
+	- DDI
+		freeling dependency tree + shortestpath + trigram freq -> top 20?
+		words as features -> top 20
+		other orthografic features
+		->lsvm
+
+	- presentation
+		- small code snipets in notebook
+			- features, fragments of the resulting features
+			- model trainings
+			- plots of F score ..
+	- report
+
+	---------------------
+	- bigrams
+
+	- features:	
+		postag[:2] (postag prefix?)
+		randomize also feature selection
+	    selection freqs. of appearance
+		PCA
+
+	- algo: svm quadratic
+
+	-w2v
+		w2v initial version
+		    ok-FeatureExtraction addW2VFeature()
+		    ok- CustomFeatures: encapsulate adding features
+		    ok- CustomFeatures: add special case w2v to morpho_features and window_features
+		    ko- test
+		    	- swallows all memory!
+		    	ok- debug memory issues -> dict of dimensions kills mem
+		    
+		-strategy
+			- add word2vec onlly for word as baseline features
+			- then add other on top
+			- test
+		    	- print features
+		    	- test result
+
+	- w2v cluster version
+	- w2v other sources
+	
+
+-------------------------------------------------------
+
+Questions
+=========
+
+word2vec advices
+	- for svm ok?
+	- cluster or jsut dims
+
+**	- download already trained
+		test different sizes
+		test different sources
+		clustering vs dimensions
+
+features from exercices?
+	in the papers they seem to be simpler
+
+evaluation options
+	1-evaluation over drugbank and over Medline
+	2-evaluation combined?
+	3-cross-validation over subset of training set + evaluation over drugbank and Medline?
+
+
+DDI
+	how to proceed?
+	CRF is mandatory or we can go with svm?
+	-> interaction features "dependency parsing"  Drug subjet of predicate
+
+chunking
+	- nltk case:
+		-> sae the chunk TYPE for each word?
+		-> save the chunk ID for each word?
+	- how to from freeling?
+
+
+svm
+	for bigrams -> quadratic kernels
+	linear kernels dont work with bigrams
+
+
+
+
+project pahts:
+
+	- svm + features + ER + features + NER + DDI
+	- svm + features + ER + CRF + features + NER + DDI
+	- CRF + features + NER + DDI
+	- features + SVM + CRF
+
+	should we go now for word2vec, conjunction features?, chunking and dict? or first improve svm?
+
+	should we go now for CRF then go for word2vec, chunking,...?
+
+

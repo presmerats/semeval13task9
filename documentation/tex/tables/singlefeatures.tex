@@ -1,0 +1,22 @@
+\begin{table}[H]
+\centering
+\begin{tabular}{lcl}
+\multicolumn{3}{l}{DNR features}                                                                                                               \\ \hline
+$f_{1}$ & Word feature             &                                                                                                                               \\
+\rowcolor[HTML]{DAE8FC} 
+$f_{2}$ & Part-Of-Speech           &                                                                                                                               \\
+$f_{3}$ & Lemmatization           &                                                                                                                               \\
+\rowcolor[HTML]{DAE8FC} 
+$f_{4}$ & Orthographic - basic features     & \begin{tabular}[c]{@{}l@{}}5 classes: \\ all-capitalized, is-titlecase,all-digits,\\ alphanumeric, hyphen or not\end{tabular} \\
+$f_{5}$ & Orthographic - affix features           & Prefixes and suffixes of the length 3,4,5                                                                                     \\
+\rowcolor[HTML]{DAE8FC} 
+$f_{6}$ & Orthographic - Word shape features      & \begin{tabular}[c]{@{}l@{}}Generalized word class: Xxxxx00xxOxx \\ Brief word class: Xx0xOx\end{tabular}                      \\
+
+$f_{7}$ & Dictionary features      & Lookup on Drugbank                                                                                            \\
+\rowcolor[HTML]{DAE8FC} 
+$f_{8}$ & Chunk feature            &    NLTK noun phrase chunking tag                                                                                                                         \\
+$f_{9}$ & Word Embeddings features & Word2Vec and classification                                                                                                  
+\end{tabular}
+\caption{DNR features}
+\label{table:DNRfeatures}
+\end{table}

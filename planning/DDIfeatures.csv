@@ -1,0 +1,7 @@
+Drug-Drug Interaction,,
+$f_{1}$,Distance in Parse tree, Distance between two drug entities
+$f_{2}$,POS in Parse tree, VB and NN-VB between two drug entities
+$f_{2}$,3-gram sequence in Parse tree, sequence of PoS tags between two drug entities
+$f_{3}$,Distance in Dependency tree, Distance between two drug entities
+
+

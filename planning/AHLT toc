@@ -1,0 +1,29 @@
+AHLT toc
+
+- title
+- quick TOC
+- task 9.1: statement & inspiration papers
+- task 9.1: approaches, 
+			how we organized exploration and model selection
+			our pipeline(components schema) and automated report
+- task 9.1:svm approach: Features used
+[- task 9.1:svm approach: Features used, zoom on lookup,]
+[- task 9.1:svm approach: Features used, zoom on chunk,]
+[- task 9.1:svm approach: Features used, zoom on w2v]
+- task 9.1:svm approach: NER result tables  and comments
+
+- task 9.1:crf approach: Features used
+- task 9.1:crf approach: result tables
+
+- task 9.2: statement & inspiration papers
+- task 9.2: svm approach: Features used,
+[- task 9.2: svm approach: Features used, zoom on the feature structure and the preprocessing,  probably pipeline as it's different (compoenents) ]
+[- task 9.2: svm approach: Features used, zoom on the dependency tree + shortestpath ]
+- task 9.3: svm approach: DDI result table and comments
+
+- Conclusion:
+	- what worked
+	- possible improvements
+
+- References
+- Thx and Questions

@@ -1,0 +1,414 @@
+DDI
+====
+
+
+ok-parsing
+	already parsed 
+		pairs
+			[ddi:false/true, e1:drugname, e2:drugname, id:pairid]
+
+features & targets
+	feature for each sentence??
+	for each pair??
+		->many pairs can appear inside a sentence
+
+		n entities -> pairs: n!/(2!(n-2)!)
+
+	idea 1:
+		for each sentence, 
+			for each pair
+				metadata:
+					e1, e2, id
+
+				features:
+					all words IN BETWEEN the 2 words of the pair
+
+					ex:
+						num words
+						the whole sequence?
+							sequence of pos tags
+							sequence of lemma
+							sequence of wordstructure
+						count of pos-VB
+						count of NN-VB
+						the pos of e1
+						the pos of e2
+						if there is a pos-VB in between
+						if there is a pos-VB with specific word value?
+
+				target: true or false
+						type of interaction: advice, effect, mechanism, int
+
+	idea 2:
+		for each sentence, 
+			for each pair
+				all words that are not from the pair
+
+
+			-> some interactions are described all along the sentence!
+			-> this makes sense
+
+model input
+	features (of a sentence.pair) | target value(ddi value)
+	
+model training
+	sentence features (without entities?) or with them?) + prediction and type
+
+output format
+
+	idSentence|IdDrug1|IdDrug2| prediction|type
+
+	-> ddi's of same sentence should appear separated
+	-> task0.2_GROUP_RUN.tx
+
+evaluation
+
+
+nltk ch8
+
+
+----------------------
+
+- DDI features
+--->	- features
+- paper:other features to apply
+	- dependency trees
+		- https://www.nltk.org/book/ch08.html
+		- nktk -> get dependency tree
+		- shortest path between e1 to e2
+		- extract 3-grams, save most frequent
+		- feature is 3-gram is present
+	ok- parse trees
+		- nltk parse trees
+		- shortest pos tag path from e1 to e2
+		- extract 3-gram sequence of pos tags from path
+		- add the more frequent as appearance feature?
+- parse tree frequetn trigrams
+	ok- parse tree inside Feature Extraction
+	ok- entity from offset problem
+		-> debug
+	- entity value (casesentivie) extract from offset from text? or from word?
+	- problem with same entity appearing twice in a sentence
+		-> get both appearances and contexts and filter from the parse tree?
+	- parsetree/dependency features and write to json..-> reuse this instead of the DrugBank,Medline train files
+	- trigram frequencies and save the top 50
+	- transform top 50 trigram into appearance feature
+
+strategy:
+1)parsetrees + shortestpaths between entities (count num errors) + ddi + type -> save to json
+2)dependencytree + shorttespaths between e + ddi + type -> save to json
+3) 3-grams extractions for all shortestpaths
+4) count frequencies of those 3-grams appearing in a positive ddi
+5) save this list of trigrams and counts
+6) parse again json, -> counting the appearance of each selected trigram -> saving it to a variable
+7) train over this model
+
+8) predicting
+	- extract features + parsetrees + dependency trees
+	- extract shortestpaths?
+	- predict with trigram presence
+
+==> we do the same offline preprocessing of training and test data:
+	- parsetrees
+	- dependencytrees
+	- shortestpaths
+	- trigrams
+
+==> but on training we count the trigrams frequencies and we select the top 20, 100, as appearing features
+
+planning
+	train -> parsetree -> shortestpath -> trigrams
+	train ->depdendencytree -> shortest path -> trigram
+	ranking of trigrams (both types, and only of ddi true)
+	train -> appearance of top trigrams as features
+	MODEL TRAIN
+	test -> parsetree -> shortestpath -> trigrams
+	test ->depdendencytree -> shortest path -> trigram
+	test -> appearance of top trigrams as features
+	MODEL PREDICT
+
+tasks
+	ok- train: parsetree + shortestpath + tojson + countnumerrors + error log 
+	ok- test: parsetree + shortestpath + tojson + countnumerrors
+	ok- dependency parsing: install, test, shortestpath
+
+	ko- Dependency parsing, + features
+		ko-> test version 1.9.2
+		-> lookup word from tree -> to match with element
+			-> get each word from the tree
+			-> find element with same set of words
+			-> count matchings
+		-> or extract sentence by sentence
+
+->	- Freeling dependency parsing
+		ok- deptree parsing
+		ok- save tree in element
+		ok- shortestpath test (with partial dataset)
+		ok- trigram extraction (with partial dataset)
+		ok- problem matching deptrees and sentences
+		ok- other simpler features: words/lemmas -> 
+		ok- save everything to json (test and train)
+		ok- top120 lists: 
+			read and count trigrams, words and lemmas 
+			then register appearance of top30 in each pair 
+			ok-> prototype, function inside FeatureExtractionDDI
+			ok-> save as a feature of the pair : createCountVarsForDDI
+			ok-> save as json file again: true normal calls to load(), save()
+			ok-> test time incrementally
+			ok-> set all night?
+
+		ko- train model! (will take time for sure, do incrementally)
+			ok->not so many sentences
+			ko-> 0 accuracy -> test other features!
+
+
+Binary DDI minimum:
+====================
+
+-workarounds entities + parsetree counts
+	ok-control TRAINING SIZE
+	ok-BDDI only
+	ok-offset problem
+		- debug save an error list
+			ok- test difficult cases: ok
+			ok- train -> cleaning sentences -> offsets need to be resynced
+			ok- or correct by -1
+				train: 5/1000 -> strange cases
+				test: 20/1000 -> strange cases
+
+		- text cleaning, add a marx when offsets are modified and how much they are
+
+	ok- parse all again, 
+		- see errors
+		- see word features are in place?
+
+	ok-train 1 limit to 1500
+		ok- different top freq threshold
+			30,50,100, 200
+		ok- BDDI and DDI
+			modeltype to FeatureExtractionDDI
+		- without top freq
+		- with only word freq
+		- Medline
+
+
+-fit into the architecture
+
+	- Pipeline
+		- current schema
+			07-DDI_train_prasetree_features.py
+			preprocessing
+			--------------
+			DDImodel.featureExtractionDDITest
+			DDImodel.featureExtractionDDI
+				MyFeaturesDDI
+				FeatureExtractionDDI.extractFeaturesNG
+					biooffsets
+					cleanElement
+					Freeling.processText
+						->word,lemma, dependencyTree 
+					shortestPathDep
+					getTrigrams"
+					prepareFeatures
+						transformToXY
+				FeatureExtractionDDI.save
+					-->../data/features/d25tDBmDDIaSVM-Dependency-d25tDBmDDIaSVMm0.json
+
+			trigrams/word freqs
+			-------------------
+			
+			(for BDDI)
+			--> ./data/batches/ddi22/FeatureExtraction2.yaml
+			--> ./data/batches/ddi22/FeatureExtractionTest2.yaml
+			(for DDI)
+			--> ./data/batches/ddi22/FeatureExtraction2type.yaml 
+			--> ./data/batches/ddi22/FeatureExtractionTest2type.yaml
+
+			DDImodel.featureExtractionDDIstep2()
+				MyFeaturesDDI
+				FeatureExtractionDDI.createCountVarsForDDI
+					 - append entity word features
+					 - compute FreqDist for trigrams, words, lemmas
+					 - list of top fo most frequents
+					 - add topGrams/TopWord appearance as a feature
+				FeatureExtractionDDI.save
+					--> ../data/features/FeatureExtractionTest2_countfeatures.json
+					--> ../data/features/FeatureExtraction2_countfeatures.json
+					
+			training
+			---------
+			DDImodel.parallelDDIbatchTraining
+				MyFeaturesDDI  
+				trainTestDDIModel
+					read conf params
+					create FeatureExtractionDDI
+					loadDDIFeatures
+						FeatureExtractionDDI.loadDDIFeaturesFile
+					newModelPipelinetFeatures
+					loadDDITestFeatures
+						FeatureExtractionDDI.loadDDIFeaturesFile
+
+					
+					predict
+					parseTesetSetOUtput
+					parsePredictionOutput
+					autoEvaluation
+					...
+
+
+		- connect vars:
+			ok- topcount
+				createCountVarsForDDI
+			ok- limit on training and testing
+				from yaml file to 
+				FeatureExtractionDDI.createCountVarsForDDI
+				FeatureExtractionDDI.save
+				FeatureExtractionDDI.loadDDIFeaturesFile
+			- list of entity features
+			- list of window from entity features
+			- list of topcount features
+			- list of sentence features
+			- window for entity word
+
+			->/data/batches/ddi22/featureExtraction.yaml (x4): that extracts ALL the possibilities
+				-> for different topcounts it is not possible...
+
+			->ddi005.yaml: then just load that file and select which features
+				list of entity features-> MyFeature?
+				list of window features-> MyFeature?
+				list of topcount features-> directly on FeatureExtractionDDI
+				list of sentence features -> MyFeature?
+
+			tasks:
+			------
+			lists for
+				ok-topcount
+				ok-sentencefeatures
+
+				ok-word window select
+					-> filter word features out
+
+				ok-windo features
+					ok-> recover from self.data
+					ok-> filter from the list
+
+				ok-wordfeatures
+					ok->preprocessing script 
+					ok-to add them all to file on disk (self.data)
+					ok- comprobacio
+					ok- crear finalDDI.json i finalDDItest.json sense limit with all features
+					
+			- generate featureExtracted features
+				ko- different top freq threshold
+					30,50,100, 200
+				ok- BDDI and DDI
+				ko- Medline
+				ko- bigrams instead of trigrams
+
+				ok-run generation
+				-rename DrugBank suffix
+
+		ok- Train models over those saved on file features
+			- different top freq threshold
+				30,50,100, 200
+			ok- BDDI and DDI
+			ok- without top freq
+			ok- with only word freq
+			ok- with only trigram
+			ok- with only lemma freq
+			ok- with less word features
+			ok- with only word and window diff combinations
+			ok- limit 1000,2500,null
+
+
+	- structural debugging!
+		ko- input test & training file inside model
+		ok- DDI and BDDI train and testing params!
+		- BUG! filters on features are not being applied!
+			rename differently in the preparation file,
+				-> REDO THE PREPROCESSING STEP3 (ON BOTH DRUGBANK AND MEDLINE)
+
+				ok-1) yaml files
+				ok-2) rename yamls
+				3) add prefixing to code
+				prefix:
+				ok- e1_, e2_: wordfeatures
+				ok- w12_,w00_: windowfeatures
+				ok- sefe_: sentence features
+				ok- tofe_: topcount features
+					tofe_trigram_000_
+					tofe_word_000_
+					tofe_lemma_000_
+					tofe_pos_000_
+						000 position 
+				ok-4) prepare DrugBank and Medline commands
+					07-DDI_preprocess_Medline.py
+					07-DDI_preprocess_DrugBank.py
+				5) test and inspect
+					ok-(fixed)e2__,e1_ are not filtered
+					ok-(fixed)window features are not filtered
+					ok-sentencefeatures no suffix
+					ok- window e1 not appearing
+						-strange w12 pos not appearing
+				
+			ok- control window parameter<
+			ok- word -window filters
+				onlyt filter , not redo
+			ok- topcount
+				then filter by name later
+
+
+	- Medline
+		->feature extraction prepare files
+			ok- preprocess 1 train
+			ok- preprocess 1 test
+			ok- recover finalDDI_test.json
+			ok- preprocess 2 train
+			ok- preprocess 2 test
+			ok- preprocess 3 train
+				CREATE THE yaml files
+			ok- preprocess 3 test
+				create the yaml files
+->			- create version with 50 better than 200 topcounts
+		-> train ~ 1h
+->			- MedLine DDI and BDDI
+->			- DrugBank DDI and BDDI
+---------------------------------------
+
+	- Reporting
+		- adapt to list new features
+				mfreqw, mfreqt,...
+				posc
+				word features
+				window features
+		- window
+
+	- if F1 >50% for sure stop
+		- try modifications of the best models
+		- maybe with cv ! Yes! takes not much time!
+
+
+- ideas for presentation
+	table results vs models
+	for each feature 
+		slide showing how it is built
+
+----------------------------------------
+
+
+- enhancements
+	- adapt shortest path
+	- wordslist and lemmas without eintities (remove from shortestPath)
+	- errros can be corrected later
+	-> some errors still in parsing dependency tree
+	-> some unseen offsets.
+
+
+
+
+
+- samechunk
+- specific chunks subject vs Object?
+- specific pos around ei's
+- presence of specific pairs (word,pos=VB)
+

@@ -1,0 +1,9 @@
+Drug Entity Recognition,,
+$f_{1}$,Word feature,
+$f_{2}$,Part-Of-Speech,
+$f_{3}$,Orthographic feature, "5 classes: all-capitalized, is-capitalized,all-digits, alphanumeric, hyphen or not"
+$f_{4}$,Affix features, "Prefixes and suffixes of the length 3,4,5"
+$f_{5}$,Word shape features,"Generalized word class: Xxxxx00xxOxx Brief word class: Xx0xOx"
+$f_{6}$,Dictionary features, "Using: drugbank, drugs@FDA,	jochem"
+$f_{7}$,Chunk feature,
+$f_{8}$,Word Embeddings features, Word2Vec and classification

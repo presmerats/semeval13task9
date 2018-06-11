@@ -1,0 +1,75 @@
+Datasets
+
+Training
+	DrugBankOutput
+		text file and entity names files for each sentence
+	DrugBank
+		xml file 
+			document 
+				id
+				sentence 
+					id
+					text
+					entity
+						id
+						charOffset
+						type
+						text
+				sentence
+				...
+
+	MEdline
+		1092382.xml
+			document id
+				sentnece
+					id
+					text
+					entity
+						id
+						charOffset
+						type
+						text
+				sentence.
+					...
+
+	MedlineOuptut
+		txt file for each text and entity of a file in MedLine
+
+Test
+	TestForDDIExtraction Task
+		xmls with
+			sentence
+				entity
+				entity
+				...
+				pair
+				pair
+				..
+			sentence
+			...
+
+	TestForDrugNER
+		doc
+			sentence
+				entity
+				entity
+				..
+				pair
+				pair
+				...
+	DrugBankOutput
+		entity names file
+		interaction text file
+
+
+
+->task: features
+	get sentence id DDI-MedLine.d120.s3
+	get text
+	get entities list
+		with entity id , offset, tpe, text
+	get pairs list
+		with pair id, e1 e2 ddi=True/False
+
+-> one long datastruct?
+-> do we need to save this to a DB or a file for processing?
