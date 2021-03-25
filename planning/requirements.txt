@@ -63,7 +63,7 @@ python-crfsuite==0.9.5
 python-dateutil==2.6.1
 python-pptx==0.6.5
 pytz==2018.3
-PyYAML==3.12
+PyYAML==5.4
 pyzmq==17.0.0
 qtconsole==4.3.1
 requests==2.20.0
